@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện Phản Xạ HSK 3</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --success-color: #2ecc71;
+            --error-color: #e74c3c;
+            --bg-color: #f4f7f6;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 { color: #333; margin-bottom: 1rem; font-size: 1.5rem; }
+        .vietnamese-sentence {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            min-height: 60px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+            outline: none;
+        }
+        input[type="text"]:focus { border-color: var(--primary-color); }
+        .buttons { display: flex; gap: 10px; justify-content: center; }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-submit { background: var(--primary-color); color: white; }
+        .btn-next { background: #95a5a6; color: white; }
+        button:hover { opacity: 0.8; }
+        #result {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            display: none;
+            text-align: left;
+        }
+        .correct { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .wrong { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .answer-detail { margin-top: 5px; font-size: 1.1rem; }
+        .pinyin { color: #666; font-style: italic; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Luyện Dịch HSK 3 (Việt -> Trung)</h1>
+    <div class="vietnamese-sentence" id="viSentence">Đang tải...</div>
+    
+    <input type="text" id="userInput" placeholder="Nhập câu tiếng Trung (Hán tự)..." autocomplete="off">
+    
+    <div class="buttons">
+        <button class="btn-submit" onclick="checkAnswer()">Nộp bài</button>
+        <button class="btn-next" onclick="randomSentence()">Câu khác</button>
+    </div>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    // Danh sách 10 câu mẫu (Bạn có thể copy thêm từ danh sách 100 câu vào đây)
+    const data = [
+        { vi: "Bạn tên là gì?", zh: "你叫什么名字？", py: "Nǐ jiào shénme míngzi?" },
+        { vi: "Rất vui được làm quen với bạn.", zh: "很高兴认识你。", py: "Hěn gāoxìng rènshi nǐ." },
+        { vi: "Bạn học tiếng Trung bao lâu rồi?", zh: "你学中文多久了？", py: "Nǐ xué Zhōngwén duōjiǔ le?" },
+        { vi: "Tôi muốn gọi một bát mì bò.", zh: "我想 chà 一碗牛肉面。", py: "Wǒ xiǎng diǎn yì wǎn niúròumiàn." },
+        { vi: "Đắt quá, bớt một chút đi.", zh: "太贵了，便宜点吧。", py: "Tài guì le, piányi diǎn ba." },
+        { vi: "Thời tiết hôm nay đẹp quá!", zh: "今天天气太好了！", py: "Jīntiān tiānqì tài hǎo le!" },
+        { vi: "Tôi thấy tiếng Trung không khó lắm.", zh: "我觉得中文不太难。", py: "Wǒ juéde Zhōngwén bú tài nán." },
+        { vi: "Bạn có thể giúp tôi một chút không?", zh: "你能 giúp 我一下吗？", py: "Nǐ néng bāng wǒ yíxià ma?" },
+        { vi: "Mấy giờ bạn tan làm?", zh: "你几点下班？", py: "Nǐ jǐ diǎn xiàbān?" },
+        { vi: "Chúc bạn công việc thuận lợi.", zh: "祝你工作顺利。", py: "Zhù nǐ gōngzuò shùnlì." }
+    ];
+
+    let currentQuestion = {};
+
+    function randomSentence() {
+        const randomIndex = Math.floor(Math.random() * data.length);
+        currentQuestion = data[randomIndex];
+        document.getElementById('viSentence').innerText = currentQuestion.vi;
+        document.getElementById('userInput').value = "";
+        document.getElementById('result').style.display = "none";
+        document.getElementById('userInput').focus();
+    }
+
+    function checkAnswer() {
+        const userAns = document.getElementById('userInput').value.trim();
+        const resultDiv = document.getElementById('result');
+        
+        if (!userAns) return;
+
+        resultDiv.style.display = "block";
+        
+        // So sánh cơ bản (loại bỏ dấu câu để chấm điểm thoáng hơn)
+        const cleanUser = userAns.replace(/[，。？！\s]/g, "");
+        const cleanCorrect = currentQuestion.zh.replace(/[，。？！\s]/g, "");
+
+        if (cleanUser === cleanCorrect) {
+            resultDiv.className = "correct";
+            resultDiv.innerHTML = `<strong>Chính xác! 很好!</strong>`;
+        } else {
+            resultDiv.className = "wrong";
+            resultDiv.innerHTML = `<strong>Chưa chính xác. Thử lại nhé!</strong>`;
+        }
+
+        resultDiv.innerHTML += `
+            <div class="answer-detail">
+                <div>Đán án: <span style="color: #e67e22; font-weight:bold">${currentQuestion.zh}</span></div>
+                <div class="pinyin">${currentQuestion.py}</div>
+            </div>
+        `;
+    }
+
+    // Nhấn Enter để nộp bài
+    document.getElementById('userInput').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') checkAnswer();
+    });
+
+    // Khởi tạo câu đầu tiên
+    randomSentence();
+</script>
+
+</body>
+</html>
