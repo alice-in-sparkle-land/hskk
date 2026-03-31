@@ -1,0 +1,102 @@
+[
+  {
+    "id": "g3_001",
+    "point": "越来越…",
+    "explanation_vi": "Diễn tả sự thay đổi ngày càng tăng: 'ngày càng...'",
+    "structure": "越来越 + Adj/V",
+    "example_zh": "天气越来越热了。",
+    "example_pinyin": "Tiānqì yuèlái yuè rè le.",
+    "example_vi": "Thời tiết ngày càng nóng hơn.",
+    "hskk_note": "Cấu trúc này hay dùng trong văn nói tự nhiên, thể hiện xu hướng biến đổi liên tục."
+  },
+  {
+    "id": "g3_002",
+    "point": "虽然…但是…",
+    "explanation_vi": "Mặc dù... nhưng... (biểu thị sự tương phản)",
+    "structure": "虽然 + clause1，但是 + clause2",
+    "example_zh": "虽然很贵，但是质量很好。",
+    "example_pinyin": "Suīrán hěn guì, dànshì zhìliàng hěn hǎo.",
+    "example_vi": "Mặc dù rất đắt, nhưng chất lượng rất tốt.",
+    "hskk_note": "Đây là cặp liên từ tương phản quan trọng nhất trong tiếng Trung trung cấp."
+  },
+  {
+    "id": "g3_003",
+    "point": "因为…所以…",
+    "explanation_vi": "Vì... nên... (biểu thị nguyên nhân - kết quả)",
+    "structure": "因为 + nguyên nhân，所以 + kết quả",
+    "example_zh": "因为下雨，所以我们没有出去。",
+    "example_pinyin": "Yīnwèi xià yǔ, suǒyǐ wǒmen méiyǒu chūqù.",
+    "example_vi": "Vì trời mưa nên chúng tôi không ra ngoài.",
+    "hskk_note": "Cặp từ nối nhân quả phổ biến nhất. Trong văn nói có thể bỏ một trong hai từ."
+  },
+  {
+    "id": "g3_004",
+    "point": "如果…就…",
+    "explanation_vi": "Nếu... thì... (câu điều kiện)",
+    "structure": "如果 + điều kiện，就 + kết quả",
+    "example_zh": "如果你有空，就来我家玩吧。",
+    "example_pinyin": "Rúguǒ nǐ yǒu kòng, jiù lái wǒ jiā wán ba.",
+    "example_vi": "Nếu bạn rảnh thì đến nhà tôi chơi nhé.",
+    "hskk_note": "Câu điều kiện cơ bản. Trong khẩu ngữ tự nhiên thường bỏ 如果, chỉ dùng 就."
+  },
+  {
+    "id": "g3_005",
+    "point": "一边…一边…",
+    "explanation_vi": "Vừa... vừa... (hai hành động đồng thời)",
+    "structure": "一边 + V1，一边 + V2",
+    "example_zh": "她一边听音乐，一边做作业。",
+    "example_pinyin": "Tā yībiān tīng yīnyuè, yībiān zuò zuòyè.",
+    "example_vi": "Cô ấy vừa nghe nhạc vừa làm bài tập.",
+    "hskk_note": "Nhấn mạnh hai hành động diễn ra cùng lúc. Khác với 先…然后… (tuần tự)."
+  },
+  {
+    "id": "g3_006",
+    "point": "除了…以外，还…",
+    "explanation_vi": "Ngoài... ra, còn... (thêm vào, không loại trừ)",
+    "structure": "除了 + X 以外，还 + Y",
+    "example_zh": "除了中文以外，他还会说英文。",
+    "example_pinyin": "Chúle zhōngwén yǐwài, tā hái huì shuō yīngwén.",
+    "example_vi": "Ngoài tiếng Trung ra, anh ấy còn biết nói tiếng Anh.",
+    "hskk_note": "Phân biệt với '除了…都' (loại trừ). Ở đây 还 có nghĩa là bao gồm thêm."
+  },
+  {
+    "id": "g3_007",
+    "point": "只有…才…",
+    "explanation_vi": "Chỉ có... mới... (điều kiện duy nhất)",
+    "structure": "只有 + điều kiện，才 + kết quả",
+    "example_zh": "只有努力，才能成功。",
+    "example_pinyin": "Zhǐyǒu nǔlì, cái néng chénggōng.",
+    "example_vi": "Chỉ có cố gắng mới có thể thành công.",
+    "hskk_note": "Nhấn mạnh điều kiện DUY NHẤT. Khác với 只要…就 (điều kiện đủ)."
+  },
+  {
+    "id": "g3_008",
+    "point": "把 structure (basic)",
+    "explanation_vi": "Câu chữ 把: đưa tân ngữ lên trước động từ, nhấn mạnh xử lý đối tượng",
+    "structure": "主语 + 把 + 宾语 + V + complement",
+    "example_zh": "请把书放在桌子上。",
+    "example_pinyin": "Qǐng bǎ shū fàng zài zhuōzi shàng.",
+    "example_vi": "Hãy đặt quyển sách lên bàn.",
+    "hskk_note": "Câu 把 phải có kết quả/bổ ngữ sau động từ, không dùng với động từ tâm lý hoặc 是/有."
+  },
+  {
+    "id": "g3_009",
+    "point": "被 (passive)",
+    "explanation_vi": "Câu bị động: bị/được ai đó làm gì",
+    "structure": "受事 + 被 + 施事 + V + complement",
+    "example_zh": "我的手机被弟弟弄坏了。",
+    "example_pinyin": "Wǒ de shǒujī bèi dìdi nòng huài le.",
+    "example_vi": "Điện thoại của tôi bị em trai làm hỏng rồi.",
+    "hskk_note": "Tiếng Trung dùng 被 chủ yếu khi kết quả là tiêu cực hoặc không như ý."
+  },
+  {
+    "id": "g3_010",
+    "point": "得 (degree complement)",
+    "explanation_vi": "Bổ ngữ mức độ: động từ + 得 + mô tả mức độ",
+    "structure": "V + 得 + Adj/Clause",
+    "example_zh": "她唱歌唱得很好听。",
+    "example_pinyin": "Tā chànggē chàng de hěn hǎotīng.",
+    "example_vi": "Cô ấy hát rất hay.",
+    "hskk_note": "Khi có tân ngữ phải lặp lại động từ. Đây là điểm ngữ pháp rất hay gặp trong HSKK."
+  }
+]
