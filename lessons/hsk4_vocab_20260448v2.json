@@ -31,4 +31,62 @@
     "chinese": "赚钱",
     "pinyin": "zhuànqián",
     "vietnamese": "Kiếm tiền",
-    "
+    "example_zh": "赚钱的速度永远赶不上我花钱的速度。",
+    "example_pinyin": "Zhuànqián de sùdù yǒngyuǎn gǎnbushàng wǒ huāqián de sùdù.",
+    "example_vi": "Tốc độ kiếm tiền của tui vĩnh viễn không đuổi kịp tốc độ tiêu tiền."
+  },
+  {
+    "id": "v3_010",
+    "chinese": "按照",
+    "pinyin": "ànzhào",
+    "vietnamese": "Dựa theo, tuân theo",
+    "example_zh": "按照剧情发展，下一秒男主角就该吻我了。",
+    "example_pinyin": "Ànzhào jùqíng fāzhǎn, xià yī miǎo nán zhǔjiǎo jiù gāi wěn wǒ le.",
+    "example_vi": "Theo như diễn biến phim, thì giây tiếp theo nam chính phải hôn tui rồi chứ."
+  },
+  {
+    "id": "v3_011",
+    "chinese": "成功",
+    "pinyin": "chénggōng",
+    "vietnamese": "Thành công",
+    "example_zh": "减肥最成功的时刻，就是我穿上那件大码衣服的时候。",
+    "example_pinyin": "Jiǎnféi zuì chénggōng de shíkè, jiùshì wǒ chuān shàng nà jiàn dàmǎ yīfú de shíhòu.",
+    "example_vi": "Khoảnh khắc giảm cân thành công nhất là lúc tui mặc vừa cái áo size XL."
+  },
+  {
+    "id": "v3_012",
+    "chinese": "各有前因莫羡人",
+    "pinyin": "gè yǒu qiányīn mò xiàn rén",
+    "vietnamese": "Mỗi người có căn nguyên riêng đừng ghen tị với họ",
+    "example_zh": "虽然他很有钱，但那是他辛苦拼来的，“各有前因莫羡人”嘛。",
+    "example_pinyin": "Suīrán tā hěn yǒuqián, dàn nà shì tā xīnkǔ pīn lái de, 'gè yǒu qiányīn mò xiàn rén' ma.",
+    "example_vi": "Dẫu anh ta giàu có nhưng đó là do anh ta liều mạng làm ra, mỗi người một số đừng có tị nạnh làm gì."
+  },
+  {
+    "id": "v3_013",
+    "chinese": "顺利",
+    "pinyin": "shùnlì",
+    "vietnamese": "Thuận lợi",
+    "example_zh": "本以为面试会很顺利，结果老板问我有女朋友了吗。",
+    "example_pinyin": "Běn yǐwéi miànshì huì hěn shùnlì, jiéguǒ lǎobǎn wèn wǒ yǒu nǚ péngyǒu le ma.",
+    "example_vi": "Cứ ngỡ phỏng vấn sẽ thuận lợi, ai dè sếp lại hỏi tui có bạn gái chưa."
+  },
+  {
+    "id": "v3_014",
+    "chinese": "感谢",
+    "pinyin": "gǎnxiè",
+    "vietnamese": "Cảm ơn, cảm tạ",
+    "example_zh": "感谢各位大佬不杀之恩，今天这顿饭我请！",
+    "example_pinyin": "Gǎnxiè gèwèi dàlǎo bù shā zhī ēn, jīntiān zhè dùn fàn wǒ qǐng!",
+    "example_vi": "Đa tạ các đại lão đã hạ thủ lưu tình, bữa cơm hôm nay đệ mời!"
+  },
+  {
+    "id": "v3_015",
+    "chinese": "消息",
+    "pinyin": "xiāoxī",
+    "vietnamese": "Tin tức, tin nhắn",
+    "example_zh": "最怕空气突然安静，最怕女神突然回我消息：'呵呵'。",
+    "example_pinyin": "Zuì pà kōngqì tūrán ānjìng, zuì pà nǚshén tūrán huí wǒ xiāoxī: 'Hēhē'.",
+    "example_vi": "Sợ nhất không gian bỗng nhiên tĩnh lặng, sợ nhất nữ thần bỗng trả lời tin nhắn: 'Hehe'."
+  }
+]
