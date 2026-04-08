@@ -38,6 +38,7 @@
   .vocab-vi { font-size: 24px; text-align: center; margin-bottom: 20px; }
   .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 12px; display: none; text-align: center; }
   .answer-box.active { display: block; }
+  .answer-pinyin { font-size: 18px; color: var(--muted); margin-top: 5px; }
   .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 48px; display: block; }
 
   .btn { width: 100%; padding: 12px; border-radius: 10px; border: none; background: var(--gold); color: var(--ink); font-weight: 700; cursor: pointer; margin-top: 10px; }
@@ -52,7 +53,7 @@
 
 <header><div class="logo">汉语学习 <span>HSK Practice</span></div></header>
 
-<div class="level-bar">
+<div class="level-bar" id="level-container">
   <button class="level-btn active" onclick="changeLevel(3)">HSK 3</button>
   <button class="level-btn" onclick="changeLevel(4)">HSK 4</button>
   <button class="level-btn" onclick="changeLevel(5)">HSK 5</button>
@@ -71,11 +72,16 @@
 </div>
 
 <main id="content"></main>
-<div id="toast" class="toast"></div>
 
 <script>
-// --- CONFIG: Change YOUR_USERNAME and YOUR_REPO ---
-const BASE_URL = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/lessons/';
+// --- CONFIGURATION ---
+// Replace these with your actual details
+const GITHUB_USER = 'YOUR_USERNAME'; 
+const GITHUB_REPO = 'YOUR_REPO';
+const FOLDER_PATH = 'lessons';
+
+// This URL lists all files in your folder
+const API_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${FOLDER_PATH}`;
 
 let state = {
   level: 3, tab: 'vocab',
@@ -85,22 +91,49 @@ let state = {
 };
 
 async function fetchData(level) {
-  const categories = ['vocab', 'grammar', 'sentences'];
-  for (const cat of categories) {
-    try {
-      const res = await fetch(`${BASE_URL}hsk${level}_${cat}.json`);
-      state.data[cat] = res.ok ? await res.json() : [];
-    } catch (e) { state.data[cat] = []; }
+  try {
+    const container = document.getElementById('content');
+    container.innerHTML = `<div class="card">📡 Đang tìm kiếm bài học...</div>`;
+
+    // 1. Get the list of all files in the folder
+    const response = await fetch(API_URL);
+    if (!response.ok) throw new Error("Could not access the lessons folder.");
+    const files = await response.json();
+
+    const categories = ['vocab', 'grammar', 'sentences'];
+    
+    // 2. For each category, search for a matching filename
+    for (const cat of categories) {
+      const match = files.find(f => 
+        f.name.toLowerCase().includes(`hsk${level}`) && 
+        f.name.toLowerCase().includes(cat)
+      );
+
+      if (match) {
+        console.log(`Found match for ${cat}: ${match.name}`);
+        const dataRes = await fetch(match.download_url);
+        state.data[cat] = dataRes.ok ? await dataRes.json() : [];
+      } else {
+        console.warn(`No file found for HSK${level} ${cat}`);
+        state.data[cat] = [];
+      }
+    }
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML = `
+      <div class="card" style="border-color: var(--red)">
+        ⚠️ Lỗi: ${e.message}<br>
+        Hãy kiểm tra tên Folder và cài đặt GitHub của bạn.
+      </div>`;
   }
-  render();
 }
 
 function render() {
   const container = document.getElementById('content');
-  const items = state.data[state.tab];
+  const items = state.data[state.tab] || [];
   
-  if (!items || items.length === 0) {
-    container.innerHTML = `<div class="card">Chưa có dữ liệu cho HSK ${state.level}. Vui lòng kiểm tra folder /lessons/.</div>`;
+  if (items.length === 0) {
+    container.innerHTML = `<div class="card">Không tìm thấy file bài học nào chứa "hsk${state.level}" và "${state.tab}" trong tên file.</div>`;
     return;
   }
 
@@ -113,24 +146,31 @@ function render() {
         <button class="btn" onclick="state.showAnswer=true;render()">Xem đáp án</button>
         <div class="answer-box ${state.showAnswer ? 'active' : ''}">
           <span class="answer-hanzi">${item.chinese}</span>
-          <p>${item.pinyin}</p>
+          <div class="answer-pinyin">${item.pinyin}</div>
         </div>
         <div class="srs-row ${state.showAnswer ? 'active' : ''}">
-          <button class="srs-btn" onclick="next()">Lại (10m)</button>
-          <button class="srs-btn" onclick="next(true)">Nhớ (1d)</button>
-          <button class="srs-btn" onclick="next(true)">Thuộc (7d)</button>
+          <button class="srs-btn" onclick="next()">Lại</button>
+          <button class="srs-btn" onclick="next(true)">Nhớ</button>
         </div>
       </div>`;
   } else {
-    container.innerHTML = `<div class="card"><div class="vocab-vi">${item.point}</div><p>${item.explanation_vi}</p></div>`;
+    container.innerHTML = `
+      <div class="card">
+        <div class="vocab-vi">${item.point}</div>
+        <p>${item.explanation_vi}</p>
+        <div class="answer-box active" style="background:none; border-top:1px solid var(--border); margin-top:15px; padding-top:15px;">
+           <strong>Cấu trúc:</strong><br> ${item.structure}
+        </div>
+        <button class="btn" onclick="next()">Bài tiếp theo →</button>
+      </div>`;
   }
+  updateUI();
 }
 
 function next(isLearned = false) {
   if (isLearned) {
     state.stats.learned++;
     state.stats.tokens += 5;
-    updateUI();
   }
   state.index++;
   state.showAnswer = false;
@@ -149,6 +189,8 @@ function changeLevel(lvl) {
 
 function changeTab(tab) {
   state.tab = tab;
+  state.index = 0;
+  state.showAnswer = false;
   document.querySelectorAll('.nav-tab').forEach(t => {
     t.classList.toggle('active', t.innerText.includes(tab === 'vocab' ? 'Vựng' : 'Pháp'));
   });
