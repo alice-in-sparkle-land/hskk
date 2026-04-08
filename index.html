@@ -537,12 +537,10 @@
 
 <script>
 // ─── CONFIG ───────────────────────────────────────
-const BASE = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/';
-// Change the line above to your GitHub raw content base URL
-// e.g. 'https://raw.githubusercontent.com/alice-sg/hsk-practice/main/'
+const BASE = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/lessons/';
 
 const SRS_INTERVALS = [
-  { label: '10分钟', ms: 10 * 60 * 1000 },
+  { label: '10 phút', ms: 10 * 60 * 1000 },
   { label: '1 ngày', ms: 24 * 60 * 60 * 1000 },
   { label: '7 ngày', ms: 7 * 24 * 60 * 60 * 1000 },
   { label: '10 ngày', ms: 10 * 24 * 60 * 60 * 1000 },
@@ -600,16 +598,16 @@ function load() {
 async function fetchJSON(filename) {
   try {
     const r = await fetch(BASE + filename);
-    if (!r.ok) throw new Error('not ok');
+    if (!r.ok) throw new Error(`Could not find ${filename}`);
     return await r.json();
   } catch(e) {
+    console.warn('Fetch error:', e.message);
     // Fallback: try local (same directory)
     try {
       const r2 = await fetch(filename);
       if (!r2.ok) throw new Error('local fail');
       return await r2.json();
     } catch(e2) {
-      console.warn('Could not load', filename);
       return [];
     }
   }
@@ -637,7 +635,6 @@ function isDue(id) {
 }
 
 function markSRS(id, quality) {
-  // quality: 0=again(10min), 1=hard(1d), 2=ok(7d), 3=good(10d), 4=great(15d), 5=easy(30d)
   const interval = Math.max(0, Math.min(quality, SRS_INTERVALS.length - 1));
   const wasNew = !state.srs[id]?.seen;
   state.srs[id] = {
@@ -697,7 +694,6 @@ function updateStats() {
 function buildVocabSession() {
   const level = state.level;
   const vocab = state.vocab[level] || [];
-  // Priority: due items first, then new
   const due = vocab.filter(v => isDue(v.id));
   const notDue = vocab.filter(v => !isDue(v.id));
   const pool = [...due, ...notDue];
@@ -830,7 +826,6 @@ function initCanvas() {
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
 
-  // Draw grid guide
   ctx.strokeStyle = '#e8dfc8';
   ctx.lineWidth = 1;
   ctx.beginPath();
@@ -864,7 +859,6 @@ function clearCanvas() {
   const canvas = document.getElementById('stroke-canvas');
   if (!canvas || !ctx) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // Redraw grid
   ctx.strokeStyle = '#e8dfc8'; ctx.lineWidth = 1;
   ctx.beginPath();
   ctx.moveTo(canvas.width/2, 0); ctx.lineTo(canvas.width/2, canvas.height);
@@ -957,7 +951,6 @@ function renderGrammarTab() {
         </div>
       </div>`;
   } else {
-    // Compose mode: show grammar point, ask user to compose
     container.innerHTML = `
       ${modeHtml}
       <div class="card">
@@ -1095,7 +1088,6 @@ function showToast(msg) {
 // ─── INIT ─────────────────────────────────────────
 async function init() {
   load();
-  // Set UI state
   document.querySelectorAll('.level-btn').forEach((b, i) => {
     b.classList.toggle('active', [3,4,5][i] === state.level);
   });
@@ -1106,7 +1098,6 @@ async function init() {
   document.getElementById('tab-grammar').style.display = state.tab === 'grammar' ? '' : 'none';
 
   await loadData(state.level);
-  // Preload other levels silently
   [3,4,5].filter(l => l !== state.level).forEach(l => loadData(l));
   render();
 }
