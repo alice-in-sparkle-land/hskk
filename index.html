@@ -22,7 +22,7 @@
   .level-btn.active { background: var(--gold); border-color: var(--gold); color: var(--ink); font-weight: 700; }
 
   .nav-tabs { display: flex; border-bottom: 2px solid var(--border); background: var(--card); position: sticky; top: 56px; z-index: 90; }
-  .nav-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 13px; color: var(--muted); border-bottom: 3px solid transparent; transition: all .2s; }
+  .nav-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 13px; color: var(--muted); border-bottom: 3px solid transparent; }
   .nav-tab.active { color: var(--gold); border-bottom-color: var(--gold); background: var(--paper); font-weight: bold; }
 
   .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 1px solid var(--border); }
@@ -36,7 +36,6 @@
   
   .vocab-vi { font-size: 24px; font-weight: 300; text-align: center; margin-bottom: 15px; }
   
-  /* Ô TRỐNG GHI CHỮ */
   .canvas-wrap { margin: 16px 0; background: #fff; border: 1.5px solid var(--border); border-radius: 12px; overflow: hidden; }
   .canvas-label { font-size: 11px; color: var(--muted); padding: 8px 14px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
   canvas.stroke-canvas { display: block; touch-action: none; cursor: crosshair; width: 100%; height: 160px; }
@@ -48,7 +47,6 @@
   
   .btn { width: 100%; padding: 12px; border-radius: 10px; border: none; background: var(--gold); color: var(--ink); font-weight: 700; cursor: pointer; margin-top: 10px; }
   
-  /* 6 CẤP ĐỘ GHI NHỚ */
   .srs-row { display: none; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
   .srs-row.active { display: flex; }
   .srs-btn { flex: 1; padding: 9px 4px; border-radius: 10px; font-size: 11px; font-weight: 600; cursor: pointer; border: 1.5px solid; text-align: center; background: white; transition: all .2s; min-width: 70px; }
@@ -92,17 +90,17 @@ let state = {
   level: 3, tab: 'vocab', 
   data: { vocab: [], grammar: [], sentences: [] }, 
   index: 0, showAnswer: false, 
-  stats: { learned: 0, tokens: 0, streak: 0, lastDate: null }
+  stats: { learned: 0, tokens: 0, streak: 0 }
 };
 
-// ─── TẢI DỮ LIỆU (Logic gộp nhiều file) ───
+// ─── TẢI DỮ LIỆU ĐA FILE ───
 async function fetchData(level) {
   try {
     const container = document.getElementById('content');
-    container.innerHTML = `<div class="card">📡 Đang kết nối bài học HSK${level}...</div>`;
+    container.innerHTML = `<div class="card">📡 Đang đồng bộ HSK${level}...</div>`;
 
     const response = await fetch(API_URL);
-    if (!response.ok) throw new Error("API GitHub lỗi.");
+    if (!response.ok) throw new Error("API GitHub không phản hồi.");
     const files = await response.json();
 
     state.data = { vocab: [], grammar: [], sentences: [] };
@@ -111,10 +109,12 @@ async function fetchData(level) {
     for (const file of relevant) {
       const name = file.name.toLowerCase();
       const res = await fetch(file.download_url);
-      const jsonData = res.ok ? await res.json() : [];
-      if (name.includes('vocab')) state.data.vocab.push(...jsonData);
-      else if (name.includes('grammar')) state.data.grammar.push(...jsonData);
-      else if (name.includes('sentence')) state.data.sentences.push(...jsonData);
+      if (!res.ok) continue;
+      const json = await res.json();
+
+      if (name.includes('vocab')) state.data.vocab.push(...json);
+      else if (name.includes('grammar')) state.data.grammar.push(...json);
+      else if (name.includes('sentence')) state.data.sentences.push(...json);
     }
     state.index = 0;
     render();
@@ -123,12 +123,12 @@ async function fetchData(level) {
   }
 }
 
-// ─── HIỂN THỊ GIAO DIỆN ───
+// ─── RENDER GIAO DIỆN ───
 function render() {
   const container = document.getElementById('content');
   const items = state.data[state.tab] || [];
   if (items.length === 0) {
-    container.innerHTML = `<div class="card">📭 Không tìm thấy dữ liệu.</div>`;
+    container.innerHTML = `<div class="card">📭 Chưa có dữ liệu cho mục này.</div>`;
     return;
   }
   const item = items[state.index % items.length];
@@ -137,26 +137,22 @@ function render() {
     container.innerHTML = `
       <div class="card">
         <div class="vocab-vi">${item.vietnamese}</div>
-        
         <div class="canvas-wrap">
-          <div class="canvas-label"><span>✏️ Luyện viết</span> <button class="clear-btn" onclick="clearCanvas()">Xóa</button></div>
+          <div class="canvas-label"><span>✏️ Ô ghi chữ</span> <button class="clear-btn" onclick="clearCanvas()">Xóa</button></div>
           <canvas class="stroke-canvas" id="stroke-canvas"></canvas>
         </div>
-
         <button class="btn" onclick="state.showAnswer=true;render()">Xem đáp án</button>
-
         <div class="answer-box ${state.showAnswer ? 'active' : ''}">
           <span class="answer-hanzi">${item.chinese}</span>
           <div style="font-size:18px; color:var(--muted)">${item.pinyin}</div>
         </div>
-
         <div class="srs-row ${state.showAnswer ? 'active' : ''}">
-          <button class="srs-btn srs-0" onclick="handleSRS(0)">😰 Lại</button>
-          <button class="srs-btn" style="border-color:#e67e22" onclick="handleSRS(1)">😕 Khó</button>
-          <button class="srs-btn srs-2" onclick="handleSRS(2)">🙂 OK</button>
-          <button class="srs-btn" style="border-color:var(--green)" onclick="handleSRS(3)">😊 Nhớ</button>
-          <button class="srs-btn" style="border-color:var(--blue)" onclick="handleSRS(4)">🌟 Giỏi</button>
-          <button class="srs-btn srs-5" onclick="handleSRS(5)">⭐ Thuộc</button>
+          <button class="srs-btn srs-0" onclick="handleNext(0)">😰 Lại</button>
+          <button class="srs-btn" style="border-color:#e67e22" onclick="handleNext(1)">😕 Khó</button>
+          <button class="srs-btn srs-2" onclick="handleNext(2)">🙂 OK</button>
+          <button class="srs-btn" style="border-color:var(--green)" onclick="handleNext(3)">😊 Nhớ</button>
+          <button class="srs-btn" style="border-color:var(--blue)" onclick="handleNext(4)">🌟 Giỏi</button>
+          <button class="srs-btn srs-5" onclick="handleNext(5)">⭐ Thuộc</button>
         </div>
       </div>`;
     initCanvas();
@@ -168,66 +164,43 @@ function render() {
         <div style="margin-top:15px; padding:15px; border-top:1px solid var(--border)">
           <strong>Cấu trúc:</strong> <code>${item.structure}</code>
         </div>
-        <button class="btn" onclick="handleSRS(3)">Tiếp theo →</button>
+        <button class="btn" onclick="handleNext(3)">Bài tiếp theo →</button>
       </div>`;
   }
   updateUI();
 }
 
-// ─── XỬ LÝ CANVAS (Ô GHI CHỮ) ───
+// ─── CANVAS (Ô GHI CHỮ) ───
 let isDrawing = false, ctx = null;
 function initCanvas() {
   const canvas = document.getElementById('stroke-canvas');
   if (!canvas) return;
-  canvas.width = canvas.parentElement.clientWidth;
-  canvas.height = 160;
+  canvas.width = canvas.parentElement.clientWidth; canvas.height = 160;
   ctx = canvas.getContext('2d');
   ctx.strokeStyle = '#1a1208'; ctx.lineWidth = 3; ctx.lineCap = 'round';
-
   const getPos = (e) => {
     const r = canvas.getBoundingClientRect();
     const t = e.touches ? e.touches[0] : e;
     return { x: t.clientX - r.left, y: t.clientY - r.top };
   };
-  canvas.onmousedown = canvas.ontouchstart = (e) => {
-    e.preventDefault(); isDrawing = true;
-    ctx.beginPath(); const {x,y} = getPos(e); ctx.moveTo(x,y);
-  };
-  canvas.onmousemove = canvas.ontouchmove = (e) => {
-    if (!isDrawing) return; e.preventDefault();
-    const {x,y} = getPos(e); ctx.lineTo(x,y); ctx.stroke();
-  };
+  canvas.onmousedown = canvas.ontouchstart = (e) => { e.preventDefault(); isDrawing = true; ctx.beginPath(); const {x,y} = getPos(e); ctx.moveTo(x,y); };
+  canvas.onmousemove = canvas.ontouchmove = (e) => { if(!isDrawing) return; e.preventDefault(); const {x,y} = getPos(e); ctx.lineTo(x,y); ctx.stroke(); };
   canvas.onmouseup = canvas.ontouchend = () => isDrawing = false;
 }
 function clearCanvas() { ctx.clearRect(0,0,999,999); }
 
-// ─── LOGIC HỌC TẬP ───
-function handleSRS(quality) {
-  if (quality >= 2) {
-    state.stats.learned++;
-    state.stats.tokens += (quality + 1);
-  }
-  state.index++;
-  state.showAnswer = false;
-  render();
+function handleNext(q) {
+  if (q >= 2) { state.stats.learned++; state.stats.tokens += (q + 1); }
+  state.index++; state.showAnswer = false; render();
 }
-
-function changeLevel(l) {
-  state.level = l;
-  document.querySelectorAll('.level-btn').forEach(b => b.classList.toggle('active', b.innerText.includes(l)));
-  fetchData(l);
-}
-
-function changeTab(t) {
-  state.tab = t;
-  document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.innerText.includes(t==='vocab'?'Vựng':'Pháp')));
-  render();
-}
-
+function changeLevel(l) { state.level = l; fetchData(l); }
+function changeTab(t) { state.tab = t; render(); }
 function updateUI() {
   document.getElementById('s-learned').innerText = state.stats.learned;
   document.getElementById('s-tokens').innerText = state.stats.tokens;
   document.getElementById('c-lvl').innerText = state.level;
+  document.querySelectorAll('.level-btn').forEach(b => b.classList.toggle('active', b.innerText.includes(state.level)));
+  document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.innerText.includes(state.tab==='vocab'?'Vựng':'Pháp')));
 }
 
 fetchData(3);
