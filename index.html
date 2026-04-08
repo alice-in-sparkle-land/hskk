@@ -6,32 +6,57 @@
 <title>汉语学习 · HSK Practice</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --ink: #1a1208; --paper: #f5f0e8; --warm: #e8dfc8; --gold: #c8962a; --red: #c0392b; --border: #d4c9b0; --card: #fdfaf4; }
+  :root {
+    --ink: #1a1208; --paper: #f5f0e8; --warm: #e8dfc8; --gold: #c8962a;
+    --red: #c0392b; --green: #27ae60; --blue: #2471a3; --muted: #8a7f70;
+    --border: #d4c9b0; --card: #fdfaf4; --shadow: rgba(26,18,8,0.12);
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); min-height: 100vh; }
-  header { background: var(--ink); color: var(--paper); padding: 15px 24px; display: flex; align-items: center; justify-content: space-between; }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); min-height: 100vh; font-size: 15px; }
+
+  header { background: var(--ink); color: var(--paper); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
   .logo { font-family: 'Noto Serif SC', serif; font-size: 20px; color: #e8b84b; }
-  .level-bar { background: var(--ink); display: flex; justify-content: center; gap: 8px; padding-bottom: 15px; }
-  .level-btn { background: transparent; border: 1px solid rgba(255,255,255,0.3); color: white; padding: 6px 20px; border-radius: 20px; cursor: pointer; }
-  .level-btn.active { background: var(--gold); border-color: var(--gold); font-weight: bold; }
-  .nav-tabs { display: flex; border-bottom: 2px solid var(--border); background: var(--card); }
-  .nav-tab { flex: 1; padding: 15px; text-align: center; cursor: pointer; color: #8a7f70; }
-  .nav-tab.active { color: var(--gold); border-bottom: 3px solid var(--gold); font-weight: bold; }
-  .stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--warm); border-bottom: 1px solid var(--border); padding: 10px; }
-  .stat-cell { text-align: center; }
+  
+  .level-bar { background: var(--ink); display: flex; justify-content: center; gap: 4px; padding: 0 24px 12px; }
+  .level-btn { background: transparent; border: 1.5px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.55); padding: 6px 22px; border-radius: 20px; cursor: pointer; font-size: 13px; transition: all .2s; }
+  .level-btn.active { background: var(--gold); border-color: var(--gold); color: var(--ink); font-weight: 700; }
+
+  .nav-tabs { display: flex; border-bottom: 2px solid var(--border); background: var(--card); position: sticky; top: 56px; z-index: 90; }
+  .nav-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 13px; color: var(--muted); border-bottom: 3px solid transparent; transition: all .2s; }
+  .nav-tab.active { color: var(--gold); border-bottom-color: var(--gold); background: var(--paper); font-weight: bold; }
+
+  .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 1px solid var(--border); }
+  .stat-cell { background: var(--warm); text-align: center; padding: 10px 4px; }
   .stat-num { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--gold); display: block; }
-  .stat-label { font-size: 10px; text-transform: uppercase; }
+  .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; }
+
   main { padding: 20px; max-width: 600px; margin: 0 auto; }
-  .card { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative; }
-  .vocab-vi { font-size: 28px; text-align: center; margin-bottom: 20px; font-weight: 300; }
-  .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 15px; display: none; text-align: center; }
-  .answer-box.active { display: block; animation: fadeIn 0.3s ease; }
-  .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 50px; display: block; margin-bottom: 5px; }
-  .btn { width: 100%; padding: 14px; border-radius: 10px; border: none; background: var(--gold); color: white; font-weight: bold; cursor: pointer; margin-top: 10px; }
-  .srs-row { display: none; gap: 10px; margin-top: 15px; }
+  .card { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 28px 24px; box-shadow: 0 2px 16px var(--shadow); position: relative; overflow: hidden; }
+  .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
+  
+  .vocab-vi { font-size: 24px; font-weight: 300; text-align: center; margin-bottom: 15px; }
+  
+  /* Ô TRỐNG GHI CHỮ */
+  .canvas-wrap { margin: 16px 0; background: #fff; border: 1.5px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .canvas-label { font-size: 11px; color: var(--muted); padding: 8px 14px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  canvas.stroke-canvas { display: block; touch-action: none; cursor: crosshair; width: 100%; height: 160px; }
+  .clear-btn { font-size: 11px; background: transparent; border: 1px solid var(--border); color: var(--muted); padding: 2px 10px; border-radius: 8px; cursor: pointer; }
+
+  .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 12px; display: none; text-align: center; }
+  .answer-box.active { display: block; animation: fadeIn .3s ease; }
+  .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 48px; color: var(--ink); letter-spacing: 4px; }
+  
+  .btn { width: 100%; padding: 12px; border-radius: 10px; border: none; background: var(--gold); color: var(--ink); font-weight: 700; cursor: pointer; margin-top: 10px; }
+  
+  /* 6 CẤP ĐỘ GHI NHỚ */
+  .srs-row { display: none; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
   .srs-row.active { display: flex; }
-  .srs-btn { flex: 1; padding: 12px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; background: white; }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .srs-btn { flex: 1; padding: 9px 4px; border-radius: 10px; font-size: 11px; font-weight: 600; cursor: pointer; border: 1.5px solid; text-align: center; background: white; transition: all .2s; min-width: 70px; }
+  .srs-0 { border-color: var(--red); color: var(--red); }
+  .srs-2 { border-color: #f1c40f; color: #946c00; }
+  .srs-5 { border-color: #8e44ad; color: #8e44ad; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 </head>
 <body>
@@ -49,9 +74,10 @@
 </div>
 
 <div class="stats-bar">
-  <div class="stat-cell"><span class="stat-num" id="learned">0</span><span class="stat-label">Đã học</span></div>
-  <div class="stat-cell"><span class="stat-num" id="tokens">0</span><span class="stat-label">Tokens</span></div>
-  <div class="stat-cell"><span class="stat-num" id="current-lvl">3</span><span class="stat-label">Level</span></div>
+  <div class="stat-cell"><span class="stat-num" id="s-learned">0</span><span class="stat-label">Đã học</span></div>
+  <div class="stat-cell"><span class="stat-num" id="s-tokens">0</span><span class="stat-label">Tokens</span></div>
+  <div class="stat-cell"><span class="stat-num" id="s-streak">0</span><span class="stat-label">Streak</span></div>
+  <div class="stat-cell"><span class="stat-num" id="c-lvl">3</span><span class="stat-label">Level</span></div>
 </div>
 
 <main id="content"></main>
@@ -63,112 +89,145 @@ const FOLDER_PATH = 'lessons';
 const API_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${FOLDER_PATH}`;
 
 let state = { 
-  level: 3, 
-  tab: 'vocab', 
+  level: 3, tab: 'vocab', 
   data: { vocab: [], grammar: [], sentences: [] }, 
-  index: 0, 
-  showAnswer: false, 
-  stats: { learned: 0, tokens: 0 }
+  index: 0, showAnswer: false, 
+  stats: { learned: 0, tokens: 0, streak: 0, lastDate: null }
 };
 
+// ─── TẢI DỮ LIỆU (Logic gộp nhiều file) ───
 async function fetchData(level) {
   try {
     const container = document.getElementById('content');
-    container.innerHTML = `<div class="card">📡 Đang tải bài học HSK${level}...</div>`;
+    container.innerHTML = `<div class="card">📡 Đang kết nối bài học HSK${level}...</div>`;
 
     const response = await fetch(API_URL);
-    if (!response.ok) throw new Error("Không thể truy cập GitHub. Hãy đảm bảo Repo đã Public.");
+    if (!response.ok) throw new Error("API GitHub lỗi.");
     const files = await response.json();
 
-    // Xóa dữ liệu cũ trước khi tải mới
     state.data = { vocab: [], grammar: [], sentences: [] };
+    const relevant = files.filter(f => f.name.toLowerCase().includes(`hsk${level}`));
 
-    // Lọc tất cả các file liên quan đến level (ví dụ: hsk3)
-    const relevantFiles = files.filter(f => f.name.toLowerCase().includes(`hsk${level}`));
-
-    for (const file of relevantFiles) {
+    for (const file of relevant) {
       const name = file.name.toLowerCase();
       const res = await fetch(file.download_url);
-      if (!res.ok) continue;
-      const jsonData = await res.json();
-
-      // Phân loại và gộp (concat) dữ liệu vào state
-      if (name.includes('vocab')) {
-        state.data.vocab = state.data.vocab.concat(jsonData);
-      } else if (name.includes('grammar')) {
-        state.data.grammar = state.data.grammar.concat(jsonData);
-      } else if (name.includes('sentence')) {
-        state.data.sentences = state.data.sentences.concat(jsonData);
-      }
+      const jsonData = res.ok ? await res.json() : [];
+      if (name.includes('vocab')) state.data.vocab.push(...jsonData);
+      else if (name.includes('grammar')) state.data.grammar.push(...jsonData);
+      else if (name.includes('sentence')) state.data.sentences.push(...jsonData);
     }
-
     state.index = 0;
     render();
   } catch (e) {
-    document.getElementById('content').innerHTML = `<div class="card" style="color:var(--red)">⚠️ Lỗi: ${e.message}</div>`;
+    document.getElementById('content').innerHTML = `<div class="card" style="color:red">⚠️ Lỗi: ${e.message}</div>`;
   }
 }
 
+// ─── HIỂN THỊ GIAO DIỆN ───
 function render() {
   const container = document.getElementById('content');
   const items = state.data[state.tab] || [];
-  
   if (items.length === 0) {
-    container.innerHTML = `<div class="card">📭 Không tìm thấy dữ liệu cho HSK ${state.level}.</div>`;
+    container.innerHTML = `<div class="card">📭 Không tìm thấy dữ liệu.</div>`;
     return;
   }
-
   const item = items[state.index % items.length];
 
   if (state.tab === 'vocab') {
     container.innerHTML = `
       <div class="card">
         <div class="vocab-vi">${item.vietnamese}</div>
-        <button class="btn" onclick="showAns()">Xem đáp án</button>
+        
+        <div class="canvas-wrap">
+          <div class="canvas-label"><span>✏️ Luyện viết</span> <button class="clear-btn" onclick="clearCanvas()">Xóa</button></div>
+          <canvas class="stroke-canvas" id="stroke-canvas"></canvas>
+        </div>
+
+        <button class="btn" onclick="state.showAnswer=true;render()">Xem đáp án</button>
+
         <div class="answer-box ${state.showAnswer ? 'active' : ''}">
           <span class="answer-hanzi">${item.chinese}</span>
-          <div style="font-size:20px; color:#8a7f70">${item.pinyin}</div>
+          <div style="font-size:18px; color:var(--muted)">${item.pinyin}</div>
         </div>
+
         <div class="srs-row ${state.showAnswer ? 'active' : ''}">
-          <button class="srs-btn" onclick="next()">Lại</button>
-          <button class="srs-btn" style="color:var(--gold)" onclick="next(true)">Nhớ</button>
+          <button class="srs-btn srs-0" onclick="handleSRS(0)">😰 Lại</button>
+          <button class="srs-btn" style="border-color:#e67e22" onclick="handleSRS(1)">😕 Khó</button>
+          <button class="srs-btn srs-2" onclick="handleSRS(2)">🙂 OK</button>
+          <button class="srs-btn" style="border-color:var(--green)" onclick="handleSRS(3)">😊 Nhớ</button>
+          <button class="srs-btn" style="border-color:var(--blue)" onclick="handleSRS(4)">🌟 Giỏi</button>
+          <button class="srs-btn srs-5" onclick="handleSRS(5)">⭐ Thuộc</button>
         </div>
       </div>`;
+    initCanvas();
   } else {
     container.innerHTML = `
       <div class="card">
         <div style="font-size:22px; color:var(--gold); margin-bottom:10px">${item.point}</div>
-        <p style="line-height:1.6">${item.explanation_vi}</p>
-        <div style="margin-top:15px; padding-top:15px; border-top:1px solid var(--border)">
-          <strong>Cấu trúc:</strong> <code style="background:#eee; padding:2px 5px">${item.structure}</code>
+        <p>${item.explanation_vi}</p>
+        <div style="margin-top:15px; padding:15px; border-top:1px solid var(--border)">
+          <strong>Cấu trúc:</strong> <code>${item.structure}</code>
         </div>
-        <button class="btn" onclick="next()">Bài tiếp theo →</button>
+        <button class="btn" onclick="handleSRS(3)">Tiếp theo →</button>
       </div>`;
   }
   updateUI();
 }
 
-function showAns() { state.showAnswer = true; render(); }
-function next(isLearned = false) {
-  if (isLearned) { state.stats.learned++; state.stats.tokens += 10; }
+// ─── XỬ LÝ CANVAS (Ô GHI CHỮ) ───
+let isDrawing = false, ctx = null;
+function initCanvas() {
+  const canvas = document.getElementById('stroke-canvas');
+  if (!canvas) return;
+  canvas.width = canvas.parentElement.clientWidth;
+  canvas.height = 160;
+  ctx = canvas.getContext('2d');
+  ctx.strokeStyle = '#1a1208'; ctx.lineWidth = 3; ctx.lineCap = 'round';
+
+  const getPos = (e) => {
+    const r = canvas.getBoundingClientRect();
+    const t = e.touches ? e.touches[0] : e;
+    return { x: t.clientX - r.left, y: t.clientY - r.top };
+  };
+  canvas.onmousedown = canvas.ontouchstart = (e) => {
+    e.preventDefault(); isDrawing = true;
+    ctx.beginPath(); const {x,y} = getPos(e); ctx.moveTo(x,y);
+  };
+  canvas.onmousemove = canvas.ontouchmove = (e) => {
+    if (!isDrawing) return; e.preventDefault();
+    const {x,y} = getPos(e); ctx.lineTo(x,y); ctx.stroke();
+  };
+  canvas.onmouseup = canvas.ontouchend = () => isDrawing = false;
+}
+function clearCanvas() { ctx.clearRect(0,0,999,999); }
+
+// ─── LOGIC HỌC TẬP ───
+function handleSRS(quality) {
+  if (quality >= 2) {
+    state.stats.learned++;
+    state.stats.tokens += (quality + 1);
+  }
   state.index++;
   state.showAnswer = false;
   render();
 }
-function changeLevel(l) { 
-  state.level = l; 
+
+function changeLevel(l) {
+  state.level = l;
   document.querySelectorAll('.level-btn').forEach(b => b.classList.toggle('active', b.innerText.includes(l)));
-  fetchData(l); 
+  fetchData(l);
 }
-function changeTab(t) { 
-  state.tab = t; 
-  document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.innerText.includes(t === 'vocab' ? 'Vựng' : 'Pháp')));
-  state.index = 0; render(); 
+
+function changeTab(t) {
+  state.tab = t;
+  document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.innerText.includes(t==='vocab'?'Vựng':'Pháp')));
+  render();
 }
+
 function updateUI() {
-  document.getElementById('learned').innerText = state.stats.learned;
-  document.getElementById('tokens').innerText = state.stats.tokens;
-  document.getElementById('current-lvl').innerText = state.level;
+  document.getElementById('s-learned').innerText = state.stats.learned;
+  document.getElementById('s-tokens').innerText = state.stats.tokens;
+  document.getElementById('c-lvl').innerText = state.level;
 }
 
 fetchData(3);
