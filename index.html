@@ -15,204 +15,153 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); min-height: 100vh; font-size: 15px; }
 
-  /* Header & Tabs */
   header { background: var(--ink); color: var(--paper); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px var(--shadow); }
   .logo { font-family: 'Noto Serif SC', serif; font-size: 20px; letter-spacing: 2px; color: var(--gold-light); }
-  .logo span { color: var(--paper); font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 300; margin-left: 10px; opacity: 0.7; }
+  
   .level-bar { background: var(--ink); display: flex; justify-content: center; gap: 4px; padding: 0 24px 12px; }
-  .level-btn { background: transparent; border: 1.5px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.55); padding: 6px 22px; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all .2s; font-family: 'Noto Serif SC', serif; }
+  .level-btn { background: transparent; border: 1.5px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.55); padding: 6px 22px; border-radius: 20px; cursor: pointer; font-size: 13px; transition: all .2s; }
   .level-btn.active { background: var(--gold); border-color: var(--gold); color: var(--ink); font-weight: 700; }
-  .nav-tabs { display: flex; border-bottom: 2px solid var(--border); background: var(--card); position: sticky; top: 56px; z-index: 90; }
-  .nav-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--muted); border-bottom: 3px solid transparent; transition: all .2s; }
-  .nav-tab.active { color: var(--gold); border-bottom-color: var(--gold); background: var(--paper); }
 
-  /* Stats & Progress */
+  .nav-tabs { display: flex; border-bottom: 2px solid var(--border); background: var(--card); position: sticky; top: 56px; z-index: 90; }
+  .nav-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 13px; color: var(--muted); border-bottom: 3px solid transparent; }
+  .nav-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
   .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 1px solid var(--border); }
   .stat-cell { background: var(--warm); text-align: center; padding: 10px 4px; }
   .stat-num { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--gold); display: block; }
   .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; }
-  .progress-wrap { padding: 10px 20px; background: var(--card); border-bottom: 1px solid var(--border); }
-  .progress-label { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; margin-bottom: 5px; }
-  .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
-  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); transition: width .5s ease; }
 
-  /* Content Cards */
   main { padding: 20px; max-width: 600px; margin: 0 auto; }
-  .card { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 28px 24px; margin-bottom: 16px; box-shadow: 0 2px 16px var(--shadow); position: relative; overflow: hidden; }
-  .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
-  .vocab-vi { font-size: 22px; font-weight: 300; margin-bottom: 6px; }
-  .canvas-wrap { margin: 16px 0; background: #fff; border: 1.5px solid var(--border); border-radius: 12px; }
-  canvas { display: block; width: 100%; height: 160px; touch-action: none; }
-  .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 12px; display: none; }
-  .answer-box.visible { display: block; animation: fadeIn .3s ease; }
-  .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 42px; text-align: center; letter-spacing: 4px; }
+  .card { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 28px 24px; box-shadow: 0 2px 16px var(--shadow); position: relative; }
+  .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
+  
+  .vocab-vi { font-size: 24px; text-align: center; margin-bottom: 20px; }
+  .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 12px; display: none; text-align: center; }
+  .answer-box.active { display: block; }
+  .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 48px; display: block; }
 
-  /* Buttons */
-  .btn-row { display: flex; gap: 10px; margin-top: 14px; }
-  .btn { padding: 11px 24px; border-radius: 10px; font-size: 14px; cursor: pointer; border: none; flex: 1; transition: .2s; }
-  .btn-primary { background: var(--gold); color: var(--ink); font-weight: 700; }
-  .srs-row { display: none; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-  .srs-row.visible { display: flex; }
-  .srs-btn { flex: 1; padding: 9px 6px; border-radius: 10px; font-size: 11px; border: 1.5px solid; cursor: pointer; }
+  .btn { width: 100%; padding: 12px; border-radius: 10px; border: none; background: var(--gold); color: var(--ink); font-weight: 700; cursor: pointer; margin-top: 10px; }
+  .srs-row { display: none; gap: 5px; margin-top: 15px; }
+  .srs-row.active { display: flex; }
+  .srs-btn { flex: 1; padding: 8px; font-size: 11px; border-radius: 5px; border: 1px solid var(--border); cursor: pointer; background: white; }
 
-  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(80px); background: var(--ink); color: var(--paper); padding: 12px 24px; border-radius: 24px; transition: .3s; z-index: 999; }
-  .toast.show { transform: translateX(-50%) translateY(0); }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--ink); color: white; padding: 10px 20px; border-radius: 20px; display: none; }
 </style>
 </head>
 <body>
 
 <header><div class="logo">汉语学习 <span>HSK Practice</span></div></header>
 
-<div class="level-bar" id="level-container">
-  <button class="level-btn active" onclick="setLevel(3)">HSK 3</button>
-  <button class="level-btn" onclick="setLevel(4)">HSK 4</button>
-  <button class="level-btn" onclick="setLevel(5)">HSK 5</button>
+<div class="level-bar">
+  <button class="level-btn active" onclick="changeLevel(3)">HSK 3</button>
+  <button class="level-btn" onclick="changeLevel(4)">HSK 4</button>
+  <button class="level-btn" onclick="changeLevel(5)">HSK 5</button>
 </div>
 
 <div class="nav-tabs">
-  <div class="nav-tab active" onclick="setTab('vocab')">📖 Từ Vựng</div>
-  <div class="nav-tab" onclick="setTab('grammar')">✍️ Ngữ Pháp</div>
+  <div class="nav-tab active" onclick="changeTab('vocab')">📖 Từ Vựng</div>
+  <div class="nav-tab" onclick="changeTab('grammar')">✍️ Ngữ Pháp</div>
 </div>
 
 <div class="stats-bar">
-  <div class="stat-cell"><span class="stat-num" id="s-learned">0</span><span class="stat-label">Đã học</span></div>
-  <div class="stat-cell"><span class="stat-num" id="s-due">0</span><span class="stat-label">Cần ôn</span></div>
-  <div class="stat-cell"><span class="stat-num" id="s-tokens">0</span><span class="stat-label">Tokens</span></div>
-  <div class="stat-cell"><span class="stat-num" id="s-streak">0</span><span class="stat-label">Streak</span></div>
+  <div class="stat-cell"><span class="stat-num" id="learned">0</span><span class="stat-label">Đã học</span></div>
+  <div class="stat-cell"><span class="stat-num" id="tokens">0</span><span class="stat-label">Tokens</span></div>
+  <div class="stat-cell"><span class="stat-num" id="streak">0</span><span class="stat-label">Streak</span></div>
+  <div class="stat-cell"><span class="stat-num" id="current-lvl">3</span><span class="stat-label">Level</span></div>
 </div>
 
-<div class="progress-wrap">
-  <div class="progress-label"><span>Tiến độ</span><span id="prog-text">0 / 0</span></div>
-  <div class="progress-bar"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>
-</div>
-
-<main>
-  <div id="tab-vocab"></div>
-  <div id="tab-grammar" style="display:none"></div>
-</main>
-
-<div class="toast" id="toast"></div>
+<main id="content"></main>
+<div id="toast" class="toast"></div>
 
 <script>
-// --- SIMPLE CONFIG ---
-const GITHUB_BASE = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/lessons/';
-const DATA_TYPES = ['vocab', 'grammar', 'sentences'];
+// --- CONFIG: Change YOUR_USERNAME and YOUR_REPO ---
+const BASE_URL = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/lessons/';
 
-// --- STATE ---
 let state = {
   level: 3, tab: 'vocab',
-  data: { vocab: {}, grammar: {}, sentences: {} },
-  srs: {}, stats: { learned: 0, tokens: 0, streak: 0, lastDate: null },
-  vocabSession: [], vocabIdx: 0, showAnswer: false, grammarItem: null
+  data: { vocab: [], grammar: [], sentences: [] },
+  index: 0, showAnswer: false,
+  stats: { learned: 0, tokens: 0, streak: 0 }
 };
 
-// --- DATA FETCHING (SIMPLE & FLEXIBLE) ---
-async function loadData(level) {
-  for (const type of DATA_TYPES) {
-    const filename = `hsk${level}_${type}.json`;
+async function fetchData(level) {
+  const categories = ['vocab', 'grammar', 'sentences'];
+  for (const cat of categories) {
     try {
-      const response = await fetch(GITHUB_BASE + filename);
-      state.data[type][level] = response.ok ? await response.json() : [];
-    } catch (e) {
-      state.data[type][level] = [];
-    }
+      const res = await fetch(`${BASE_URL}hsk${level}_${cat}.json`);
+      state.data[cat] = res.ok ? await res.json() : [];
+    } catch (e) { state.data[cat] = []; }
+  }
+  render();
+}
+
+function render() {
+  const container = document.getElementById('content');
+  const items = state.data[state.tab];
+  
+  if (!items || items.length === 0) {
+    container.innerHTML = `<div class="card">Chưa có dữ liệu cho HSK ${state.level}. Vui lòng kiểm tra folder /lessons/.</div>`;
+    return;
+  }
+
+  const item = items[state.index % items.length];
+  
+  if (state.tab === 'vocab') {
+    container.innerHTML = `
+      <div class="card">
+        <div class="vocab-vi">${item.vietnamese}</div>
+        <button class="btn" onclick="state.showAnswer=true;render()">Xem đáp án</button>
+        <div class="answer-box ${state.showAnswer ? 'active' : ''}">
+          <span class="answer-hanzi">${item.chinese}</span>
+          <p>${item.pinyin}</p>
+        </div>
+        <div class="srs-row ${state.showAnswer ? 'active' : ''}">
+          <button class="srs-btn" onclick="next()">Lại (10m)</button>
+          <button class="srs-btn" onclick="next(true)">Nhớ (1d)</button>
+          <button class="srs-btn" onclick="next(true)">Thuộc (7d)</button>
+        </div>
+      </div>`;
+  } else {
+    container.innerHTML = `<div class="card"><div class="vocab-vi">${item.point}</div><p>${item.explanation_vi}</p></div>`;
   }
 }
 
-// --- SRS & STORAGE ---
-const SRS_INTERVALS = [10*60000, 86400000, 7*86400000, 10*86400000, 15*86400000, 30*86400000];
-
-function save() {
-  localStorage.setItem('hsk_data', JSON.stringify({ srs: state.srs, stats: state.stats }));
-}
-
-function load() {
-  const saved = JSON.parse(localStorage.getItem('hsk_data') || '{}');
-  if (saved.srs) state.srs = saved.srs;
-  if (saved.stats) state.stats = saved.stats;
-}
-
-function isDue(id) {
-  const item = state.srs[id];
-  return !item || Date.now() >= item.nextDue;
-}
-
-function markSRS(id, quality) {
-  const wasNew = !state.srs[id];
-  state.srs[id] = { nextDue: Date.now() + SRS_INTERVALS[quality], seen: true };
-  if (wasNew) state.stats.learned++;
-  state.stats.tokens += (quality + 1);
-  save();
-  updateStats();
-}
-
-// --- UI RENDERING ---
-function updateStats() {
-  const level = state.level;
-  const vTotal = (state.data.vocab[level] || []).length;
-  const learned = state.stats.learned;
-  document.getElementById('s-learned').textContent = learned;
-  document.getElementById('s-tokens').textContent = state.stats.tokens;
-  document.getElementById('prog-text').textContent = `${learned} / ${vTotal}`;
-  document.getElementById('prog-fill').style.width = vTotal ? (learned/vTotal*100)+'%' : '0%';
-}
-
-function renderVocabTab() {
-  const container = document.getElementById('tab-vocab');
-  const items = state.data.vocab[state.level] || [];
-  if (!items.length) { container.innerHTML = "Đang tải..."; return; }
-  
-  const word = items[state.vocabIdx % items.length];
-  container.innerHTML = `
-    <div class="card">
-      <div class="vocab-vi">${word.vietnamese}</div>
-      <div class="canvas-wrap"><canvas id="stroke-canvas"></canvas></div>
-      <div class="btn-row">
-        <button class="btn btn-primary" onclick="reveal()">Đáp án</button>
-      </div>
-      <div class="answer-box ${state.showAnswer ? 'visible' : ''}">
-        <div class="answer-hanzi">${word.chinese}</div>
-        <div style="text-align:center">${word.pinyin}</div>
-      </div>
-      <div class="srs-row ${state.showAnswer ? 'visible' : ''}">
-        ${[0,1,2,3,4,5].map(q => `<button class="srs-btn" onclick="handleSRS('${word.id}', ${q})">${q==0?'Lại':'Nhớ'}</button>`).join('')}
-      </div>
-    </div>`;
-}
-
-function reveal() { state.showAnswer = true; renderVocabTab(); }
-
-function handleSRS(id, q) {
-  markSRS(id, q);
-  state.vocabIdx++;
+function next(isLearned = false) {
+  if (isLearned) {
+    state.stats.learned++;
+    state.stats.tokens += 5;
+    updateUI();
+  }
+  state.index++;
   state.showAnswer = false;
-  renderVocabTab();
+  render();
 }
 
-// --- NAVIGATION ---
-async function setLevel(lvl) {
+function changeLevel(lvl) {
   state.level = lvl;
-  document.querySelectorAll('.level-btn').forEach(b => b.classList.toggle('active', b.innerText.includes(lvl)));
-  await loadData(lvl);
-  renderVocabTab();
-  updateStats();
+  state.index = 0;
+  document.querySelectorAll('.level-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.innerText.includes(lvl));
+  });
+  document.getElementById('current-lvl').innerText = lvl;
+  fetchData(lvl);
 }
 
-function setTab(t) {
-  state.tab = t;
-  document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.innerText.includes(t==='vocab'?'Vựng':'Pháp')));
-  document.getElementById('tab-vocab').style.display = t === 'vocab' ? '' : 'none';
-  document.getElementById('tab-grammar').style.display = t === 'grammar' ? '' : 'none';
+function changeTab(tab) {
+  state.tab = tab;
+  document.querySelectorAll('.nav-tab').forEach(t => {
+    t.classList.toggle('active', t.innerText.includes(tab === 'vocab' ? 'Vựng' : 'Pháp'));
+  });
+  render();
 }
 
-// --- INIT ---
-(async () => {
-  load();
-  await loadData(3);
-  renderVocabTab();
-  updateStats();
-})();
+function updateUI() {
+  document.getElementById('learned').innerText = state.stats.learned;
+  document.getElementById('tokens').innerText = state.stats.tokens;
+}
+
+// Initial Load
+fetchData(3);
 </script>
 </body>
 </html>
