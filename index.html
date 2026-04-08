@@ -6,54 +6,38 @@
 <title>汉语学习 · HSK Practice</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #1a1208; --paper: #f5f0e8; --warm: #e8dfc8; --gold: #c8962a;
-    --gold-light: #e8b84b; --red: #c0392b; --red-soft: #e74c3c;
-    --green: #27ae60; --blue: #2471a3; --muted: #8a7f70;
-    --border: #d4c9b0; --card: #fdfaf4; --shadow: rgba(26,18,8,0.12);
-  }
+  :root { --ink: #1a1208; --paper: #f5f0e8; --warm: #e8dfc8; --gold: #c8962a; --red: #c0392b; --border: #d4c9b0; --card: #fdfaf4; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); min-height: 100vh; font-size: 15px; }
-
-  header { background: var(--ink); color: var(--paper); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px var(--shadow); }
-  .logo { font-family: 'Noto Serif SC', serif; font-size: 20px; letter-spacing: 2px; color: var(--gold-light); }
-  
-  .level-bar { background: var(--ink); display: flex; justify-content: center; gap: 4px; padding: 0 24px 12px; }
-  .level-btn { background: transparent; border: 1.5px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.55); padding: 6px 22px; border-radius: 20px; cursor: pointer; font-size: 13px; transition: all .2s; }
-  .level-btn.active { background: var(--gold); border-color: var(--gold); color: var(--ink); font-weight: 700; }
-
-  .nav-tabs { display: flex; border-bottom: 2px solid var(--border); background: var(--card); position: sticky; top: 56px; z-index: 90; }
-  .nav-tab { flex: 1; padding: 14px; text-align: center; cursor: pointer; font-size: 13px; color: var(--muted); border-bottom: 3px solid transparent; }
-  .nav-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
-
-  .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 1px solid var(--border); }
-  .stat-cell { background: var(--warm); text-align: center; padding: 10px 4px; }
+  body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); min-height: 100vh; }
+  header { background: var(--ink); color: var(--paper); padding: 15px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-family: 'Noto Serif SC', serif; font-size: 20px; color: #e8b84b; }
+  .level-bar { background: var(--ink); display: flex; justify-content: center; gap: 8px; padding-bottom: 15px; }
+  .level-btn { background: transparent; border: 1px solid rgba(255,255,255,0.3); color: white; padding: 6px 20px; border-radius: 20px; cursor: pointer; }
+  .level-btn.active { background: var(--gold); border-color: var(--gold); font-weight: bold; }
+  .nav-tabs { display: flex; border-bottom: 2px solid var(--border); background: var(--card); }
+  .nav-tab { flex: 1; padding: 15px; text-align: center; cursor: pointer; color: #8a7f70; }
+  .nav-tab.active { color: var(--gold); border-bottom: 3px solid var(--gold); font-weight: bold; }
+  .stats-bar { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--warm); border-bottom: 1px solid var(--border); padding: 10px; }
+  .stat-cell { text-align: center; }
   .stat-num { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--gold); display: block; }
-  .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; }
-
+  .stat-label { font-size: 10px; text-transform: uppercase; }
   main { padding: 20px; max-width: 600px; margin: 0 auto; }
-  .card { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 28px 24px; box-shadow: 0 2px 16px var(--shadow); position: relative; }
-  .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
-  
-  .vocab-vi { font-size: 24px; text-align: center; margin-bottom: 20px; }
-  .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 12px; display: none; text-align: center; }
-  .answer-box.active { display: block; }
-  .answer-pinyin { font-size: 18px; color: var(--muted); margin-top: 5px; }
-  .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 48px; display: block; }
-
-  .btn { width: 100%; padding: 12px; border-radius: 10px; border: none; background: var(--gold); color: var(--ink); font-weight: 700; cursor: pointer; margin-top: 10px; }
-  .srs-row { display: none; gap: 5px; margin-top: 15px; }
+  .card { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: relative; }
+  .vocab-vi { font-size: 28px; text-align: center; margin-bottom: 20px; font-weight: 300; }
+  .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 15px; display: none; text-align: center; }
+  .answer-box.active { display: block; animation: fadeIn 0.3s ease; }
+  .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 50px; display: block; margin-bottom: 5px; }
+  .btn { width: 100%; padding: 14px; border-radius: 10px; border: none; background: var(--gold); color: white; font-weight: bold; cursor: pointer; margin-top: 10px; }
+  .srs-row { display: none; gap: 10px; margin-top: 15px; }
   .srs-row.active { display: flex; }
-  .srs-btn { flex: 1; padding: 8px; font-size: 11px; border-radius: 5px; border: 1px solid var(--border); cursor: pointer; background: white; }
-
-  .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--ink); color: white; padding: 10px 20px; border-radius: 20px; display: none; }
+  .srs-btn { flex: 1; padding: 12px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; background: white; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 </head>
 <body>
 
 <header><div class="logo">汉语学习 <span>HSK Practice</span></div></header>
-
-<div class="level-bar" id="level-container">
+<div class="level-bar">
   <button class="level-btn active" onclick="changeLevel(3)">HSK 3</button>
   <button class="level-btn" onclick="changeLevel(4)">HSK 4</button>
   <button class="level-btn" onclick="changeLevel(5)">HSK 5</button>
@@ -67,64 +51,61 @@
 <div class="stats-bar">
   <div class="stat-cell"><span class="stat-num" id="learned">0</span><span class="stat-label">Đã học</span></div>
   <div class="stat-cell"><span class="stat-num" id="tokens">0</span><span class="stat-label">Tokens</span></div>
-  <div class="stat-cell"><span class="stat-num" id="streak">0</span><span class="stat-label">Streak</span></div>
   <div class="stat-cell"><span class="stat-num" id="current-lvl">3</span><span class="stat-label">Level</span></div>
 </div>
 
 <main id="content"></main>
 
 <script>
-// --- CONFIGURATION ---
-// Replace these with your actual details
-const GITHUB_USER = 'alice-in-sparkle-land'; 
+const GITHUB_USER = 'alice-in-sparkle-land';
 const GITHUB_REPO = 'hskk';
 const FOLDER_PATH = 'lessons';
-
-// This URL lists all files in your folder
 const API_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${FOLDER_PATH}`;
 
-let state = {
-  level: 3, tab: 'vocab',
-  data: { vocab: [], grammar: [], sentences: [] },
-  index: 0, showAnswer: false,
-  stats: { learned: 0, tokens: 0, streak: 0 }
+let state = { 
+  level: 3, 
+  tab: 'vocab', 
+  data: { vocab: [], grammar: [], sentences: [] }, 
+  index: 0, 
+  showAnswer: false, 
+  stats: { learned: 0, tokens: 0 }
 };
 
 async function fetchData(level) {
   try {
     const container = document.getElementById('content');
-    container.innerHTML = `<div class="card">📡 Đang tìm kiếm bài học...</div>`;
+    container.innerHTML = `<div class="card">📡 Đang tải bài học HSK${level}...</div>`;
 
-    // 1. Get the list of all files in the folder
     const response = await fetch(API_URL);
-    if (!response.ok) throw new Error("Could not access the lessons folder.");
+    if (!response.ok) throw new Error("Không thể truy cập GitHub. Hãy đảm bảo Repo đã Public.");
     const files = await response.json();
 
-    const categories = ['vocab', 'grammar', 'sentences'];
-    
-    // 2. For each category, search for a matching filename
-    for (const cat of categories) {
-      const match = files.find(f => 
-        f.name.toLowerCase().includes(`hsk${level}`) && 
-        f.name.toLowerCase().includes(cat)
-      );
+    // Xóa dữ liệu cũ trước khi tải mới
+    state.data = { vocab: [], grammar: [], sentences: [] };
 
-      if (match) {
-        console.log(`Found match for ${cat}: ${match.name}`);
-        const dataRes = await fetch(match.download_url);
-        state.data[cat] = dataRes.ok ? await dataRes.json() : [];
-      } else {
-        console.warn(`No file found for HSK${level} ${cat}`);
-        state.data[cat] = [];
+    // Lọc tất cả các file liên quan đến level (ví dụ: hsk3)
+    const relevantFiles = files.filter(f => f.name.toLowerCase().includes(`hsk${level}`));
+
+    for (const file of relevantFiles) {
+      const name = file.name.toLowerCase();
+      const res = await fetch(file.download_url);
+      if (!res.ok) continue;
+      const jsonData = await res.json();
+
+      // Phân loại và gộp (concat) dữ liệu vào state
+      if (name.includes('vocab')) {
+        state.data.vocab = state.data.vocab.concat(jsonData);
+      } else if (name.includes('grammar')) {
+        state.data.grammar = state.data.grammar.concat(jsonData);
+      } else if (name.includes('sentence')) {
+        state.data.sentences = state.data.sentences.concat(jsonData);
       }
     }
+
+    state.index = 0;
     render();
   } catch (e) {
-    document.getElementById('content').innerHTML = `
-      <div class="card" style="border-color: var(--red)">
-        ⚠️ Lỗi: ${e.message}<br>
-        Hãy kiểm tra tên Folder và cài đặt GitHub của bạn.
-      </div>`;
+    document.getElementById('content').innerHTML = `<div class="card" style="color:var(--red)">⚠️ Lỗi: ${e.message}</div>`;
   }
 }
 
@@ -133,33 +114,33 @@ function render() {
   const items = state.data[state.tab] || [];
   
   if (items.length === 0) {
-    container.innerHTML = `<div class="card">Không tìm thấy file bài học nào chứa "hsk${state.level}" và "${state.tab}" trong tên file.</div>`;
+    container.innerHTML = `<div class="card">📭 Không tìm thấy dữ liệu cho HSK ${state.level}.</div>`;
     return;
   }
 
   const item = items[state.index % items.length];
-  
+
   if (state.tab === 'vocab') {
     container.innerHTML = `
       <div class="card">
         <div class="vocab-vi">${item.vietnamese}</div>
-        <button class="btn" onclick="state.showAnswer=true;render()">Xem đáp án</button>
+        <button class="btn" onclick="showAns()">Xem đáp án</button>
         <div class="answer-box ${state.showAnswer ? 'active' : ''}">
           <span class="answer-hanzi">${item.chinese}</span>
-          <div class="answer-pinyin">${item.pinyin}</div>
+          <div style="font-size:20px; color:#8a7f70">${item.pinyin}</div>
         </div>
         <div class="srs-row ${state.showAnswer ? 'active' : ''}">
           <button class="srs-btn" onclick="next()">Lại</button>
-          <button class="srs-btn" onclick="next(true)">Nhớ</button>
+          <button class="srs-btn" style="color:var(--gold)" onclick="next(true)">Nhớ</button>
         </div>
       </div>`;
   } else {
     container.innerHTML = `
       <div class="card">
-        <div class="vocab-vi">${item.point}</div>
-        <p>${item.explanation_vi}</p>
-        <div class="answer-box active" style="background:none; border-top:1px solid var(--border); margin-top:15px; padding-top:15px;">
-           <strong>Cấu trúc:</strong><br> ${item.structure}
+        <div style="font-size:22px; color:var(--gold); margin-bottom:10px">${item.point}</div>
+        <p style="line-height:1.6">${item.explanation_vi}</p>
+        <div style="margin-top:15px; padding-top:15px; border-top:1px solid var(--border)">
+          <strong>Cấu trúc:</strong> <code style="background:#eee; padding:2px 5px">${item.structure}</code>
         </div>
         <button class="btn" onclick="next()">Bài tiếp theo →</button>
       </div>`;
@@ -167,42 +148,29 @@ function render() {
   updateUI();
 }
 
+function showAns() { state.showAnswer = true; render(); }
 function next(isLearned = false) {
-  if (isLearned) {
-    state.stats.learned++;
-    state.stats.tokens += 5;
-  }
+  if (isLearned) { state.stats.learned++; state.stats.tokens += 10; }
   state.index++;
   state.showAnswer = false;
   render();
 }
-
-function changeLevel(lvl) {
-  state.level = lvl;
-  state.index = 0;
-  document.querySelectorAll('.level-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.innerText.includes(lvl));
-  });
-  document.getElementById('current-lvl').innerText = lvl;
-  fetchData(lvl);
+function changeLevel(l) { 
+  state.level = l; 
+  document.querySelectorAll('.level-btn').forEach(b => b.classList.toggle('active', b.innerText.includes(l)));
+  fetchData(l); 
 }
-
-function changeTab(tab) {
-  state.tab = tab;
-  state.index = 0;
-  state.showAnswer = false;
-  document.querySelectorAll('.nav-tab').forEach(t => {
-    t.classList.toggle('active', t.innerText.includes(tab === 'vocab' ? 'Vựng' : 'Pháp'));
-  });
-  render();
+function changeTab(t) { 
+  state.tab = t; 
+  document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b.innerText.includes(t === 'vocab' ? 'Vựng' : 'Pháp')));
+  state.index = 0; render(); 
 }
-
 function updateUI() {
   document.getElementById('learned').innerText = state.stats.learned;
   document.getElementById('tokens').innerText = state.stats.tokens;
+  document.getElementById('current-lvl').innerText = state.level;
 }
 
-// Initial Load
 fetchData(3);
 </script>
 </body>
