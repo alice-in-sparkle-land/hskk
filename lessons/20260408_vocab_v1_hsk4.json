@@ -1,8 +1,3 @@
-Ồ, ra là bạn muốn mình "nhập liệu" vào đúng định dạng JSON để tiện lưu trữ hoặc nạp vào các app học tập như Anki. 
-
-Dưới đây là 4 từ mới của bạn đã được "xào nấu" lại theo phong cách phim ảnh, đời thường và có chút hài hước để bạn luyện khẩu ngữ cho bớt khô khan nhé:
-
-```json
 [
   {
     "id": "v3_002",
@@ -41,4 +36,3 @@ Dưới đây là 4 từ mới của bạn đã được "xào nấu" lại theo
     "example_vi": "Kế hoạch của chúng ta rất hoàn hảo, mỗi tội sếp không phát lương (nên thôi dẹp đi)."
   }
 ]
-```
