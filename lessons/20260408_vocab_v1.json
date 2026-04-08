@@ -1,0 +1,44 @@
+Ồ, ra là bạn muốn mình "nhập liệu" vào đúng định dạng JSON để tiện lưu trữ hoặc nạp vào các app học tập như Anki. 
+
+Dưới đây là 4 từ mới của bạn đã được "xào nấu" lại theo phong cách phim ảnh, đời thường và có chút hài hước để bạn luyện khẩu ngữ cho bớt khô khan nhé:
+
+```json
+[
+  {
+    "id": "v3_002",
+    "chinese": "原来",
+    "pinyin": "yuánlái",
+    "vietnamese": "Hóa ra, té ra",
+    "example_zh": "原来你就是那个一直偷我外卖的人！",
+    "example_pinyin": "Yuánlái nǐ jiùshì nàge yīzhí tōu wǒ wàimài de rén!",
+    "example_vi": "Hóa ra anh chính là cái đứa suốt ngày ăn trộm trà sữa/cơm hộp của tôi!"
+  },
+  {
+    "id": "v3_003",
+    "chinese": "本来",
+    "pinyin": "běnlái",
+    "vietnamese": "Vốn dĩ, ban đầu",
+    "example_zh": "我本来想减肥，但炸鸡实在太香了。",
+    "example_pinyin": "Wǒ běnlái xiǎng jiǎnféi, dàn zhájī shízài tài xiāngle.",
+    "example_vi": "Tui vốn dĩ định giảm cân đấy, nhưng mà gà rán nó thơm quá chịu sao thấu."
+  },
+  {
+    "id": "v3_004",
+    "chinese": "调查",
+    "pinyin": "diàochá",
+    "vietnamese": "Điều tra, khảo sát",
+    "example_zh": "经过我的调查，他根本没有女朋友，他在装酷！",
+    "example_pinyin": "Jīngguò wǒ de diàochá, tā gēnběn méiyǒu nǚ péngyǒu, tā zài zhuāng kù!",
+    "example_vi": "Qua điều tra của tui thì lão đó làm gì có bạn gái, lão đang giả vờ ngầu thôi!"
+  },
+  {
+    "id": "v3_005",
+    "chinese": "计划",
+    "pinyin": "jìhuà",
+    "vietnamese": "Kế hoạch",
+    "example_zh": "我们的计划很完美，可惜老板不发工资。",
+    "example_pinyin": "Wǒmen de jìhuà hěn wánměi, kěxī lǎobǎn bù fā gōngzī.",
+    "example_vi": "Kế hoạch của chúng ta rất hoàn hảo, mỗi tội sếp không phát lương (nên thôi dẹp đi)."
+  }
+]
+```
