@@ -44,14 +44,22 @@
   .answer-box { background: var(--warm); border-radius: 12px; padding: 20px; margin-top: 12px; display: none; text-align: center; }
   .answer-box.active { display: block; animation: fadeIn .3s ease; }
   .answer-hanzi { font-family: 'Noto Serif SC', serif; font-size: 48px; color: var(--ink); letter-spacing: 4px; }
-  
+  .answer-pinyin { color: var(--muted); font-size: 16px; margin-bottom: 14px; }
+  .divider { height: 1px; background: var(--border); margin: 12px 0; }
+  .example-zh { font-family: 'Noto Serif SC', serif; font-size: 18px; color: var(--ink); margin-bottom: 4px; }
+  .example-pinyin { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  .example-vi { font-size: 13px; color: var(--blue); font-style: italic; }
+
   .btn { width: 100%; padding: 12px; border-radius: 10px; border: none; background: var(--gold); color: var(--ink); font-weight: 700; cursor: pointer; margin-top: 10px; }
   
   .srs-row { display: none; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
   .srs-row.active { display: flex; }
-  .srs-btn { flex: 1; padding: 9px 4px; border-radius: 10px; font-size: 11px; font-weight: 600; cursor: pointer; border: 1.5px solid; text-align: center; background: white; transition: all .2s; min-width: 70px; }
+  .srs-btn { flex: 1; padding: 9px 4px; border-radius: 10px; font-size: 11px; font-weight: 600; cursor: pointer; border: 1.5px solid; text-align: center; background: white; transition: all .2s; min-width: 72px; }
   .srs-0 { border-color: var(--red); color: var(--red); }
+  .srs-1 { border-color: #e67e22; color: #e67e22; }
   .srs-2 { border-color: #f1c40f; color: #946c00; }
+  .srs-3 { border-color: var(--green); color: var(--green); }
+  .srs-4 { border-color: var(--blue); color: var(--blue); }
   .srs-5 { border-color: #8e44ad; color: #8e44ad; }
 
   @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
@@ -100,7 +108,7 @@ async function fetchData(level) {
     container.innerHTML = `<div class="card">📡 Đang đồng bộ HSK${level}...</div>`;
 
     const response = await fetch(API_URL);
-    if (!response.ok) throw new Error("API GitHub không phản hồi.");
+    if (!response.ok) throw new Error("API GitHub lỗi.");
     const files = await response.json();
 
     state.data = { vocab: [], grammar: [], sentences: [] };
@@ -128,7 +136,7 @@ function render() {
   const container = document.getElementById('content');
   const items = state.data[state.tab] || [];
   if (items.length === 0) {
-    container.innerHTML = `<div class="card">📭 Chưa có dữ liệu cho mục này.</div>`;
+    container.innerHTML = `<div class="card">📭 Chưa có bài học cho mục này.</div>`;
     return;
   }
   const item = items[state.index % items.length];
@@ -142,16 +150,22 @@ function render() {
           <canvas class="stroke-canvas" id="stroke-canvas"></canvas>
         </div>
         <button class="btn" onclick="state.showAnswer=true;render()">Xem đáp án</button>
+        
         <div class="answer-box ${state.showAnswer ? 'active' : ''}">
           <span class="answer-hanzi">${item.chinese}</span>
-          <div style="font-size:18px; color:var(--muted)">${item.pinyin}</div>
+          <div class="answer-pinyin">${item.pinyin}</div>
+          <div class="divider"></div>
+          <div class="example-zh">${item.example_zh || ''}</div>
+          <div class="example-pinyin">${item.example_pinyin || ''}</div>
+          <div class="example-vi">${item.example_vi || ''}</div>
         </div>
+
         <div class="srs-row ${state.showAnswer ? 'active' : ''}">
           <button class="srs-btn srs-0" onclick="handleNext(0)">😰 Lại</button>
-          <button class="srs-btn" style="border-color:#e67e22" onclick="handleNext(1)">😕 Khó</button>
+          <button class="srs-btn srs-1" onclick="handleNext(1)">😕 Khó</button>
           <button class="srs-btn srs-2" onclick="handleNext(2)">🙂 OK</button>
-          <button class="srs-btn" style="border-color:var(--green)" onclick="handleNext(3)">😊 Nhớ</button>
-          <button class="srs-btn" style="border-color:var(--blue)" onclick="handleNext(4)">🌟 Giỏi</button>
+          <button class="srs-btn srs-3" onclick="handleNext(3)">😊 Nhớ</button>
+          <button class="srs-btn srs-4" onclick="handleNext(4)">🌟 Giỏi</button>
           <button class="srs-btn srs-5" onclick="handleNext(5)">⭐ Thuộc</button>
         </div>
       </div>`;
@@ -163,6 +177,13 @@ function render() {
         <p>${item.explanation_vi}</p>
         <div style="margin-top:15px; padding:15px; border-top:1px solid var(--border)">
           <strong>Cấu trúc:</strong> <code>${item.structure}</code>
+        </div>
+        <div class="answer-box active" style="background:none; text-align:left;">
+          <div class="divider"></div>
+          <div class="example-zh">${item.example_zh || ''}</div>
+          <div class="example-pinyin">${item.example_pinyin || ''}</div>
+          <div class="example-vi" style="color:var(--blue)">${item.example_vi || ''}</div>
+          <div class="hskk-note" style="margin-top:10px; font-size:12px; color:var(--muted)">${item.hskk_note || ''}</div>
         </div>
         <button class="btn" onclick="handleNext(3)">Bài tiếp theo →</button>
       </div>`;
@@ -178,6 +199,13 @@ function initCanvas() {
   canvas.width = canvas.parentElement.clientWidth; canvas.height = 160;
   ctx = canvas.getContext('2d');
   ctx.strokeStyle = '#1a1208'; ctx.lineWidth = 3; ctx.lineCap = 'round';
+  
+  // Lưới hướng dẫn mờ
+  ctx.strokeStyle = '#e8dfc8'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(canvas.width/2, 0); ctx.lineTo(canvas.width/2, 160); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(0, 80); ctx.lineTo(canvas.width, 80); ctx.stroke();
+  ctx.strokeStyle = '#1a1208'; ctx.lineWidth = 3;
+
   const getPos = (e) => {
     const r = canvas.getBoundingClientRect();
     const t = e.touches ? e.touches[0] : e;
@@ -187,7 +215,7 @@ function initCanvas() {
   canvas.onmousemove = canvas.ontouchmove = (e) => { if(!isDrawing) return; e.preventDefault(); const {x,y} = getPos(e); ctx.lineTo(x,y); ctx.stroke(); };
   canvas.onmouseup = canvas.ontouchend = () => isDrawing = false;
 }
-function clearCanvas() { ctx.clearRect(0,0,999,999); }
+function clearCanvas() { ctx.clearRect(0,0,1000,1000); initCanvas(); }
 
 function handleNext(q) {
   if (q >= 2) { state.stats.learned++; state.stats.tokens += (q + 1); }
