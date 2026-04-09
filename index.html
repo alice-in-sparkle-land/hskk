@@ -548,7 +548,7 @@ const LESSONS_PATH = 'lessons';   // folder inside your repo
 // Raw base for direct file fetches
 const RAW_BASE = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${LESSONS_PATH}/`;
 // GitHub Contents API to list the folder (no auth needed for public repos)
-const API_DIR   = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${LESSONS_PATH}?ref=${GITHUB_BRANCH}`;
+const API_DIR   = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${LESSONS_PATH}`;
 
 const SRS_INTERVALS = [
   { label: '10分钟', ms: 10 * 60 * 1000 },
