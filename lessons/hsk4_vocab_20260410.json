@@ -1,0 +1,87 @@
+[
+  {
+    "id": "v3_022",
+    "chinese": "按时",
+    "pinyin": "ànshí",
+    "vietnamese": "Đúng hạn, đúng giờ",
+    "example_zh": "我按时上班，按时下班，就是工资不按时到账。",
+    "example_pinyin": "Wǒ ànshí shàngbān, ànshí xiàbān, jiùshì gōngzī bù ànshí dào zhàng.",
+    "example_vi": "Tôi đi làm đúng giờ, về đúng giờ, chỉ có mỗi lương là không bao giờ ting ting đúng giờ."
+  },
+  {
+    "id": "v3_023",
+    "chinese": "准时",
+    "pinyin": "zhǔnshí",
+    "vietnamese": "Đúng giờ (tính thời điểm chính xác)",
+    "example_zh": "约会我可以迟到，但食堂开饭我一定准时。",
+    "example_pinyin": "Yuēhuì wǒ kěyǐ chídào, dàn shítáng kāifàn wǒ yīdìng zhǔnshí.",
+    "example_vi": "Đi hẹn hò tôi có thể đến muộn, chứ canteen mở cửa là tôi nhất định có mặt đúng giờ."
+  },
+  {
+    "id": "v3_024",
+    "chinese": "发奖金",
+    "pinyin": "fā jiǎngjīn",
+    "vietnamese": "Phát tiền thưởng",
+    "example_zh": "老板说要发奖金，结果发了一张“努力工作”的奖状。",
+    "example_pinyin": "Lǎobǎn shuō yào fā jiǎngjīn, jiéguǒ fāle yī zhāng “nǔlì gōngzuò” de jiǎngzhuàng.",
+    "example_vi": "Sếp bảo sắp phát tiền thưởng, cuối cùng phát cho một tấm bằng khen \"nỗ lực làm việc\"."
+  },
+  {
+    "id": "v3_025",
+    "chinese": "补贴",
+    "pinyin": "bǔtiē",
+    "vietnamese": "Trợ cấp, phụ cấp",
+    "example_zh": "这点交通补贴，都不够我打车去公司的车费。",
+    "example_pinyin": "Zhè diǎn jiāotōng bǔtiē, dōu bùgòu wǒ dǎchē qù gōngsī de chēfèi.",
+    "example_vi": "Chút phụ cấp đi lại này còn không đủ cho tôi tiền bắt xe đến công ty nữa."
+  },
+  {
+    "id": "v3_026",
+    "chinese": "授人以鱼不如授人以渔",
+    "pinyin": "shòu rén yǐ yú bùrú shòu rén yǐ yú",
+    "vietnamese": "Cho con cá không bằng cho cần câu",
+    "example_zh": "道理我都懂，但授人以渔之前，能不能先给我条鱼？我饿！",
+    "example_pinyin": "Dàolǐ wǒ dōu dǒng, dàn shòu rén yǐ yú bùrú shòu rén yǐ yú zhīqián, néng bùnéng xiān gěi wǒ tiáo yú? Wǒ è!",
+    "example_vi": "Đạo lý này tôi hiểu, nhưng trước khi cho cái cần câu thì có thể cho tôi một con cá trước không? Đói quá!"
+  },
+  {
+    "id": "v3_027",
+    "chinese": "工资",
+    "pinyin": "gōngzī",
+    "vietnamese": "Tiền lương",
+    "example_zh": "我的工资就像是大姨妈，一个月来一次，几天就没了。",
+    "example_pinyin": "Wǒ de gōngzī jiù xiàng shì dàyímā, yīgè yuè lái yīcì, jǐ tiān jiù méile.",
+    "example_vi": "Lương của tôi như là \"ngày đèn đỏ\" vậy, mỗi tháng tới một lần, vài ngày là sạch sành sanh."
+  },
+  {
+    "id": "v3_028",
+    "chinese": "办法",
+    "pinyin": "bànfǎ",
+    "vietnamese": "Cách thức, biện pháp (thiên về hướng giải quyết)",
+    "example_zh": "面对这么多工作，我唯一的办法就是装死。",
+    "example_pinyin": "Miànduì zhème duō gōngzuò, wǒ wéiyī de bànfǎ jiùshì zhuāngsǐ.",
+    "example_vi": "Đối mặt với đống việc này, cách duy nhất của tôi là giả chết."
+  },
+  {
+    "id": "v3_029",
+    "chinese": "方法",
+    "pinyin": "fāngfǎ",
+    "vietnamese": "Phương pháp (thiên về quy trình, kỹ thuật)",
+    "example_zh": "他变帅的方法其实很简单，就是用美颜相机。",
+    "example_pinyin": "Tā biàn shuài de fāngfǎ qíshí hěn jiǎndān, jiùshì yòng měiyán xiàngjī.",
+    "example_vi": "Phương pháp đẹp trai lên của anh ta thực ra đơn giản lắm, dùng app sống ảo thôi."
+  },
+  {
+    "id": "v3_030",
+    "chinese": "知识",
+    "pinyin": "zhīshì",
+    "vietnamese": "Kiến thức",
+    "example_zh": "知识就像内裤，虽然看不见，但很重要。",
+    "example_pinyin": "Zhīshì jiù xiàng nèikù, suīrán kàn bùjiàn, dàn hěn zhòngyào.",
+    "example_vi": "Kiến thức giống như đồ lót vậy, tuy không nhìn thấy bên ngoài nhưng cực kỳ quan trọng."
+  },
+  {
+    "id": "v3_031",
+    "chinese": "不得不",
+    "pinyin": "bùdébù",
+    "vietnamese": "Buộc
