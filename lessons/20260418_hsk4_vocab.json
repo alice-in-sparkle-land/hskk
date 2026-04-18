@@ -1,0 +1,101 @@
+[
+  {
+    "id": "v3_035",
+    "chinese": "按时",
+    "pinyin": "ànshí",
+    "vietnamese": "Đúng hạn, đúng giờ",
+    "example_zh": "我按时上班，按时下班，就是工资从来不按时到账。",
+    "example_pinyin": "Wǒ ànshí shàngbān, ànshí xiàbān, jiùshì gōngzī cónglái bù ànshí dàozhàng.",
+    "example_vi": "Tôi đi làm đúng giờ, về đúng giờ, chỉ có mỗi tiền lương là chẳng bao giờ vào tài khoản đúng hạn."
+  },
+  {
+    "id": "v3_036",
+    "chinese": "授人以鱼不如授人以渔",
+    "pinyin": "shòu rén yǐ yú bùrú shòu rén yǐ yú",
+    "vietnamese": "Cho con cá không bằng cho cần câu",
+    "example_zh": "道理我都懂，但在授我以渔之前，能不能先给我条鱼？我快饿死了！",
+    "example_pinyin": "Dàolǐ wǒ dōu dǒng, dàn zài shòu wǒ yǐ yú zhīqián, néng bùnéng xiān gěi wǒ tiáo yú? Wǒ kuài è sǐ le!",
+    "example_vi": "Đạo lý thì tôi hiểu đấy, nhưng trước khi dạy tôi cách câu cá, có thể cho tôi một con cá trước không? Đói sắp chết rồi!"
+  },
+  {
+    "id": "v3_037",
+    "chinese": "发奖金",
+    "pinyin": "fā jiǎngjīn",
+    "vietnamese": "Phát tiền thưởng",
+    "example_zh": "老板说今年发奖金，结果发了一盒印着“努力工作”的月饼。",
+    "example_pinyin": "Lǎobǎn shuō jīnnián fā jiǎngjīn, jiéguǒ fāle yī hé yìnzhe 'nǔlì gōngzuò' de yuèbǐng.",
+    "example_vi": "Sếp bảo năm nay phát tiền thưởng, cuối cùng lại phát cho một hộp bánh trung thu in chữ 'nỗ lực làm việc'."
+  },
+  {
+    "id": "v3_038",
+    "chinese": "价格",
+    "pinyin": "jiàgé",
+    "vietnamese": "Giá cả",
+    "example_zh": "这件衣服的价格很美丽，但穿在我身上就很悲剧。",
+    "example_pinyin": "Zhè jiàn yīfú de jiàgé hěn měilì, dàn chuān zài wǒ shēnshàng jiù hěn bēijù.",
+    "example_vi": "Cái giá của bộ đồ này thì rất đẹp, nhưng mặc lên người tôi thì đúng là bi kịch."
+  },
+  {
+    "id": "v3_039",
+    "chinese": "打折",
+    "pinyin": "dǎzhé",
+    "vietnamese": "Giảm giá",
+    "example_zh": "商场打折的时候，女人的体力甚至比运动员还好。",
+    "example_pinyin": "Shāngchǎng dǎzhé de shíhòu, nǚrén de tǐlì shènzhì bǐ yùndòngyuán hái hǎo.",
+    "example_vi": "Lúc trung tâm thương mại giảm giá, thể lực của phụ nữ thậm chí còn tốt hơn cả vận động viên."
+  },
+  {
+    "id": "v3_040",
+    "chinese": "甚至",
+    "pinyin": "shènzhì",
+    "vietnamese": "Thậm chí",
+    "example_zh": "我穷得连水都喝不起，甚至想去大街上卖艺。",
+    "example_pinyin": "Wǒ qióng de lián shuǐ dōu hē bù qǐ, shènzhì xiǎng qù dàjiē shàng màiyì.",
+    "example_vi": "Tôi nghèo đến mức nước còn chẳng có mà uống, thậm chí còn muốn ra đường bán nghệ."
+  },
+  {
+    "id": "v3_041",
+    "chinese": "吓死我了",
+    "pinyin": "xià sǐ wǒ le",
+    "vietnamese": "Sợ chết khiếp, làm hú hồn",
+    "example_zh": "一看余额，竟然只剩两块钱，真是吓死我了！",
+    "example_pinyin": "Yī kàn yú'é, jìngrán zhǐ shèng liǎng kuài qián, zhēnshì xià sǐ wǒ le!",
+    "example_vi": "Vừa nhìn số dư, không ngờ chỉ còn có 2 đồng, đúng là làm tôi sợ chết khiếp!"
+  },
+  {
+    "id": "v3_042",
+    "chinese": "物美价廉",
+    "pinyin": "wùměi jiàlián",
+    "vietnamese": "Ngon bổ rẻ",
+    "example_zh": "这家店的东西确实物美价廉，唯一的缺点就是没货。",
+    "example_pinyin": "Zhè jiā diàn de dōngxī quèshí wùměi jiàlián, wéiyī de quēdiǎn jiùshì méi huò.",
+    "example_vi": "Đồ của tiệm này đúng là ngon bổ rẻ thật, nhược điểm duy nhất là lúc nào cũng hết hàng."
+  },
+  {
+    "id": "v3_043",
+    "chinese": "考虑",
+    "pinyin": "kǎolǜ",
+    "vietnamese": "Suy nghĩ, cân nhắc",
+    "example_zh": "老板说会考虑给我涨工资，这通常意味着“没门”。",
+    "example_pinyin": "Lǎobǎn shuō huì kǎolǜ gěi wǒ zhǎng gōngzī, zhè tōngcháng yìwèizhe 'méimén'.",
+    "example_vi": "Sếp bảo sẽ cân nhắc tăng lương cho tôi, điều này thường đồng nghĩa với việc 'không đời nào'."
+  },
+  {
+    "id": "v3_044",
+    "chinese": "皮肤",
+    "pinyin": "pífū",
+    "vietnamese": "Da, làn da",
+    "example_zh": "为了让皮肤变好，我买了一堆昂贵的护肤品，然后继续熬夜。",
+    "example_pinyin": "Wèile ràng pífū biàn hǎo, wǒ mǎile yī duī ángguì de hùfūpǐn, ránhòu jìxù áoyè.",
+    "example_vi": "Để da đẹp lên, tôi mua một đống mỹ phẩm đắt tiền, sau đó thì... tiếp tục thức khuya."
+  },
+  {
+    "id": "v3_045",
+    "chinese": "责任",
+    "pinyin": "zérèn",
+    "vietnamese": "Trách nhiệm",
+    "example_zh": "作为一名单身狗，我的责任就是吃光所有的狗粮。",
+    "example_pinyin": "Zuòwéi yī míng dānshēngǒu, wǒ de zérèn jiùshì chī guāng suǒyǒu de gǒuliáng.",
+    "example_vi": "Là một 'kiếp FA', trách nhiệm của tôi là ăn sạch sành sanh đống cẩu lương này."
+  }
+]
