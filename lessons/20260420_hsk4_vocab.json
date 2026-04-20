@@ -1,0 +1,47 @@
+[
+  {
+    "id": "hskk_001",
+    "chinese": "浪费",
+    "pinyin": "làngfèi",
+    "vietnamese": "Lãng phí",
+    "example_zh": "由于现在的年轻人过度追求名牌，这其实是一种极大的浪费。首先，我们应该树立正确的消费观，不该把钱花在虚荣心上。其次，赚钱不易，我们要三思而后行，养成勤俭节约的好习惯。",
+    "example_pinyin": "Yóuyú xiànzài de niánqīngrén guòdù zhuīqiú míngpái, zhè qíshí shì yīzhǒng jídà de làngfèi. Shǒuxiān, wǒmen yīnggāi shùlì zhèngquè de xiāofèiguān, bù gāi bǎ qián huā zài xūróngxīn shàng. Qícì, zhuànqián bùyì, wǒmen yào sānsī ér hòu xíng, yǎngchéng qínjiǎn jiéyuē de hǎo xíguàn.",
+    "example_vi": "Vì giới trẻ hiện nay quá theo đuổi hàng hiệu nên thực chất đây là một sự lãng phí cực lớn. Trước tiên, chúng ta nên thiết lập quan điểm tiêu dùng đúng đắn, không nên tiêu tiền vào sự phù phiếm. Thứ hai, kiếm tiền không dễ dàng, chúng ta cần suy nghĩ kỹ trước khi hành động và hình thành thói quen tốt là cần kiệm liêm chính."
+  },
+  {
+    "id": "hskk_002",
+    "chinese": "吓死我了",
+    "pinyin": "xià sǐ wǒ le",
+    "vietnamese": "Dọa chết tôi rồi / Sợ chết khiếp",
+    "example_zh": "刚才老板突然叫我去办公室，真是吓死我了。我以为自己犯了什么不可原谅的错误，结果他只是想表扬我的表现。尽管虚惊一场，但是我的心到现在还扑通扑通地跳呢。",
+    "example_pinyin": "Gāngcái lǎobǎn tūrán jiào wǒ qù bàngōngshì, zhēnshì xià sǐ wǒ le. Wǒ yǐwéi zìjǐ fànle shénme bùkě yuányàng de cuòwù, jiéguǒ tā zhǐshì xiǎng biǎoyáng wǒ de biǎoxiàn. Jǐnguǎn xūjīng yīchǎng, dànshì wǒ de xīn dào xiànzài hái pūtōng pūtōng de tiào ne.",
+    "example_vi": "Lúc nãy sếp đột nhiên gọi tôi vào văn phòng, đúng là dọa chết tôi rồi. Tôi cứ tưởng mình phạm phải sai lầm không thể tha thứ nào đó, kết quả là ông ấy chỉ muốn khen ngợi biểu hiện của tôi. Dù chỉ là một phen hú vía nhưng tim tôi đến giờ vẫn còn đập thình thịch đây."
+  },
+  {
+    "id": "hskk_003",
+    "chinese": "物美价廉",
+    "pinyin": "wù měi jià lián",
+    "vietnamese": "Hàng đẹp giá rẻ / Ngon bổ rẻ",
+    "example_zh": "我平时特别喜欢在这家超市购物，因为这里的商品不仅物美价廉，而且种类繁多。首先，蔬菜和水果都非常新鲜，让人吃得放心。最后，再加上这里的服务态度极好，所以总是吸引了很多回头客。",
+    "example_pinyin": "Wǒ píngshí tèbié xǐhuān zài zhè jiā chāoshì gòuwù, yīnwèi zhèlǐ de shāngpǐn bùjǐn wù měi jià lián, érqiě zhǒnglèi fánduō. Shǒuxiān, shūcài hé shuǐguǒ dōu fēicháng xīnxiān, ràng rén chī de fàngxīn. Zuìhòu, zài jiāshàng zhèlǐ de fúwù tàidù jí hǎo, suǒyǐ zǒngshì xīyǐnle hěnduō huítóukè.",
+    "example_vi": "Tôi thường ngày đặc biệt thích mua sắm ở siêu thị này vì hàng hóa ở đây không chỉ ngon bổ rẻ mà chủng loại còn đa dạng. Trước tiên, rau củ và trái cây đều rất tươi, khiến người ta yên tâm khi ăn. Cuối cùng, cộng thêm thái độ phục vụ ở đây cực kỳ tốt nên luôn thu hút được rất nhiều khách quen."
+  },
+  {
+    "id": "hskk_004",
+    "chinese": "尤其",
+    "pinyin": "yóuqí",
+    "vietnamese": "Đặc biệt là",
+    "example_zh": "现代人的生活压力很大，尤其是在一线城市工作的年轻人。他们不仅要面对繁忙的工作，还要处理复杂的人际关系。因此，学会自我调节、劳逸结合是至关重要的，否则身体迟早会出问题。",
+    "example_pinyin": "Xiàndàirén de shēnghuó yālì hěn dà, yóuqí shì zài yīxiàn chéngshì gōngzuò de niánqīngrén. Tāmen bùjǐn yào miànduì fánmáng de gōngzuò, hái yào chǔlǐ fùzá de rénjì guānxì. Yīncǐ, xuéhuì zìwǒ tiáojié, láoyì jiéhé shì zhìguān zhòngyào de, fǒuzé shēntǐ chízǎo huì chū wèntí.",
+    "example_vi": "Áp lực cuộc sống của người hiện đại rất lớn, đặc biệt là những người trẻ làm việc ở các thành phố lớn. Họ không chỉ phải đối mặt với công việc bận rộn mà còn phải xử lý các mối quan hệ nhân sinh phức tạp. Do đó, học cách tự điều tiết, làm việc nghỉ ngơi hợp lý là điều vô cùng quan trọng, nếu không sức khỏe sớm muộn cũng gặp vấn đề."
+  },
+  {
+    "id": "hskk_005",
+    "chinese": "值得",
+    "pinyin": "zhídé",
+    "vietnamese": "Xứng đáng / Đáng giá",
+    "example_zh": "虽然创业的过程充满了艰辛，但是为了实现梦想，所有的付出都是值得的。首先，失败并不可怕，那是迈向成功的垫脚石。最后，只要我们持之以恒，就一定能看到雨后的彩虹。",
+    "example_pinyin": "Suīrán chuàngyè de guòchéng chōngmǎnle jiānxīn, dànshì wèile shíxiàn mèngxiǎng, suǒyǒu de fùchū dōu shì zhídé de. Shǒuxiān, shībài bìng bù kěpà, nà shì màixiàng chénggōng de diànjiǎoshí. Zuìhòu, zhǐyào wǒmen chízhīyǐhéng, jiù yīdìng néng kàndào yǔhòu de cǎihóng.",
+    "example_vi": "Mặc dù quá trình khởi nghiệp đầy rẫy gian khổ, nhưng để đạt được ước mơ, mọi nỗ lực bỏ ra đều xứng đáng. Trước tiên, thất bại không đáng sợ, đó là bước đệm tiến tới thành công. Cuối cùng, chỉ cần chúng ta kiên trì bền bỉ, nhất định sẽ nhìn thấy cầu vồng sau cơn mưa."
+  }
+]
