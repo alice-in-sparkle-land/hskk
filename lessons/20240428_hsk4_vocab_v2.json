@@ -1,0 +1,146 @@
+[
+  {
+    "id": "hskk_001",
+    "chinese": "按喇叭",
+    "pinyin": "àn lǎba | Chữ 按 (ấn): dùng tay (扌) ấn lên mục tiêu (安 - an tâm). Chữ 喇 (loa): cái miệng (口) nhai bó bó (束) để phát ra tiếng. Chữ 喇 (ba): cái miệng (口) của ba (巴) hay nói.",
+    "vietnamese": "bấm còi",
+    "example_zh": "由于前面发生了事故，后面的司机一直在不停地按喇叭。虽然心情很急躁，但是这样做不仅不能解决问题，反而会制造噪音。首先我们要保持冷静，其次要耐心等待交警的处理。",
+    "example_pinyin": "Yóuyú qiánmiàn fāshēngle shìgù, hòumiàn de sījī yīzhí zài bùtíng de àn lǎba. Suīrán xīnqíng hěn jízào, dànshì zhèyàng zuò bùjǐn bùnéng jiějué wèntí, fǎn'ér huì zhìzào zàoyīn. Shǒuxiān wǒmen yào bǎochí lěngjìng, qícì yào nàixīn děngdài jiāojǐng de chǔlǐ.",
+    "example_vi": "Do phía trước có tai nạn nên tài xế phía sau cứ liên tục bấm còi. Dù tâm trạng đang rất vội vã nhưng làm vậy không những không giải quyết được vấn đề mà còn tạo ra tiếng ồn. Trước hết chúng ta cần giữ bình tĩnh, sau đó kiên nhẫn chờ cảnh sát giao thông xử lý."
+  },
+  {
+    "id": "hskk_002",
+    "chinese": "堵车",
+    "pinyin": "dǔchē | Chữ 堵 (tắc): dùng đất (土) lấp cái giả (者) đang chắn đường. Chữ 车 (xe): hình cái xe nhìn từ trên xuống.",
+    "vietnamese": "tắc đường",
+    "example_zh": "我今天出门不太顺利，正好遇到了严重的堵车。尽管我已经提前半小时出发了，但是路上的车还是多得数不胜数。首先我们要学会合理规划时间，否则每天都会因为堵车而感到焦虑。",
+    "example_pinyin": "Wǒ jīntiān chūmén bù tài shùnlì, zhènghǎo yù dàole yánzhòng de dǔchē. Jǐnguǎn wǒ yǐjīng tíqián bàn xiǎoshí chūfāle, dànshì lùshàng de chē háishì duō dé shǔbùshèngshǔ. Shǒuxiān wǒmen yào xuéhuì hélǐ guīhuà shíjiān, fǒuzé měitiān dūhuì yīnwèi dǔchē ér gǎndào jiāolǜ.",
+    "example_vi": "Hôm nay tôi ra ngoài không thuận lợi lắm, đúng lúc gặp cảnh tắc đường nghiêm trọng. Mặc dù tôi đã đi sớm nửa tiếng nhưng xe cộ trên đường vẫn nhiều không sao đếm xuể. Trước hết chúng ta phải học cách quy hoạch thời gian hợp lý, nếu không ngày nào cũng sẽ thấy lo âu vì tắc đường."
+  },
+  {
+    "id": "hskk_003",
+    "chinese": "早高峰",
+    "pinyin": "zǎogāofēng | Chữ 早 (sớm): mặt trời (日) mọc trên ngọn cỏ (十). Chữ 高 (cao): cái tháp cao. Chữ 峰 (đỉnh): núi (山) có đỉnh nhọn như mũi tên (夆).",
+    "vietnamese": "giờ cao điểm buổi sáng",
+    "example_zh": "在早高峰期间，地铁站里总是人山人海，挤得不得了。不仅年轻人赶着上班，而且学生们也要赶着去上学。为了避开这个高峰，我建议大家首先要早点起床，其次可以尝试骑自行车。",
+    "example_pinyin": "Zài zǎogāofēng qījiān, dìtiě zhàn lǐ zǒng shì rénshānhénhǎi, jǐ dé bùdéliǎo. Bùjǐn niánqīngrén gǎnzhe shàngbān, érqiě xuéshēngmen yě yào gǎnzhe qù shàngxué. Wèile bì kāi zhège gāofēng, wǒ jiànyì dàjiā shǒuxiān yào zǎodiǎn qǐchuáng, qícì kěyǐ chángshì qí zìxíngchē.",
+    "example_vi": "Trong giờ cao điểm buổi sáng, ga tàu điện ngầm lúc nào cũng người đông như kiến, chen chúc không chịu nổi. Không chỉ người trẻ vội đi làm mà học sinh cũng vội đến trường. Để tránh cao điểm, tôi khuyên mọi người trước tiên nên dậy sớm một chút, sau đó có thể thử đi xe đạp."
+  },
+  {
+    "id": "hskk_004",
+    "chinese": "晚高峰",
+    "pinyin": "wǎngāofēng | Chữ 晚 (muộn): mặt trời (日) đã miễn (免) cưỡng làm việc đến tối.",
+    "vietnamese": "giờ cao điểm buổi tối",
+    "example_zh": "晚高峰是下班最痛苦的时候，到处都是排队的汽车。尽管工作了一整天很累，但是由于交通状况不好，我们往往要在路上浪费很多时间。首先我们要保持耐心，其次可以在车里听听音乐，放松心情。",
+    "example_pinyin": "Wǎngāofēng shì xiàbān zuì tòngkǔ de shíhòu, dàochù dōu shì páiduì de qìchē. Jǐnguǎn gōngzuòle yī zhěng tiān hěn lèi, dànshì yóuyú jiāotōng zhuàngkuàng bù hǎo, wǒmen wǎngwǎng yào zài lùshàng làngfèi hěnduō shíjiān. Shǒuxiān wǒmen yào bǎochí nàixīn, qícì kěyǐ zài chē lǐ tīng tīng yīnyuè, fàngsōng xīnqíng.",
+    "example_vi": "Giờ cao điểm buổi tối là lúc mệt mỏi nhất khi tan sở, đâu đâu cũng thấy xe hơi xếp hàng dài. Dù làm việc cả ngày rất mệt, nhưng do tình trạng giao thông không tốt, chúng ta thường phải lãng phí rất nhiều thời gian trên đường. Trước hết chúng ta phải giữ kiên nhẫn, sau đó có thể nghe nhạc trong xe để thư giãn."
+  },
+  {
+    "id": "hskk_005",
+    "chinese": "距离",
+    "pinyin": "jùlí | Chữ 距 (khoảng cách): chân (足) bước qua con cự (巨) lớn. Chữ 离 (cách): con chim (隹) rời khỏi cái bẫy (凶).",
+    "vietnamese": "khoảng cách",
+    "example_zh": "在这个充满竞争的时代，成功与失败的距离往往只有一步之遥。不仅要靠努力，而且还要靠科学的方法。首先要明确目标，其次要勇往直前，最后才能达到梦想的彼岸。",
+    "example_pinyin": "Zài zhège chōngmǎn jìngzhēng de shídài, chénggōng yǔ shībài de jùlí wǎngwǎng zhǐyǒu yībùzhīyáo. Bùjǐn yào kào nǔlì, érqiě hái yào kào kēxué de fāngfǎ. Shǒuxiān yào míngquè mùbiāo, qícì yào yǒngwǎngzhíqián, zuìhòu cáinéng dádào mèngxiǎng de bǐ'àn.",
+    "example_vi": "Trong thời đại đầy cạnh tranh này, khoảng cách giữa thành công và thất bại thường chỉ cách nhau một bước chân. Không chỉ dựa vào nỗ lực, mà còn phải dựa vào phương pháp khoa học. Trước hết cần xác định mục tiêu, tiếp đến là dũng cảm tiến về phía trước, cuối cùng mới có thể chạm đến bến bờ ước mơ."
+  },
+  {
+    "id": "hskk_006",
+    "chinese": "耐心",
+    "pinyin": "nàixīn | Chữ 耐 (nhẫn nại): cạo râu (而) bằng dao (寸) là phải nhẫn nại. Chữ 心 (tim): hình trái tim.",
+    "vietnamese": "kiên nhẫn",
+    "example_zh": "教孩子学习汉语需要极大的耐心，不能操之过急。虽然他们刚开始会遇到很多困难，但是只要坚持下去，就会有进步。首先要多鼓励，其次要多练习，最后他们一定会取得优异的成绩。",
+    "example_pinyin": "Jiāo háizi xuéxí hànyǔ xūyào jídà de nàixīn, bùnéng cāozhīguòjí. Suīrán tāmen gāng kāishǐ huì yù dào hěnduō kùnnán, dànshì zhǐyào jiānchí xiàqù, jiù huì yǒu jìnbù. Shǒuxiān yào duō gǔlì, qícì yào duō liànxí, zuìhòu tāmen yīdìng huì qǔdé yōuyì de chéngjī.",
+    "example_vi": "Dạy trẻ học tiếng Trung cần sự kiên nhẫn cực lớn, không được nóng vội. Dù lúc đầu các em sẽ gặp nhiều khó khăn, nhưng chỉ cần kiên trì thì sẽ có tiến bộ. Trước hết cần khuyến khích nhiều, sau đó luyện tập nhiều, cuối cùng chắc chắn các em sẽ đạt thành tích xuất sắc."
+  },
+  {
+    "id": "hskk_007",
+    "chinese": "遇到",
+    "pinyin": "yùdào | Chữ 遇 (gặp): đi (辶) trên đường gặp con khỉ (禺). Chữ 到 (đến): đến nơi (至) rồi hạ dao (刂) xuống.",
+    "vietnamese": "gặp phải",
+    "example_zh": "生活就像一场旅行，我们总会遇到形形色色的人和事。不仅有快乐的时刻，而且也有挫折。尽管如此，我们首先要保持阳光的心态，其次要从中总结经验，最后不断完善自己。",
+    "example_pinyin": "Shēnghuó jiù xiàng yī chǎng lǚxíng, wǒmen zǒng huì yù dào xíngxíngsèsè de rén hé shì. Bùjǐn yǒu kuàilè de shíkè, érqiě yěyǒu cuòzhé. Jǐnguǎn rúcǐ, wǒmen shǒuxiān yào bǎochí yángguāng de xīntài, qícì yào cóngzhōng zǒngjié jīngyàn, zuìhòu bùduàn wánshàn zìjǐ.",
+    "example_vi": "Cuộc sống giống như một chuyến đi, chúng ta luôn gặp đủ loại người và việc. Không chỉ có những khoảnh khắc vui vẻ mà còn có cả những thất bại. Dù vậy, trước hết chúng ta phải giữ tâm thái tích cực, sau đó đúc rút kinh nghiệm từ đó, cuối cùng không ngừng hoàn thiện bản thân."
+  },
+  {
+    "id": "hskk_008",
+    "chinese": "可不是",
+    "pinyin": "kěbushì | Chữ 可 (khả): cái miệng (口) có thể (丁) nói năng. Chữ 不 (không): hình cái cây không có rễ. Chữ 是 (là): mặt trời (日) ở trên chân (正) là chính xác.",
+    "vietnamese": "chẳng phải sao / đúng vậy",
+    "example_zh": "哎呀，这几天的天气真是变幻莫测，昨天还出太阳，今天就下大雨了。可不是嘛，这让很多人都感冒了。首先我们要多穿衣服，其次要多喝温水，最后要注意劳逸结合。",
+    "example_pinyin": "Āiyā, zhè jǐ tiān de tiānqì zhēnshì biànhuànmòcè, zuótiān hái chū tàiyáng, jīntiān jiù xià dàyǔle. Kě bùshì ma, zhè ràng hěnduō rén dōu gǎnmàole. Shǒuxiān wǒmen yào duō chuān yīfú, qícì yào duō hē wēnshuǐ, zuìhòu yào zhùyì láoyìjiéhé.",
+    "example_vi": "Ái chà, thời tiết mấy ngày nay thật là biến hóa khôn lường, hôm qua còn nắng mà hôm nay đã mưa to rồi. Chẳng phải sao, điều này khiến bao nhiêu người bị cảm rồi đấy. Trước hết chúng ta phải mặc thêm áo, sau đó uống nhiều nước ấm, cuối cùng là chú ý làm việc nghỉ ngơi hợp lý."
+  },
+  {
+    "id": "hskk_009",
+    "chinese": "警察",
+    "pinyin": "jǐngchá | Chữ 警 (cảnh sát): dùng lời nói (言) để cảnh báo việc tôn kính (敬). Chữ 察 (quan sát): trong nhà (宀) soi xét tế lễ (祭) một cách tỉ mỉ.",
+    "vietnamese": "cảnh sát",
+    "example_zh": "每当遇到困难或危险，我们首先想到的就是寻求警察的帮助。不仅是因为他们保护着我们的安全，而且是因为他们乐于助人。尽管他们的工作很辛苦，但他们依然义无反顾地履行职责。",
+    "example_pinyin": "Měi dāng yù dào kùnnán huò wēixiǎn, wǒmen shǒuxiān xiǎngdào de jiùshì xúnqiú jǐngchá de bāngzhù. Bùjǐn shì yīnwèi tāmen bǎohùzhe wǒmen de ānquán, érqiě shì yīnwèi tāmen lèyú zhùrén. Jǐnguǎn tāmen de gōngzuò hěn xīnkǔ, dàn tāmen yīrán yìwúfǎngù de lǚxíng zhízé.",
+    "example_vi": "Mỗi khi gặp khó khăn hay nguy hiểm, điều đầu tiên chúng ta nghĩ đến chính là tìm kiếm sự giúp đỡ của cảnh sát. Không chỉ vì họ bảo vệ an toàn cho chúng ta, mà còn vì họ rất sẵn lòng giúp đỡ mọi người. Dù công việc rất vất vả, nhưng họ vẫn không chút do dự thực hiện nghĩa vụ của mình."
+  },
+  {
+    "id": "hskk_010",
+    "chinese": "缺少",
+    "pinyin": "quēshǎo | Chữ 缺 (thiếu): đồ sành (缶) bị nứt thì quyết (夬) định là hỏng. Chữ 少 (ít): hạt cát (小) bị gạt đi (丿) một ít.",
+    "vietnamese": "thiếu hụt",
+    "example_zh": "现在的年轻人虽然生活条件好了，但是往往缺少吃苦耐劳的精神。不仅在工作中容易放弃，而且在生活中也缺乏主见。首先我们要磨炼意志，其次要独立思考，最后才能在社会中立于不败之地。",
+    "example_pinyin": "Xiànzài de niánqīngrén suīrán shēnghuó tiáojiàn hǎole, dànshì wǎngwǎng quēshǎo chīkǔnàiláo de jīngshén. Bùjǐn zài gōngzuò zhōng róngyì fàngqì, érqiě zài shēnghuó zhōng yě quēfá zhǔjiàn. Shǒuxiān wǒmen yào móliàn yìzhì, qícì yào dúlì sīkǎo, zuìhòu cáinéng zài shèhuì zhōng lìyú bùbài zhī dì.",
+    "example_vi": "Giới trẻ ngày nay tuy điều kiện sống đã tốt hơn nhưng thường thiếu tinh thần chịu thương chịu khó. Không chỉ dễ dàng bỏ cuộc trong công việc mà còn thiếu chính kiến trong cuộc sống. Trước hết chúng ta phải rèn luyện ý chí, sau đó tư duy độc lập, cuối cùng mới có thể đứng vững trong xã hội."
+  },
+  {
+    "id": "hskk_011",
+    "chinese": "到处",
+    "pinyin": "dàochù | Chữ 处 (nơi): đi (夂) đến cái ghế (几) để dừng lại nghỉ.",
+    "vietnamese": "khắp nơi",
+    "example_zh": "春天来了，公园里百花齐放，到处是一片生机勃勃的景象。不仅空气清新，而且景色也非常宜人。首先我们可以带家人去郊游，其次可以拍很多漂亮的照片，最后感受大自然的美好。",
+    "example_pinyin": "Chūntiān láile, gōngyuán lǐ bǎihuāqífàng, dàochù shì yīpiàn shēngjībóbó de jǐngxiàng. Bùjǐn kōngqì qīngxīn, érqiě jǐngsè yě fēicháng yírén. Shǒuxiān wǒmen kěyǐ dài jiārén qù jiāoyóu, qícì kěyǐ pāi hěnduō piàoliang de zhàopiàn, zuìhòu gǎnshòu dàzìrán de měihǎo.",
+    "example_vi": "Mùa xuân đến rồi, trong công viên trăm hoa đua nở, khắp nơi là một cảnh tượng tràn đầy sức sống. Không chỉ không khí trong lành mà phong cảnh cũng rất dễ chịu. Trước hết chúng ta có thể đưa gia đình đi dã ngoại, sau đó chụp thật nhiều ảnh đẹp, cuối cùng là cảm nhận vẻ đẹp của thiên nhiên."
+  },
+  {
+    "id": "hskk_012",
+    "chinese": "态度",
+    "pinyin": "tàidu | Chữ 态 (thái độ): trái tim (心) của con gấu (能) to lớn. Chữ 度 (mức độ): trong nhà (广) dùng tay (又) đo đạc 21 (廿) lần.",
+    "vietnamese": "thái độ",
+    "example_zh": "在职场中，工作态度往往比能力更重要，因为态度决定一切。如果你整天无所事事，不仅会被老板批评，而且也会失去晋升的机会。首先要端正态度，其次要踏实肯干，最后才能赢得大家的尊重。",
+    "example_pinyin": "Zài zhíchǎng zhōng, gōngzuò tàidù wǎngwǎng bǐ nénglì gèng zhòngyào, yīnwèi tàidù juédìng yīqiè. Rúguǒ nǐ zhěng tiān wúsuǒshìshì, bùjǐn huì bèi lǎobǎn pīpíng, érqiě yě huì shīqù jìnshēng de jīhuì. Shǒuxiān yào duānzhèng tàidù, qícì yào tāshi kěngàn, zuìhòu cáinéng yíngdé dàjiā de zūnzhòng.",
+    "example_vi": "Trong môi trường công sở, thái độ làm việc thường quan trọng hơn năng lực, vì thái độ quyết định tất cả. Nếu bạn suốt ngày không làm gì, không chỉ bị sếp phê bình mà còn mất đi cơ hội thăng tiến. Trước hết phải chấn chỉnh thái độ, sau đó làm việc thực chất, cuối cùng mới có thể giành được sự tôn trọng của mọi người."
+  },
+  {
+    "id": "hskk_013",
+    "chinese": "因此",
+    "pinyin": "yīncǐ | Chữ 因 (nguyên nhân): cái cây bị bao quanh (囗) bởi nguyên nhân (大). Chữ 此 (này): dừng (止) lại nhìn người (匕) này.",
+    "vietnamese": "vì vậy / do đó",
+    "example_zh": "他每天都坚持运动，因此身体非常健康，很少生病。不仅精神状态好，而且工作效率也提高了不少。尽管平时工作很忙，但他首先会保证充足的睡眠，其次会坚持跑步。",
+    "example_pinyin": "Tā měitiān dū jiānchí yùndòng, yīncǐ shēntǐ fēicháng jiànkāng, hěn shǎo shēngbìng. Bùjǐn jīngshén zhuàngtài hǎo, érqiě gōngzuò xiàolǜ yě tígāole bù shǎo. Jǐnguǎn píngshí gōngzuò hěn máng, dàn tā shǒuxiān huì bǎozhèng chōngzú de shuìmián, qícì huì jiānchí pǎobù.",
+    "example_vi": "Anh ấy mỗi ngày đều kiên trì vận động, vì vậy cơ thể rất khỏe mạnh, ít khi bị ốm. Không chỉ trạng thái tinh thần tốt mà hiệu suất làm việc cũng tăng lên không ít. Mặc dù bình thường công việc bận rộn, nhưng trước hết anh ấy sẽ đảm bảo ngủ đủ giấc, sau đó là kiên trì chạy bộ."
+  },
+  {
+    "id": "hskk_014",
+    "chinese": "科学",
+    "pinyin": "kēxué | Chữ 科 (khoa học): lúa (禾) được đong bằng đấu (斗). Chữ 学 (học): đứa trẻ (子) ở dưới mái nhà có mấy dấu gạch.",
+    "vietnamese": "khoa học",
+    "example_zh": "我们要用科学的方法来管理时间，不能漫无目的。不仅要制定计划，而且要严格执行。首先要区分轻重缓急，其次要专注投入，最后才能实现在职场上的脱颖而出。",
+    "example_pinyin": "Wǒmen yào yòng kēxué de fāngfǎ lái guǎnlǐ shíjiān, bùnéng mànwúmùdì. Bùjǐn yào zhìdìng jìhuà, érqiě yào yángé zhíxíng. Shǒuxiān yào qūfēn qīngzhònghuǎnjí, qícì yào zhuānzhù tóurù, zuìhòu cáinéng shíxiàn zài zhíchǎng shàng de tuōyǐng'érchū.",
+    "example_vi": "Chúng ta phải dùng phương pháp khoa học để quản lý thời gian, không được làm việc không mục đích. Không chỉ phải lập kế hoạch mà còn phải thực hiện nghiêm túc. Trước hết phải phân biệt việc nặng nhẹ nhanh chậm, sau đó là tập trung dốc sức, cuối cùng mới có thể đạt được sự nổi bật trong sự nghiệp."
+  },
+  {
+    "id": "hskk_015",
+    "chinese": "阳光",
+    "pinyin": "yángguāng | Chữ 阳 (dương): đồi (阝) có mặt trời (日) tỏa sáng. Chữ 光 (quang): đôi chân (儿) cầm ngọn lửa trên đầu.",
+    "vietnamese": "ánh nắng / tích cực",
+    "example_zh": "做一个阳光的人，生活就会处处充满希望。尽管生活中会有不如意，但是我们不仅要学会释怀，而且要学会感恩。首先要微笑面对，其次要乐于助人，最后才能活出精彩人生。",
+    "example_pinyin": "Zuò yīgè yángguāng de rén, shēnghuó jiù huì chùchù chōngmǎn xīwàng. Jǐnguǎn shēnghuó zhōng huì yǒu bùrúyì, dànshì wǒmen bùjǐn yào xuéhuì shìhuái, érqiě yào xuéhuì gǎn'ēn. Shǒuxiān yào wēixiào miànduì, qícì yào lèyú zhùrén, zuìhòu cáinéng huó chū jīngcǎi rénshēng.",
+    "example_vi": "Làm một người tích cực, cuộc sống sẽ luôn tràn đầy hy vọng. Dù trong đời sẽ có những chuyện không như ý, nhưng chúng ta không chỉ phải học cách buông bỏ mà còn phải học cách biết ơn. Trước hết hãy mỉm cười đối diện, sau đó sẵn lòng giúp đỡ mọi người, cuối cùng mới có thể sống một cuộc đời rực rỡ."
+  },
+  {
+    "id": "hskk_016",
+    "chinese": "往往",
+    "pinyin": "wǎngwǎng | Chữ 往 (đi): bước chân (彳) đi đến chỗ ông chủ (主).",
+    "vietnamese": "thường thường",
+    "example_zh": "性格开朗的人，运气往往都不会太差。不仅容易交到朋友，而且也容易得到贵人相助。首先我们要学会自我调节，其次要保持自信，最后才能半途而废是不行的，必须要坚持到底。",
+    "example_pinyin": "Xìnggé kāilǎng de rén, yùnqì wǎngwǎng dōu bù huì tài chà. Bùjǐn róngyì jiāo dào péngyǒu, érqiě yě róngyì dédào guìrén xiāngzhù. Shǒuxiān wǒmen yào xuéhuì zìwǒ tiáojié, qícì yào bǎochí zìxìn, zuìhòu cáinéng bàntú'érfèi shì bùxíng de, bìxū yào jiānchí dàodǐ.",
+    "example_vi": "Người có tính cách cởi mở thường vận khí sẽ không quá tệ. Không chỉ dễ kết bạn mà còn dễ được quý nhân giúp đỡ. Trước hết chúng ta phải học cách tự điều chỉnh, tiếp theo là giữ sự tự tin, cuối cùng thì bỏ dở giữa chừng là không được, phải kiên trì tới cùng."
+  }
+]
