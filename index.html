@@ -1010,31 +1010,25 @@ function clearCanvas() {
   if (!canvas) return;
   
   const ctx = canvas.getContext('2d');
-  const dpr = window.devicePixelRatio || 1;
-  
-  // Lấy kích thước thực tế của canvas để xóa không sót pixel nào
-  // Chúng ta xóa dựa trên toàn bộ width/height đã nhân dpr
+  // Xóa toàn bộ dựa trên kích thước thật (đã nhân dpr)
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   
-  // Sau khi xóa trắng, ta cần vẽ lại lưới Guide
-  // Lưu ý: vì đã có ctx.scale(dpr, dpr) ở initCanvas, 
-  // nên tọa độ vẽ lưới dùng kích thước hiển thị (rect.width)
+  // Vẽ lại lưới Guide
+  const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
   
   ctx.strokeStyle = '#e8dfc8'; 
   ctx.lineWidth = 1;
+  ctx.setLineDash([4, 4]); 
   ctx.beginPath();
   ctx.moveTo(rect.width / 2, 0); ctx.lineTo(rect.width / 2, 160);
   ctx.moveTo(0, 80); ctx.lineTo(rect.width, 80);
-  ctx.setLineDash([4, 4]); 
   ctx.stroke(); 
   
-  // Reset lại nét bút để viết tiếp
+  // Trả lại cấu hình bút
   ctx.setLineDash([]);
   ctx.strokeStyle = '#1a1208'; 
   ctx.lineWidth = 2.2;
-  
-  console.log("Canvas đã được dọn dẹp!"); // Kiểm tra xem hàm có chạy không ở F12
 }
 
 // ─── GRAMMAR TAB ──────────────────────────────────
