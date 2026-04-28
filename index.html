@@ -948,12 +948,25 @@ let isDrawing = false, ctx = null;
 function initCanvas() {
   const canvas = document.getElementById('stroke-canvas');
   if (!canvas) return;
+  
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1; // Lấy tỉ lệ màn hình (thường là 2x hoặc 3x)
   const rect = canvas.parentElement.getBoundingClientRect();
-  canvas.width = rect.width || 560;
-  canvas.height = 160;
-  ctx = canvas.getContext('2d');
+  
+  // Thiết lập kích thước hiển thị (CSS)
+  canvas.style.width = rect.width + "px";
+  canvas.style.height = "160px";
+  
+  // Thiết lập kích thước vẽ thực tế (nâng cao độ phân giải)
+  canvas.width = rect.width * dpr;
+  canvas.height = 160 * dpr;
+  
+  // Quan trọng: Scale lại context để không phải tính toán tọa độ thủ công
+  ctx.scale(dpr, dpr);
+
+  // Cấu hình nét vẽ mượt hơn
   ctx.strokeStyle = '#1a1208';
-  ctx.lineWidth = 2.5;
+  ctx.lineWidth = 2; // Giảm xuống một chút cho thanh thoát
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
 
