@@ -950,26 +950,26 @@ function initCanvas() {
   if (!canvas) return;
   
   const ctx = canvas.getContext('2d');
-  const dpr = window.devicePixelRatio || 1; // Lấy tỉ lệ màn hình (thường là 2x hoặc 3x)
-  const rect = canvas.parentElement.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1; // Lấy tỉ lệ màn hình thực tế
+  const rect = canvas.getBoundingClientRect();
   
-  // Thiết lập kích thước hiển thị (CSS)
+  // 1. Thiết lập kích thước hiển thị cố định (CSS)
   canvas.style.width = rect.width + "px";
   canvas.style.height = "160px";
   
-  // Thiết lập kích thước vẽ thực tế (nâng cao độ phân giải)
+  // 2. Nâng cao độ phân giải thực tế của canvas
   canvas.width = rect.width * dpr;
   canvas.height = 160 * dpr;
   
-  // Quan trọng: Scale lại context để không phải tính toán tọa độ thủ công
+  // 3. Scale context để các lệnh vẽ sau này tự khớp với dpr
   ctx.scale(dpr, dpr);
 
-  // Cấu hình nét vẽ mượt hơn
+  // Cấu hình nét vẽ mượt (Line Smoothing)
   ctx.strokeStyle = '#1a1208';
-  ctx.lineWidth = 2; // Giảm xuống một chút cho thanh thoát
-  ctx.lineCap = 'round';
-  ctx.lineJoin = 'round';
-
+  ctx.lineWidth = 2.2; // Độ dày vừa phải cho chữ Hán
+  ctx.lineCap = 'round'; // Bo tròn đầu nét
+  ctx.lineJoin = 'round'; // Bo tròn các góc nối
+  
   // Vẽ lại Grid Guide (đã điều chỉnh cho dpr)
   ctx.strokeStyle = '#e8dfc8';
   ctx.lineWidth = 1;
@@ -989,16 +989,19 @@ function initCanvas() {
     const t = e.touches ? e.touches[0] : e;
     return { x: t.clientX - r.left, y: t.clientY - r.top };
   };
+
   canvas.onmousedown = canvas.ontouchstart = (e) => {
     e.preventDefault(); isDrawing = true;
     const {x,y} = getPos(e);
     ctx.beginPath(); ctx.moveTo(x, y);
   };
+
   canvas.onmousemove = canvas.ontouchmove = (e) => {
     e.preventDefault(); if (!isDrawing) return;
     const {x,y} = getPos(e);
     ctx.lineTo(x, y); ctx.stroke();
   };
+
   canvas.onmouseup = canvas.ontouchend = () => { isDrawing = false; };
 }
 
