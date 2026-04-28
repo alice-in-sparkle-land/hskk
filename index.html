@@ -970,17 +970,19 @@ function initCanvas() {
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
 
-  // Draw grid guide
+  // Vẽ lại Grid Guide (đã điều chỉnh cho dpr)
   ctx.strokeStyle = '#e8dfc8';
   ctx.lineWidth = 1;
   ctx.beginPath();
-  ctx.moveTo(canvas.width/2, 0); ctx.lineTo(canvas.width/2, canvas.height);
-  ctx.moveTo(0, canvas.height/2); ctx.lineTo(canvas.width, canvas.height/2);
+  ctx.moveTo(rect.width/2, 0); ctx.lineTo(rect.width/2, 160);
+  ctx.moveTo(0, 80); ctx.lineTo(rect.width, 80);
   ctx.setLineDash([4, 4]);
   ctx.stroke();
   ctx.setLineDash([]);
+  
+  // Thiết lập lại màu mực sau khi vẽ lưới
   ctx.strokeStyle = '#1a1208';
-  ctx.lineWidth = 2.5;
+  ctx.lineWidth = 2.2;
 
   const getPos = (e) => {
     const r = canvas.getBoundingClientRect();
