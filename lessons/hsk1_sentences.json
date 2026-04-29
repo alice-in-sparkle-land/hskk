@@ -1,0 +1,30 @@
+[
+  {
+    "id": "s1_001",
+    "grammar_id": "g1_001",
+    "vi": "Tôi là học sinh.",
+    "zh": "我是学生。",
+    "pinyin": "Wǒ shì xuésheng."
+  },
+  {
+    "id": "s1_002",
+    "grammar_id": "g1_001",
+    "vi": "Đây là sách của tôi.",
+    "zh": "这是我的书。",
+    "pinyin": "Zhè shì wǒ de shū."
+  },
+  {
+    "id": "s1_003",
+    "grammar_id": "g1_002",
+    "vi": "Hôm nay tôi không đi làm.",
+    "zh": "我今天不去上班。",
+    "pinyin": "Wǒ jīntiān bù qù shàngbān."
+  },
+  {
+    "id": "s1_004",
+    "grammar_id": "g1_003",
+    "vi": "Bạn có thích trà không?",
+    "zh": "你喜欢茶吗？",
+    "pinyin": "Nǐ xǐhuan chá ma?"
+  }
+]

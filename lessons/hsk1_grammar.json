@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g1_001",
+    "point": "是 (Thì, là)",
+    "explanation_vi": "Dùng để nối hai danh từ/đại từ để chỉ sự tương đương hoặc định nghĩa.",
+    "structure": "A + 是 + B",
+    "example_zh": "他是我的老师。",
+    "example_pinyin": "Tā shì wǒ de lǎoshī.",
+    "example_vi": "Anh ấy là thầy giáo của tôi.",
+    "hskk_note": "Cấu trúc cơ bản nhất để giới thiệu bản thân và người khác."
+  },
+  {
+    "id": "g1_002",
+    "point": "不 (Phủ định)",
+    "explanation_vi": "Dùng để phủ định hành động trong hiện tại hoặc tương lai, hoặc phủ định tính chất.",
+    "structure": "不 + V/Adj",
+    "example_zh": "我不喝咖啡。",
+    "example_pinyin": "Wǒ bù hē kāfēi.",
+    "example_vi": "Tôi không uống cà phê.",
+    "hskk_note": "Lưu ý biến điệu của 'bù' khi đứng trước từ thanh 4."
+  },
+  {
+    "id": "g1_003",
+    "point": "吗 (Câu hỏi Có/Không)",
+    "explanation_vi": "Đặt ở cuối câu trần thuật để biến nó thành câu hỏi.",
+    "structure": "Câu trần thuật + 吗？",
+    "example_zh": "你是中国人吗？",
+    "example_pinyin": "Nǐ shì Zhōngguórén ma?",
+    "example_vi": "Bạn là người Trung Quốc phải không?",
+    "hskk_note": "Cách đặt câu hỏi đơn giản và phổ biến nhất."
+  }
+]

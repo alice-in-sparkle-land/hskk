@@ -1,0 +1,32 @@
+[
+  {
+    "id": "g2_001",
+    "point": "了 (Sự thay đổi/Hoàn thành)",
+    "explanation_vi": "Biểu thị hành động đã hoàn thành hoặc có sự thay đổi trạng thái mới.",
+    "structure": "V + 了 / Câu + 了",
+    "example_zh": "我买了一本书。",
+    "example_pinyin": "Wǒ mǎile yī běn shū.",
+    "example_vi": "Tôi đã mua một cuốn sách.",
+    "hskk_note": "Rất quan trọng để kể về các sự kiện trong quá khứ."
+  },
+  {
+    "id": "g2_002",
+    "point": "得 (Trợ từ trạng thái)",
+    "explanation_vi": "Dùng để đánh giá hoặc miêu tả mức độ của hành động.",
+    "structure": "V + 得 + Adj",
+    "example_zh": "他说得很好。",
+    "example_pinyin": "Tā shuō de hěn hǎo.",
+    "example_vi": "Anh ấy nói rất tốt.",
+    "hskk_note": "Dùng để khen ngợi hoặc nhận xét về kỹ năng của ai đó."
+  },
+  {
+    "id": "g2_003",
+    "point": "比 (So sánh hơn)",
+    "explanation_vi": "Dùng để so sánh sự khác biệt giữa hai đối tượng.",
+    "structure": "A + 比 + B + Adj",
+    "example_zh": "今天比昨天热。",
+    "example_pinyin": "Jīntiān bǐ zuótiān rè.",
+    "example_vi": "Hôm nay nóng hơn hôm qua.",
+    "hskk_note": "Cấu trúc so sánh cơ bản nhất cần nắm vững."
+  }
+]

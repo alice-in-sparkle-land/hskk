@@ -1,0 +1,23 @@
+[
+  {
+    "id": "s2_001",
+    "grammar_id": "g2_001",
+    "vi": "Tôi đã ăn cơm rồi.",
+    "zh": "我吃饭了。",
+    "pinyin": "Wǒ chīfàn le."
+  },
+  {
+    "id": "s2_002",
+    "grammar_id": "g2_002",
+    "vi": "Cô ấy chạy rất nhanh.",
+    "zh": "她跑得很快。",
+    "pinyin": "Tā pǎo de hěn kuài."
+  },
+  {
+    "id": "s2_003",
+    "grammar_id": "g2_003",
+    "vi": "Anh trai cao hơn tôi.",
+    "zh": "哥哥比我高。",
+    "pinyin": "Gēge bǐ wǒ gāo."
+  }
+]
