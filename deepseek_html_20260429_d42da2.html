@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>汉语学习 · HSK Practice 全等级</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1208;
+    --paper: #f5f0e8;
+    --warm: #e8dfc8;
+    --gold: #c8962a;
+    --gold-light: #e8b84b;
+    --red: #c0392b;
+    --red-soft: #e74c3c;
+    --green: #27ae60;
+    --blue: #2471a3;
+    --muted: #8a7f70;
+    --border: #d4c9b0;
+    --card: #fdfaf4;
+    --shadow: rgba(26,18,8,0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    font-size: 15px;
+  }
+
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px var(--shadow);
+  }
+  .logo {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--gold-light);
+  }
+  .logo span { color: var(--paper); font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 300; margin-left: 10px; opacity: 0.7; }
+
+  /* 扩展等级栏 - 支持5个等级 */
+  .level-bar {
+    background: var(--ink);
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 0 16px 12px;
+    flex-wrap: wrap;
+  }
+  .level-btn {
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.6);
+    padding: 5px 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .2s;
+    font-family: 'Noto Serif SC', serif;
+  }
+  .level-btn.active {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--ink);
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .nav-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--border);
+    background: var(--card);
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+  }
+  .nav-tab {
+    flex: 1;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: all .2s;
+    letter-spacing: .5px;
+  }
+  .nav-tab.active {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+    background: var(--paper);
+  }
+  .nav-tab .tab-icon { display: block; font-size: 20px; margin-bottom: 2px; }
+
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-cell {
+    background: var(--warm);
+    text-align: center;
+    padding: 10px 4px;
+  }
+  .stat-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--gold);
+    display: block;
+  }
+  .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; }
+
+  .progress-wrap { padding: 10px 20px; background: var(--card); border-bottom: 1px solid var(--border); }
+  .progress-label { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; margin-bottom: 5px; }
+  .progress-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 3px; transition: width .5s ease; }
+
+  main { padding: 20px; max-width: 600px; margin: 0 auto; }
+
+  .queue-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .queue-badge {
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--warm);
+    border: 1px solid var(--border);
+    padding: 4px 12px;
+    border-radius: 12px;
+  }
+  .refresh-all-btn {
+    font-size: 12px;
+    background: transparent;
+    border: 1.5px solid var(--red-soft);
+    color: var(--red-soft);
+    padding: 5px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .refresh-all-btn:hover { background: var(--red-soft); color: white; }
+
+  .card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 16px var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  }
+  .card-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .vocab-vi {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .vocab-vi em { font-style: italic; color: var(--muted); font-size: 16px; }
+
+  .canvas-wrap {
+    margin: 16px 0;
+    background: #fff;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  .canvas-label {
+    font-size: 11px;
+    color: var(--muted);
+    padding: 8px 14px 4px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  canvas.stroke-canvas {
+    display: block;
+    touch-action: none;
+    cursor: crosshair;
+    width: 100%;
+    height: 160px;
+  }
+  .clear-canvas-btn {
+    font-size: 11px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 2px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .answer-box {
+    background: var(--warm);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 12px;
+    display: none;
+  }
+  .answer-box.visible { display: block; animation: fadeIn .3s ease; }
+  .answer-hanzi {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 42px;
+    color: var(--ink);
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: 4px;
+  }
+  .answer-pinyin {
+    text-align: center;
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .divider { height: 1px; background: var(--border); margin: 12px 0; }
+  .example-zh {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 4px;
+    line-height: 1.6;
+  }
+  .example-pinyin { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+  .example-vi { font-size: 13px; color: var(--blue); font-style: italic; }
+
+  .grammar-point {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 24px;
+    color: var(--gold);
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+  }
+  .grammar-struct {
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--warm);
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-family: monospace;
+  }
+  .grammar-explanation {
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  .hskk-note {
+    font-size: 12px;
+    color: var(--blue);
+    background: rgba(36,113,163,0.08);
+    border-left: 3px solid var(--blue);
+    padding: 8px 12px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 8px;
+  }
+  .hskk-note::before { content: '💬 HSKK: '; font-weight: 600; }
+
+  .translate-area {
+    width: 100%;
+    background: #fff;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: 'Noto Serif SC', serif;
+    resize: vertical;
+    min-height: 80px;
+    color: var(--ink);
+    margin: 12px 0;
+    outline: none;
+    transition: border-color .2s;
+  }
+  .translate-area:focus { border-color: var(--gold); }
+
+  .btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .btn {
+    padding: 11px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    flex: 1;
+  }
+  .btn-primary { background: var(--gold); color: var(--ink); font-weight: 700; }
+  .btn-primary:hover { background: var(--gold-light); }
+  .btn-secondary { background: transparent; border: 1.5px solid var(--border); color: var(--ink); }
+  .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+  .btn-success { background: var(--green); color: white; }
+  .btn-fail { background: var(--red); color: white; }
+
+  .srs-row { display: none; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .srs-row.visible { display: flex; animation: fadeIn .3s ease; }
+  .srs-btn {
+    flex: 1;
+    padding: 9px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1.5px solid;
+    text-align: center;
+    transition: all .2s;
+    min-width: 72px;
+  }
+  .srs-0 { border-color: var(--red); color: var(--red); }
+  .srs-0:hover { background: var(--red); color: white; }
+  .srs-1 { border-color: #e67e22; color: #e67e22; }
+  .srs-1:hover { background: #e67e22; color: white; }
+  .srs-2 { border-color: #f1c40f; color: #946c00; }
+  .srs-2:hover { background: #f1c40f; color: var(--ink); }
+  .srs-3 { border-color: var(--green); color: var(--green); }
+  .srs-3:hover { background: var(--green); color: white; }
+  .srs-4 { border-color: var(--blue); color: var(--blue); }
+  .srs-4:hover { background: var(--blue); color: white; }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+  .empty-state .big { font-size: 48px; display: block; margin-bottom: 12px; }
+
+  .mode-toggle {
+    display: flex;
+    background: var(--warm);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .mode-opt {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--muted);
+    transition: all .2s;
+    line-height: 1.4;
+  }
+  .mode-opt.active {
+    background: var(--gold);
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .dot-row {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: background .3s;
+  }
+  .dot.done { background: var(--green); }
+  .dot.current { background: var(--gold); }
+  .word-counter {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 16px;
+    text-align: center;
+    background: var(--warm);
+    padding: 6px;
+    border-radius: 8px;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--ink);
+    color: var(--paper);
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 14px;
+    z-index: 999;
+    transition: transform .3s ease;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 480px) {
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    .answer-hanzi { font-size: 34px; }
+    main { padding: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">汉语学习 <span>HSK 1-5 Complete</span></div>
+  <div id="repo-badge" style="font-size:9px;color:rgba(255,255,255,0.45);letter-spacing:.5px;font-family:monospace;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></div>
+</header>
+
+<div class="level-bar" id="level-bar-container">
+  <!-- 动态渲染 1~5 等级按钮 -->
+</div>
+
+<div class="nav-tabs">
+  <div class="nav-tab active" onclick="setTab('vocab')"><span class="tab-icon">📖</span>Từ Vựng</div>
+  <div class="nav-tab" onclick="setTab('grammar')"><span class="tab-icon">✍️</span>Ngữ Pháp</div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-cell"><span class="stat-num" id="s-learned">0</span><span class="stat-label">Đã học</span></div>
+  <div class="stat-cell"><span class="stat-num" id="s-due">0</span><span class="stat-label">Cần ôn</span></div>
+  <div class="stat-cell"><span class="stat-num" id="s-tokens">0</span><span class="stat-label">🪙 Tokens</span></div>
+  <div class="stat-cell"><span class="stat-num" id="s-streak">0</span><span class="stat-label">🔥 Streak</span></div>
+</div>
+
+<div class="progress-wrap">
+  <div class="progress-label"><span>Tiến độ tổng hợp</span><span id="prog-text">0 / 0</span></div>
+  <div class="progress-bar"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>
+</div>
+
+<main>
+  <div class="queue-info">
+    <span class="queue-badge" id="queue-badge">⏳ Đang tải...</span>
+    <button class="refresh-all-btn" onclick="confirmRefreshAll()">🔄 Ôn lại tất cả</button>
+  </div>
+  <div id="tab-vocab"></div>
+  <div id="tab-grammar" style="display:none"></div>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+  // ===================== CONFIG =====================
+  const GITHUB_USER = 'alice-in-sparkle-land';
+  const GITHUB_REPO = 'hskk';
+  const GITHUB_BRANCH = 'main';
+  const LESSONS_PATH = 'lessons';
+  const RAW_BASE = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${LESSONS_PATH}/`;
+  const API_DIR = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${LESSONS_PATH}`;
+
+  const SRS_INTERVALS = [
+    { label: '10分钟', ms: 10 * 60 * 1000 },      // 0
+    { label: '1 ngày', ms: 24 * 60 * 60 * 1000 }, // 1
+    { label: '7 ngày', ms: 7 * 24 * 60 * 60 * 1000 }, // 2
+    { label: '10 ngày', ms: 10 * 24 * 60 * 60 * 1000 }, // 3
+    { label: '15 ngày', ms: 15 * 24 * 60 * 60 * 1000 }, // 4
+    { label: '30 ngày', ms: 30 * 24 * 60 * 60 * 1000 }  // 5
+  ];
+
+  // 全局状态 (支持 HSK 1,2,3,4,5)
+  let state = {
+    level: 1,           // 默认 HSK1 (因为新手友好)
+    tab: 'vocab',
+    grammarMode: 'translate',
+    vocab: {1:[],2:[],3:[],4:[],5:[]},
+    grammar: {1:[],2:[],3:[],4:[],5:[]},
+    sentences: {1:[],2:[],3:[],4:[],5:[]},
+    srs: {},
+    stats: { learned: 0, tokens: 0, streak: 0, lastDate: null },
+    vocabSession: [],
+    vocabIdx: 0,
+    showAnswer: false,
+    grammarItem: null
+  };
+  let _lessonFiles = null;
+
+  async function discoverLessonFiles() {
+    if (_lessonFiles !== null) return _lessonFiles;
+    try {
+      const r = await fetch(API_DIR, { headers: { 'Accept': 'application/vnd.github.v3+json' } });
+      if (!r.ok) throw new Error(`GitHub API ${r.status}`);
+      const items = await r.json();
+      _lessonFiles = items.filter(f => f.type === 'file' && f.name.endsWith('.json')).map(f => f.name);
+      console.log('[HSK] lessons files:', _lessonFiles);
+    } catch(e) { console.warn('list fail', e); _lessonFiles = []; }
+    return _lessonFiles;
+  }
+
+  function matchFiles(files, level, type) {
+    const levelStr = String(level);
+    const t = type.toLowerCase();
+    return files.filter(name => {
+      const n = name.toLowerCase();
+      const hasLevel = n.includes('hsk' + levelStr);
+      const hasType = n.includes(t);
+      const noWrongLevel = ![1,2,3,4,5].filter(l => l !== level).some(l => n.includes('hsk' + l));
+      return hasLevel && hasType && noWrongLevel;
+    });
+  }
+
+  async function fetchLessonFile(filename) {
+    const url = RAW_BASE + encodeURIComponent(filename);
+    try {
+      const r = await fetch(url);
+      if (!r.ok) return [];
+      return await r.json();
+    } catch(e) { return []; }
+  }
+
+  async function fetchWithFallback(level, type) {
+    const files = await discoverLessonFiles();
+    if (files.length > 0) {
+      const matched = matchFiles(files, level, type);
+      if (matched.length) {
+        const arrays = await Promise.all(matched.map(f => fetchLessonFile(f)));
+        const seen = new Set();
+        const merged = [];
+        for(const arr of arrays) for(const item of arr) {
+          const key = item.id || JSON.stringify(item);
+          if(!seen.has(key)) { seen.add(key); merged.push(item); }
+        }
+        return merged;
+      }
+    }
+    // fallback patterns
+    const patterns = [`hsk${level}_${type}.json`, `${type}_hsk${level}.json`, `hsk${level}-${type}.json`];
+    for(const name of patterns) {
+      try {
+        const r = await fetch(RAW_BASE + name);
+        if(r.ok) return await r.json();
+      } catch(e) {}
+    }
+    return [];
+  }
+
+  async function loadData(level, isActive = false) {
+    if(isActive) {
+      const containerId = state.tab === 'vocab' ? 'tab-vocab' : 'tab-grammar';
+      const el = document.getElementById(containerId);
+      if(el) el.innerHTML = `<div class="empty-state"><span class="big" style="font-size:32px;animation:spin 1s linear infinite;display:inline-block">⏳</span><p>Đang tải HSK ${level}...</p></div>`;
+    }
+    const [vocab, grammar, sentences] = await Promise.all([
+      fetchWithFallback(level, 'vocab'),
+      fetchWithFallback(level, 'grammar'),
+      fetchWithFallback(level, 'sentences')
+    ]);
+    state.vocab[level] = vocab;
+    state.grammar[level] = grammar;
+    state.sentences[level] = sentences;
+    if(isActive && !vocab.length && !grammar.length) {
+      document.getElementById('tab-vocab').innerHTML = `<div class="empty-state"><span class="big">📭</span><p>Chưa có dữ liệu HSK ${level}</p><small>Đặt file hsk${level}_vocab.json trong thư mục lessons/</small></div>`;
+      if(state.tab === 'grammar') document.getElementById('tab-grammar').innerHTML = `<div class="empty-state"><span class="big">📭</span><p>Chưa có ngữ pháp HSK ${level}</p></div>`;
+    }
+  }
+
+  function getSRS(id) { return state.srs[id] || { interval: -1, nextDue: 0, seen: false }; }
+  function isDue(id) { const s = getSRS(id); return s.interval < 0 || Date.now() >= s.nextDue; }
+  function markSRS(id, quality) {
+    const interval = Math.min(Math.max(0, quality), SRS_INTERVALS.length-1);
+    const wasNew = !state.srs[id]?.seen;
+    state.srs[id] = { interval, nextDue: Date.now() + SRS_INTERVALS[interval].ms, seen: true };
+    if (wasNew) state.stats.learned++;
+    state.stats.tokens += [1,2,3,4,5,6][interval];
+    updateStreak();
+    save();
+    updateStats();
+  }
+  function updateStreak() {
+    const today = new Date().toDateString();
+    if(state.stats.lastDate !== today) {
+      const yesterday = new Date(Date.now() - 86400000).toDateString();
+      if(state.stats.lastDate === yesterday) state.stats.streak++;
+      else state.stats.streak = 1;
+      state.stats.lastDate = today;
+    }
+  }
+  function getDueItems(level, type) {
+    const items = type === 'vocab' ? state.vocab[level] || [] : state.grammar[level] || [];
+    return items.filter(i => isDue(i.id));
+  }
+  function updateStats() {
+    const level = state.level;
+    const vTotal = (state.vocab[level] || []).length;
+    const gTotal = (state.grammar[level] || []).length;
+    const total = vTotal + gTotal;
+    const learned = state.stats.learned;
+    const due = getDueItems(level, 'vocab').length + getDueItems(level, 'grammar').length;
+    document.getElementById('s-learned').textContent = learned;
+    document.getElementById('s-due').textContent = due;
+    document.getElementById('s-tokens').textContent = state.stats.tokens;
+    document.getElementById('s-streak').textContent = state.stats.streak;
+    document.getElementById('prog-text').textContent = `${learned} / ${total}`;
+    const pct = total ? Math.round(learned / total * 100) : 0;
+    document.getElementById('prog-fill').style.width = pct + '%';
+    const tabDue = getDueItems(level, state.tab).length;
+    document.getElementById('queue-badge').textContent = tabDue > 0 ? `⏳ ${tabDue} thẻ cần ôn` : `✅ Xong hôm nay!`;
+  }
+
+  function buildVocabSession() {
+    const level = state.level;
+    const vocab = state.vocab[level] || [];
+    const due = vocab.filter(v => isDue(v.id));
+    const notDue = vocab.filter(v => !isDue(v.id));
+    const pool = [...due, ...notDue];
+    state.vocabSession = pool.slice(0, 10).map(v => v.id);
+    state.vocabIdx = 0;
+    state.showAnswer = false;
+  }
+  function renderVocabTab() {
+    const container = document.getElementById('tab-vocab');
+    const level = state.level;
+    const vocab = state.vocab[level] || [];
+    if(!vocab.length) { container.innerHTML = `<div class="empty-state"><span class="big">📡</span><p>Đợi dữ liệu HSK ${level}...</p><small>Kiểm tra file hsk${level}_vocab.json</small></div>`; return; }
+    if(!state.vocabSession.length || state.vocabIdx >= state.vocabSession.length) buildVocabSession();
+    const dots = state.vocabSession.map((_,i) => `<div class="dot ${i<state.vocabIdx ? 'done' : (i===state.vocabIdx ? 'current' : '')}"></div>`).join('');
+    if(state.vocabIdx >= state.vocabSession.length) {
+      container.innerHTML = `<div class="dot-row">${dots}</div><div class="empty-state"><span class="big">🎉</span><p>Xong 10 từ!</p><button class="btn btn-primary" onclick="buildVocabSession();renderVocabTab()">Học thêm 10 từ</button></div>`;
+      return;
+    }
+    const wordId = state.vocabSession[state.vocabIdx];
+    const word = vocab.find(v => v.id === wordId);
+    if(!word) { state.vocabIdx++; renderVocabTab(); return; }
+    const srsInfo = getSRS(word.id);
+    const isNew = !srsInfo.seen;
+    const due = isDue(word.id);
+    container.innerHTML = `
+      <div class="dot-row">${dots}</div>
+      <div class="word-counter">Từ ${state.vocabIdx+1}/${state.vocabSession.length} ${isNew ? '✨ Mới' : (due ? '🔔 Cần ôn' : '')}</div>
+      <div class="card">
+        <div class="card-label">📖 TỪ VỰNG · HSK ${level}</div>
+        <div class="vocab-vi">${word.vietnamese} <em>(${word.part_of_speech || 'từ'})</em></div>
+        <div class="canvas-wrap"><div class="canvas-label"><span>✏️ Luyện viết</span><button class="clear-canvas-btn" onclick="clearCanvas()">Xóa</button></div><canvas class="stroke-canvas" id="stroke-canvas" width="560" height="160"></canvas></div>
+        <div class="btn-row"><button class="btn btn-primary" onclick="revealVocab()">Xem đáp án</button><button class="btn btn-secondary" onclick="skipVocab()">Bỏ qua →</button></div>
+        <div class="answer-box ${state.showAnswer ? 'visible' : ''}" id="answer-box"><div class="answer-hanzi">${word.chinese}</div><div class="answer-pinyin">${word.pinyin}</div><div class="divider"></div><div class="example-zh">${word.example_zh}</div><div class="example-pinyin">${word.example_pinyin}</div><div class="example-vi">${word.example_vi}</div></div>
+        <div class="srs-row ${state.showAnswer ? 'visible' : ''}" id="srs-row"><div style="width:100%;font-size:11px;text-align:center">Tôi nhớ...</div><button class="srs-btn srs-0" onclick="doSRS('${word.id}',0)">Lại<br><small>10p</small></button><button class="srs-btn srs-1" onclick="doSRS('${word.id}',1)">Khó<br><small>1d</small></button><button class="srs-btn srs-2" onclick="doSRS('${word.id}',2)">OK<br><small>7d</small></button><button class="srs-btn srs-3" onclick="doSRS('${word.id}',3)">Nhớ<br><small>10d</small></button><button class="srs-btn srs-4" onclick="doSRS('${word.id}',4)">Giỏi<br><small>15d</small></button><button class="srs-btn srs-4" style="border-color:#8e44ad" onclick="doSRS('${word.id}',5)">Thuộc<br><small>30d</small></button></div>
+      </div>`;
+    initCanvas();
+    updateStats();
+  }
+  function revealVocab() { state.showAnswer=true; document.getElementById('answer-box')?.classList.add('visible'); document.getElementById('srs-row')?.classList.add('visible'); }
+  function skipVocab() { state.vocabIdx++; state.showAnswer=false; save(); renderVocabTab(); }
+  function doSRS(id, q) { markSRS(id,q); state.vocabIdx++; state.showAnswer=false; save(); showToast(`✅ +${[1,2,3,4,5,6][q]} tokens`); renderVocabTab(); }
+
+  let canvasCtx=null, drawing=false;
+  function initCanvas() {
+    const canvas = document.getElementById('stroke-canvas');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * devicePixelRatio;
+    canvas.height = 160 * devicePixelRatio;
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+    ctx.strokeStyle = '#1a1208'; ctx.lineWidth = 2.2; ctx.lineCap='round'; ctx.lineJoin='round';
+    ctx.strokeStyle = '#e8dfc8'; ctx.lineWidth=1; ctx.setLineDash([4,4]); 
+    ctx.beginPath(); ctx.moveTo(rect.width/2,0); ctx.lineTo(rect.width/2,160); ctx.moveTo(0,80); ctx.lineTo(rect.width,80); ctx.stroke();
+    ctx.setLineDash([]); ctx.strokeStyle = '#1a1208'; ctx.lineWidth = 2.2;
+    const getPos = (e) => { const t = e.touches? e.touches[0]:e; const r=canvas.getBoundingClientRect(); return {x:t.clientX-r.left, y:t.clientY-r.top}; };
+    canvas.onmousedown=canvas.ontouchstart=(e)=>{ e.preventDefault(); drawing=true; const {x,y}=getPos(e); ctx.beginPath(); ctx.moveTo(x,y); };
+    canvas.onmousemove=canvas.ontouchmove=(e)=>{ if(!drawing) return; e.preventDefault(); const {x,y}=getPos(e); ctx.lineTo(x,y); ctx.stroke(); };
+    canvas.onmouseup=canvas.ontouchend=()=>{ drawing=false; };
+  }
+  function clearCanvas() {
+    const canvas = document.getElementById('stroke-canvas');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    const rect = canvas.getBoundingClientRect();
+    ctx.strokeStyle='#e8dfc8'; ctx.lineWidth=1; ctx.setLineDash([4,4]); 
+    ctx.beginPath(); ctx.moveTo(rect.width/2,0); ctx.lineTo(rect.width/2,160); ctx.moveTo(0,80); ctx.lineTo(rect.width,80); ctx.stroke();
+    ctx.setLineDash([]); ctx.strokeStyle='#1a1208'; ctx.lineWidth=2.2;
+  }
+
+  function getRandomGrammarItem() {
+    const level=state.level;
+    const grammar = state.grammar[level] || [];
+    const sentences = state.sentences[level] || [];
+    const due = grammar.filter(g=>isDue(g.id));
+    const pool = due.length? due: grammar;
+    if(!pool.length) return null;
+    const g = pool[Math.floor(Math.random()*pool.length)];
+    const related = sentences.filter(s=>s.grammar_id===g.id);
+    const sentence = related.length? related[Math.floor(Math.random()*related.length)]:null;
+    return {grammar:g, sentence};
+  }
+  function renderGrammarTab() {
+    const container = document.getElementById('tab-grammar');
+    const level=state.level;
+    const grammar = state.grammar[level] || [];
+    if(!grammar.length) { container.innerHTML=`<div class="empty-state"><span class="big">📘</span><p>Đang tải ngữ pháp HSK ${level}...</p></div>`; return; }
+    if(!state.grammarItem) state.grammarItem = getRandomGrammarItem();
+    const {grammar:g, sentence:s} = state.grammarItem || {grammar:grammar[0], sentence:null};
+    const modeHtml = `<div class="mode-toggle"><div class="mode-opt ${state.grammarMode==='translate' ? 'active':''}" onclick="setGrammarMode('translate')">🇻🇳→🇨🇳 Dịch câu</div><div class="mode-opt ${state.grammarMode==='compose' ? 'active':''}" onclick="setGrammarMode('compose')">✍️ Tự đặt câu</div></div>`;
+    const srsInfo = getSRS(g.id);
+    const isNew = !srsInfo.seen;
+    if(state.grammarMode==='translate') {
+      container.innerHTML = `${modeHtml}<div class="card"><div class="card-label">✍️ NGỮ PHÁP HSK ${level} ${isNew?'✨ Mới':''}</div><div class="grammar-point">${g.point}</div><div class="grammar-struct">${g.structure}</div><div class="grammar-explanation">${g.explanation_vi}</div><div style="background:var(--warm);padding:14px;border-radius:12px;margin:10px 0"><div style="font-size:11px">📝 DỊCH SANG TIẾNG TRUNG</div><div style="font-size:18px">${s ? s.vi : g.example_vi}</div></div><textarea id="grammar-input" class="translate-area" placeholder="Viết câu bằng chữ Hán..."></textarea><div class="btn-row"><button class="btn btn-primary" onclick="revealGrammar()">Xem đáp án</button><button class="btn btn-secondary" onclick="nextGrammar()">Câu khác →</button></div><div class="answer-box" id="grammar-answer"><div class="example-zh">${s ? s.zh : g.example_zh}</div><div class="example-pinyin">${s ? s.pinyin : g.example_pinyin}</div><div class="divider"></div><div class="hskk-note">${g.hskk_note||'Luyện tập cấu trúc'}</div></div><div class="srs-row" id="grammar-srs"><div class="srs-btn srs-0" onclick="doGrammarSRS('${g.id}',0)">Lại (10p)</div><div class="srs-btn srs-1" onclick="doGrammarSRS('${g.id}',1)">Khó (1d)</div><div class="srs-btn srs-2" onclick="doGrammarSRS('${g.id}',2)">OK (7d)</div><div class="srs-btn srs-3" onclick="doGrammarSRS('${g.id}',3)">Nhớ (10d)</div><div class="srs-btn srs-4" onclick="doGrammarSRS('${g.id}',4)">Tốt (15d)</div><div class="srs-btn srs-4" style="border-color:#8e44ad" onclick="doGrammarSRS('${g.id}',5)">Thuộc (30d)</div></div></div>`;
+    } else {
+      container.innerHTML = `${modeHtml}<div class="card"><div class="card-label">✍️ TỰ ĐẶT CÂU HSK ${level}</div><div class="grammar-point">${g.point}</div><div class="grammar-struct">${g.structure}</div><div class="grammar-explanation">${g.explanation_vi}</div><div class="hskk-note">${g.hskk_note||'Tự tạo câu với cấu trúc'}</div><textarea id="grammar-input" class="translate-area" placeholder="Viết câu ví dụ của bạn..."></textarea><div class="btn-row"><button class="btn btn-primary" onclick="revealGrammar()">Xem mẫu</button><button class="btn btn-secondary" onclick="nextGrammar()">Điểm khác</button></div><div class="answer-box" id="grammar-answer"><div class="example-zh">${g.example_zh}</div><div class="example-pinyin">${g.example_pinyin}</div><div class="example-vi">${g.example_vi}</div>${s?`<div class="divider"></div><div class="example-zh">${s.zh}</div><div class="example-pinyin">${s.pinyin}</div><div class="example-vi">${s.vi}</div>`:''}</div><div class="srs-row" id="grammar-srs"><div class="srs-btn srs-0" onclick="doGrammarSRS('${g.id}',0)">Lại</div><div class="srs-btn srs-1" onclick="doGrammarSRS('${g.id}',1)">Khó</div><div class="srs-btn srs-2" onclick="doGrammarSRS('${g.id}',2)">OK</div><div class="srs-btn srs-3" onclick="doGrammarSRS('${g.id}',3)">Nhớ</div><div class="srs-btn srs-4" onclick="doGrammarSRS('${g.id}',4)">Giỏi</div><div class="srs-btn srs-4" style="border-color:#8e44ad" onclick="doGrammarSRS('${g.id}',5)">Thuộc</div></div></div>`;
+    }
+    updateStats();
+  }
+  function revealGrammar() { document.getElementById('grammar-answer')?.classList.add('visible'); document.getElementById('grammar-srs')?.classList.add('visible'); }
+  function nextGrammar() { state.grammarItem = getRandomGrammarItem(); renderGrammarTab(); }
+  function doGrammarSRS(id,q) { markSRS(id,q); state.grammarItem = getRandomGrammarItem(); showToast(`📘 ngữ pháp +${[1,2,3,4,5,6][q]} tokens`); renderGrammarTab(); }
+  function setGrammarMode(mode) { state.grammarMode = mode; state.grammarItem = getRandomGrammarItem(); save(); renderGrammarTab(); }
+
+  async function setLevel(level) {
+    state.level = level;
+    state.vocabSession = []; state.vocabIdx=0; state.grammarItem=null; state.showAnswer=false;
+    document.querySelectorAll('.level-btn').forEach((btn,i)=> btn.classList.toggle('active', [1,2,3,4,5][i] === level));
+    save();
+    if(state.vocab[level]?.length || state.grammar[level]?.length) render();
+    else await loadData(level, true);
+    render();
+    // preload others
+    [1,2,3,4,5].filter(l=>l!==level).forEach(l=>{ if(!state.vocab[l]?.length) loadData(l,false); });
+  }
+  function setTab(tab) {
+    state.tab = tab;
+    document.querySelectorAll('.nav-tab').forEach((el,i)=> el.classList.toggle('active', ['vocab','grammar'][i]===tab));
+    document.getElementById('tab-vocab').style.display = tab==='vocab' ? '' : 'none';
+    document.getElementById('tab-grammar').style.display = tab==='grammar' ? '' : 'none';
+    save();
+    render();
+  }
+  function render() { if(state.tab==='vocab') renderVocabTab(); else renderGrammarTab(); }
+  function confirmRefreshAll() {
+    if(confirm('Đặt lại tất cả thẻ ôn (giữ stats)?')) {
+      const allItems = [...(state.vocab[state.level]||[]), ...(state.grammar[state.level]||[])];
+      allItems.forEach(item=>{ if(state.srs[item.id]) { state.srs[item.id].nextDue = Date.now(); state.srs[item.id].interval = 0; } });
+      state.vocabSession=[]; state.vocabIdx=0; state.grammarItem=null;
+      save(); showToast('🔄 Đã đặt lại lịch ôn!'); render();
+    }
+  }
+  function showToast(msg) { const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000); }
+  function save() {
+    localStorage.setItem('hsk_srs_full', JSON.stringify(state.srs));
+    localStorage.setItem('hsk_stats_full', JSON.stringify(state.stats));
+    localStorage.setItem('hsk_session_full', JSON.stringify({level:state.level, tab:state.tab, vocabIdx:state.vocabIdx, vocabSession:state.vocabSession, grammarMode:state.grammarMode}));
+  }
+  function loadStorage() {
+    try {
+      const srs = localStorage.getItem('hsk_srs_full'); if(srs) state.srs = JSON.parse(srs);
+      const stats = localStorage.getItem('hsk_stats_full'); if(stats) state.stats = JSON.parse(stats);
+      const sess = localStorage.getItem('hsk_session_full'); if(sess) { const s=JSON.parse(sess); state.level=s.level||1; state.tab=s.tab||'vocab'; state.grammarMode=s.grammarMode||'translate'; state.vocabSession=s.vocabSession||[]; state.vocabIdx=s.vocabIdx||0; }
+    } catch(e){}
+  }
+
+  async function init() {
+    loadStorage();
+    const container = document.getElementById('level-bar-container');
+    [1,2,3,4,5].forEach(lvl => {
+      const btn = document.createElement('button');
+      btn.className = `level-btn ${state.level===lvl ? 'active' : ''}`;
+      btn.textContent = `HSK ${lvl === 1 ? '一' : lvl===2 ? '二' : lvl===3?'三':lvl===4?'四':'五'}`;
+      btn.onclick = () => setLevel(lvl);
+      container.appendChild(btn);
+    });
+    document.querySelectorAll('.nav-tab').forEach((b,i)=> b.classList.toggle('active', ['vocab','grammar'][i]===state.tab));
+    document.getElementById('tab-vocab').style.display = state.tab==='vocab' ? '' : 'none';
+    document.getElementById('tab-grammar').style.display = state.tab==='grammar' ? '' : 'none';
+    document.getElementById('repo-badge').textContent = `📁 ${GITHUB_USER}/${LESSONS_PATH}`;
+    await discoverLessonFiles();
+    await loadData(state.level, true);
+    [1,2,3,4,5].filter(l=>l!==state.level).forEach(l=>loadData(l,false));
+    render();
+  }
+  init();
+  window.setLevel = setLevel; window.setTab = setTab; window.revealVocab = revealVocab; window.skipVocab = skipVocab; window.doSRS = doSRS; window.clearCanvas = clearCanvas;
+  window.revealGrammar = revealGrammar; window.nextGrammar = nextGrammar; window.doGrammarSRS = doGrammarSRS; window.setGrammarMode = setGrammarMode; window.confirmRefreshAll = confirmRefreshAll;
+</script>
+</body>
+</html>
