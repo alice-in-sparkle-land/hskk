@@ -1,0 +1,452 @@
+[
+    {
+        "id": "hsk2_001",
+        "chinese": "准备",
+        "pinyin": "zhǔnbèi | Chữ 准 (chuẩn): nước (冫) đóng băng chim (隹). Chữ 备 (bị): chuẩn bị thức ăn trên ruộng (田) dưới mái nhà.",
+        "vietnamese": "chuẩn bị",
+        "example_zh": "为了下次去海边的“见海”仪式，我已经开始做准备了。首先，我要挑选最喜欢的曲谱，其次，要给那几只猫买好便携笼子。尽管准备工作很辛苦，但想到能在大海面前弹琴，我就感到心花怒放。",
+        "example_pinyin": "Wèile xià cì qù hǎibiān de “jiàn hǎi” yíshì, wǒ yǐjīng kāishǐ zuò zhǔnbèile. Shǒuxiān, wǒ yào tiāoxuǎn zuì xǐhuān de qǔpǔ, qícì, yào gěi nà jǐ zhī māo mǎi hǎo biànxié lóngzi. Jǐnguǎn zhǔnbèi gōngzuò hěn xīnkǔ, dàn xiǎngdào néng zài dàhǎi miànqián tánqín, wǒ jiù gǎndào xīnhuānùfàng.",
+        "example_vi": "Để chuẩn bị cho nghi thức 'Kiến Hải' lần tới, tôi đã bắt đầu chuẩn bị rồi. Trước hết, tôi phải chọn ra những bản nhạc yêu thích nhất, tiếp theo là mua lồng vận chuyển cho mấy chú mèo. Dù công tác chuẩn bị khá vất vả, nhưng nghĩ đến việc được đàn trước biển cả là tôi lại thấy hoa lòng nở rộ."
+    },
+    {
+        "id": "hsk2_002",
+        "chinese": "帮助",
+        "pinyin": "bāngzhù | Chữ 帮 (giúp): dùng vải (巾) may giày. Chữ 助 (trợ): dùng sức (力) gánh vác việc chung (且).",
+        "vietnamese": "giúp đỡ",
+        "example_zh": "在生活中，互帮互助能让我们的世界变得更美好。比如我出差时，邻居会帮忙照顾我的猫，而我也经常分享一些好吃的给他们。这种助人为乐的精神，不仅能增进邻里感情，还能让生活充满阳光。",
+        "example_pinyin": "Zài shēnghuó zhōng, hùbāng hùzhù néng ràng wǒmen de shìjiè biàn dé gèng měihǎo. Bǐrú wǒ chūchāi shí, línjū huì bāngmáng zhàogù wǒ de māo, ér wǒ yě jīngcháng fēnxiǎng yīxiē hǎochī de gěi tāmen. Zhè zhǒng zhùrénwéilè de jīngshén, bùjǐn néng zēngjìn línlǐ gǎnqíng, hái néng ràng shēnghuó chōngmǎn yángguāng.",
+        "example_vi": "Trong cuộc sống, việc giúp đỡ lẫn nhau giúp thế giới của chúng ta đẹp đẽ hơn. Ví dụ khi tôi đi công tác, hàng xóm sẽ giúp chăm sóc mèo, còn tôi cũng thường chia sẻ đồ ăn ngon cho họ. Tinh thần lấy việc giúp người làm niềm vui này không chỉ tăng cường tình cảm láng giềng mà còn giúp cuộc sống tràn đầy ánh nắng."
+    },
+    {
+        "id": "hsk2_003",
+        "chinese": "旅游",
+        "pinyin": "lǚyóu | Chữ 旅 (lữ): cờ và đoàn người. Chữ 游 (du): đứa trẻ (子) bơi dưới nước (氵) ở phương (方) xa.",
+        "vietnamese": "du lịch",
+        "example_zh": "我一直梦想着带上古筝去世界各地旅游。首先，我想去那些有山有水的地方找寻灵感，其次，我想在不同的小镇感受风土人情。尽管旅途可能会遇到不顺，但能看到大好河山，一切努力都是值得的。",
+        "example_pinyin": "Wǒ yīzhí mèngxiǎngzhe dàishàng gǔzhēng qù shìjiè gèdì lǚyóu. Shǒuxiān, wǒ xiǎng qù nàxiē yǒushān yǒushuǐ de dìfāng zhǎoxún línggǎn, qícì, wǒ xiǎng zài bùtóng de xiǎozhèn gǎnshòu fēngtǔrénqíng. Jǐnguǎn lǚtú kěnéng huì yù dào bùshùn, dàn néng kàn dào dàhǎo héshān, yīqiè nǔlì dōu shì zhídé de.",
+        "example_vi": "Tôi luôn mơ ước mang theo cây đàn tranh đi du lịch khắp nơi trên thế giới. Trước hết, tôi muốn đến những nơi sơn thủy hữu tình để tìm cảm hứng, tiếp theo là muốn cảm nhận phong tục tập quán ở những thị trấn khác nhau. Dù hành trình có thể gặp chút bất trắc, nhưng được ngắm nhìn non sông gấm vóc, mọi nỗ lực đều xứng đáng."
+    },
+    {
+        "id": "hsk2_004",
+        "chinese": "运动",
+        "pinyin": "yùndòng | Chữ 运 (vận): xe đi mang mây (云). Chữ 动 (động): dùng lực di chuyển mây.",
+        "vietnamese": "vận động",
+        "example_zh": "由于我平时总是坐着弹琴或工作，所以我非常重视体育运动。首先，每天早起跑步能让我精力充沛，其次，举重能锻炼我的意志力。只要我们坚持不懈，身体就会变得神采奕奕。",
+        "example_pinyin": "Yóuyú wǒ píngshí zǒng shì zuòzhe tánqín huò gōngzuò, suǒyǐ wǒ fēicháng zhòngshì tǐyù yùndòng. Shǒuxiān, měitiān zǎoqǐ pǎobù néng ràng wǒ jīnglì chōngpèi, qícì, jǔzhòng néng duànliàn wǒ de yìzhìlì. Zhǐyào wǒmen jiānchíbùxiè, shēntǐ jiù huì biàn dé shéncǎiyìyì.",
+        "example_vi": "Do bình thường tôi luôn ngồi chơi đàn hoặc làm việc, nên tôi rất coi trọng vận động thể thao. Trước hết, dậy sớm chạy bộ mỗi ngày giúp tôi tràn đầy năng lượng, tiếp theo là nâng tạ giúp rèn luyện ý chí. Chỉ cần chúng ta kiên trì không mệt mỏi, cơ thể sẽ trở nên thần thái rạng ngời."
+    },
+    {
+        "id": "hsk2_005",
+        "chinese": "笑",
+        "pinyin": "xiào | Chữ 笑 (cười): tre (竹) gặp gió lay động.",
+        "vietnamese": "cười",
+        "example_zh": "爱笑的人，运气往往都不会太差。每当我看到家里的猫为了抢一个纸箱而打闹时，我总会忍俊不禁。首先，笑容是最好的良药，其次，它能拉近人与人之间的距离。我们要学会微笑面对生活。",
+        "example_pinyin": "Ài xiào de rén, yùnqì wǎngwǎng dōu bù huì tài chà. Měi dāng wǒ kàn dào jiālǐ de māo wèile qiǎng yīgè zhǐxiāng ér dǎnào shí, wǒ zǒng huì rěnjùnbùjīn. Shǒuxiān, xiàoróng shì zuì hǎo de liángyào, qícì, tā néng lā jìn rén yǔ rén zhī jiān de jùlí. Wǒmen yào xuéhuì wēixiào miànduì shēnghuó.",
+        "example_vi": "Người hay cười vận may thường sẽ không quá tệ. Mỗi khi thấy mấy con mèo ở nhà nô đùa để tranh nhau cái thùng giấy, tôi luôn không nhịn được cười. Trước hết, nụ cười là liều thuốc tốt nhất, tiếp đến là nó giúp kéo gần khoảng cách giữa người với người."
+    },
+    {
+        "id": "hsk2_006",
+        "chinese": "便宜",
+        "pinyin": "piányi | Chữ 便 (tiện): người (亻) thay đổi (更). Chữ 宜 (nghi): mái nhà có thịt (且).",
+        "vietnamese": "rẻ",
+        "example_zh": "虽然在超市买猫罐头很便宜，但我更愿意亲手给猫做饭。首先，自己做的食物更加健康营养，其次，这种过程也很有趣。不仅如此，只要看到它们吃得心满意足，我就觉得乐在其中。",
+        "example_pinyin": "Suīrán zài chāoshì mǎi māo guàntóu hěn piányi, dàn wǒ gèng yuànyì qīnshǒu gěi māo zuòfàn. Shǒuxiān, zìjǐ zuò de shíwù gèngjiā jiànkāng yíngyǎng, qícì, zhè zhǒng guòchéng yě hěn yǒuqù. Bùjǐn rúcǐ, zhǐyào kàn dào tāmen chī dé xīnmǎnyìzú, wǒ jiù juédé lèzàiqízhōng.",
+        "example_vi": "Mặc dù mua pate đóng hộp ở siêu thị rất rẻ, nhưng tôi lại thích tự tay nấu ăn cho mèo hơn. Trước hết, thức ăn tự làm sẽ tốt cho sức khỏe hơn, tiếp đến là quá trình này cũng rất thú vị. Chỉ cần thấy chúng ăn một cách mãn nguyện là tôi thấy vui sướng trong đó rồi."
+    },
+    {
+        "id": "hsk2_007",
+        "chinese": "漂亮",
+        "pinyin": "piàoliang | Chữ 漂 (phiêu): nước (氵) làm sạch. Chữ 亮 (sáng): người đứng tỏa sáng.",
+        "vietnamese": "đẹp",
+        "example_zh": "大叻的风景真的非常漂亮，简直像吉卜力动画里的场景。首先，那里的阳光非常温柔，其次，漫山遍野的鲜花让人流连忘返。尽管我拍了许多照片，但那种如诗如画的美感是无法完全被捕捉的。",
+        "example_pinyin": "Dà lè de fēngjǐng zhēn de fēicháng piàoliang, jiǎnzhí xiàng jíbǔlì dònghuà lǐ de chǎngjǐng. Shǒuxiān, nàlǐ de yángguāng fēicháng wēnróu, qícì, mànshānyànyě de xiānhuā ràng rén liúliánwàngfǎn. Jǐnguǎn wǒ pāile xǔduō zhàopiàn, dàn nà zhǒng rúshīrúhuà de měigǎn shì wúfǎ wánquán bèi bǔzhuó de.",
+        "example_vi": "Phong cảnh Đà Lạt thật sự rất đẹp, cứ như thể cảnh phim Ghibli vậy. Trước hết, nắng ở đó rất dịu dàng, tiếp theo là hoa tươi phủ khắp núi đồi. Dù tôi đã chụp rất nhiều ảnh nhưng vẻ đẹp như thơ như họa đó không gì có thể ghi lại trọn vẹn được."
+    },
+    {
+        "id": "hsk2_008",
+        "chinese": "跳舞",
+        "pinyin": "tiàowǔ | Chữ 跳 (nhảy): chân đá triệu người. Chữ 舞 (múa): người cầm cành cây nhảy múa.",
+        "vietnamese": "nhảy múa",
+        "example_zh": "我最近开始学习古装舞蹈，这不仅能锻炼身体，还能提升气质。首先，舞蹈的动作非常优美，其次，配合古筝的乐声让人仿佛穿越了时空。只要我们全身心投入，生活就会变得翩翩起舞。",
+        "example_pinyin": "Wǒ zuìjìn kāishǐ xuéxí gǔzhuāng wǔdǎo, zhè bùjǐn néng duànliàn shēntǐ, hái néng tíshēng qìzhì. Shǒuxiān, wǔdǎo de dòngzuò fēicháng yōuměi, qícì, pèihé gǔzhēng de yuèshēng ràng rén fǎngfù chuānyuèle shíkōng. Zhǐyào wǒmen quánshēnxīn tóurù, shēnghuó jiù huì biàn dé piānpiānqǐwǔ.",
+        "example_vi": "Gần đây tôi bắt đầu học múa cổ trang, việc này không chỉ rèn luyện cơ thể mà còn nâng cao khí chất. Trước hết, động tác múa rất ưu nhã, tiếp theo là kết hợp với tiếng đàn tranh khiến người ta như xuyên không. Chỉ cần chúng ta dốc toàn tâm toàn ý, cuộc sống sẽ trở nên bay bổng."
+    },
+    {
+        "id": "hsk2_009",
+        "chinese": "欢迎",
+        "pinyin": "huānyíng | Chữ 欢 (vui): người gặp chim hót vui. Chữ 迎 (đón): đi đón người ngưỡng mộ.",
+        "vietnamese": "hoan nghênh",
+        "example_zh": "非常欢迎你来我家坐坐，顺便听听我新学的曲子。首先，我会准备最好的茶水，其次，你可以和我的猫一起玩耍。虽然我的家不大，但由于有朋友的到来，这里总是充满欢声笑语。",
+        "example_pinyin": "Fēicháng huānyíng nǐ lái wǒjiā zuò zuò, shùnbiàn tīng tīng wǒ xīn xué de qǔzi. Shǒuxiān, wǒ huì zhǔnbèi zuì hǎo de cháshuǐ, qícì, nǐ kěyǐ hé wǒ de māo yīqǐ wánshuǎ. Suīrán wǒ de jiā bù dà, dàn yóuyú yǒu péngyǒu de dàolái, zhèlǐ zǒng shì chōngmǎn huānshēngxiàoyǔ.",
+        "example_vi": "Rất hoan nghênh bạn đến nhà tôi chơi, sẵn tiện nghe bản nhạc tôi mới học. Trước hết tôi sẽ chuẩn bị trà ngon nhất, tiếp đến bạn có thể chơi cùng mấy chú mèo. Tuy nhà tôi không lớn, nhưng nơi đây luôn tràn ngập tiếng cười nói vui vẻ."
+    },
+    {
+        "id": "hsk2_010",
+        "chinese": "回答",
+        "pinyin": "huídá | Chữ 回 (về). Chữ 答 (đáp): dùng tre (竹) giải đáp vấn đề (合).",
+        "vietnamese": "trả lời",
+        "example_zh": "当孩子问我什么是幸福时，我给出了我的回答。首先，幸福就是能做自己喜欢的事，其次，就是有家人的陪伴。尽管每个人的答案不同，但只要心中有爱，生活就会圆圆满满。",
+        "example_pinyin": "Dāng háizi wèn wǒ shénme shì xìngfú shí, wǒ gěichūle wǒ de huídá. Shǒuxiān, xìngfú jiùshì néng zuò zìjǐ xǐhuān de shì, qícì, jiùshì yǒu jiārén de péibàn. Jǐnguǎn měi gèrén de dá'àn bùtóng, dàn zhǐyào xīnzhōng yǒu ài, shēnghuó jiù huì yuányuánmǎnmǎn.",
+        "example_vi": "Khi đứa trẻ hỏi tôi hạnh phúc là gì, tôi đã đưa ra câu trả lời của mình. Trước hết, hạnh phúc là được làm điều mình thích, tiếp theo là có gia đình ở bên. Chỉ cần trong lòng có yêu thương, cuộc sống sẽ luôn tròn đầy viên mãn."
+    },
+    {
+        "id": "hsk2_011",
+        "chinese": "唱歌",
+        "pinyin": "chànggē | Chữ 唱 (hát): miệng (口) hát suốt ngày. Chữ 歌 (ca): miệng mở to (欠) hát theo nhịp.",
+        "vietnamese": "ca hát",
+        "example_zh": "由于平时工作节奏很快，我发现唱歌是缓解压力的最好方式。首先，大声唱出来能让人心情舒畅，其次，优美的旋律能让人暂时忘却烦恼。尽管我唱得不是特别专业，但这种自得其乐的感觉才是最珍贵的。",
+        "example_pinyin": "Yóuyú píngshí gōngzuò jiézòu hěn kuài, wǒ fāxiàn chànggē shì huǎnjiě yālì de zuì hǎo fāngshì. Shǒuxiān, dàshēng chàng chūlái néng ràng rén xīnqíng shūchàng, qícì, yōuměi de xuánlǜ néng ràng rén zànshí wàngquè fánnǎo. Jǐnguǎn wǒ chàng dé bùshì tèbié zhuānyè, dàn zhè zhǒng zìdéqílè de gǎnjué cáishì zuì zhēnguì de.",
+        "example_vi": "Do nhịp sống công việc nhanh, tôi thấy ca hát là cách tốt nhất để giảm áp lực. Trước hết, hát to giúp tâm trạng thoải mái, tiếp theo là giai điệu giúp tạm quên phiền muộn. Mặc dù không chuyên nghiệp, nhưng cảm giác tự vui mới là quý giá nhất."
+    },
+    {
+        "id": "hsk2_012",
+        "chinese": "路",
+        "pinyin": "lù | Chữ 路 (đường): chân (足) đi qua mỗi nơi.",
+        "vietnamese": "con đường",
+        "example_zh": "俗话说，世上本没有路，走的人多了也便成了路。首先，我们要勇敢地迈出第一步，其次，在遇到困难时不要轻易回头。只要我们目标明确并坚持不懈，最后一定能走出一条康庄大道。",
+        "example_pinyin": "Súhuà shuō, shìshàng běn méiyǒu lù, zǒu de rén duōle yě biàn chéngle lù. Shǒuxiān, wǒmen yào yǒnggǎn de mài chū dì yī bù, qícì, zài yù dào kùnnán shí bùyào qīngyì huítóu. Zhǐyào wǒmen mùbiāo míngquè bìng jiānchí bùxiè, zuìhòu yīdìng néng zǒu chū yītiáo kāngzhuāng dàdào.",
+        "example_vi": "Tục ngữ có câu, trên đời vốn làm gì có đường, người ta đi mãi thì thành đường thôi. Trước hết phải dũng cảm bước đi, tiếp theo là gặp khó khăn đừng quay đầu. Chỉ cần kiên trì, nhất định sẽ đi ra được một con đường thênh thang rộng mở."
+    },
+    {
+        "id": "hsk2_013",
+        "chinese": "休息",
+        "pinyin": "xiūxi | Chữ 休 (nghỉ): người (亻) dựa cây (木). Chữ 息 (tức): hơi thở qua tim (心).",
+        "vietnamese": "nghỉ ngơi",
+        "example_zh": "只有懂得休息的人，才能更好地工作。首先，充足的睡眠能保证我们的大脑清醒，其次，适当的放松能提高效率。不仅如此，保持劳逸结合的生活习惯，是我们每个人通往成功的基石。",
+        "example_pinyin": "Zhǐyǒu dǒngdé xiūxi de rén, cáinéng gèng hǎo de gōngzuò. Shǒuxiān, chōngzú de shuìmián néng bǎozhèng wǒmen de dànǎo qīngxǐng, qícì, shìdàng de fàngsōng néng tígāo xiàolǜ. Bùjǐn rúcǐ, bǎochí láoyìjiéhé de shēnghuó xíguàn, shì wǒmen měi gèrén tōng wǎng chénggōng de jīshí.",
+        "example_vi": "Chỉ có những người biết nghỉ ngơi mới có thể làm việc tốt hơn. Giấc ngủ đầy đủ giúp não tỉnh táo, thư giãn hợp lý giúp nâng cao hiệu suất. Giữ thói quen làm việc và nghỉ ngơi hợp lý chính là tảng đá nền móng của thành công."
+    },
+    {
+        "id": "hsk2_014",
+        "chinese": "身体",
+        "pinyin": "shēntǐ | Chữ 身 (thân). Chữ 体 (thể): người (亻) và gốc (本).",
+        "vietnamese": "sức khỏe",
+        "example_zh": "身体是革命的本钱，我们要时刻关注自己的健康。首先，科学的饮食是必不可少的，其次，定期的锻炼也至关重要。只要我们坚持良好的生活方式，就能每天生龙活虎，充满干劲。",
+        "example_pinyin": "Shēntǐ shì gémìng de běnqián, wǒmen yào shíkè guānzhù zìjǐ de jiànkāng. Shǒuxiān, kēxué de yǐnshí shì bì bùkě shǎo de, qícì, dìngqī de duànliàn yě zhìguānzhòngyào. Zhǐyào wǒmen jiānchí liánghǎo de shēnghuó fāngshì, jiù néng měitiān shēnglónghuǒhǔ, chōngmǎn gànjìn.",
+        "example_vi": "Sức khỏe là vốn quý nhất, phải luôn quan tâm đến nó. Ăn uống khoa học là không thể thiếu, tập luyện định kỳ cũng rất quan trọng. Chỉ cần kiên trì lối sống tốt thì mỗi ngày đều tràn đầy sinh lực."
+    },
+    {
+        "id": "hsk2_015",
+        "chinese": "时间",
+        "pinyin": "shíjiān | Chữ 时 (thời). Chữ 间 (gian): nắng qua cửa (门).",
+        "vietnamese": "thời gian",
+        "example_zh": "由于时间一去不复返，所以我们更要珍惜当下的每一秒。首先，要学会合理规划工作，其次，要减少无谓的社交浪费。不仅如此，只要能做到寸阴必争，我们就一定能在未来的日子里成就更好的自己。",
+        "example_pinyin": "Yóuyú shíjiān yī qù bù fù fǎn, suǒyǐ wǒmen gèng yào zhēnxī dāngxià de měi yī miǎo. Shǒuxiān, yào xuéhuì hélǐ guīhuà gōngzuò, qícì, yào jiǎnshǎo wúwèi de shèjiāo làngfèi. Bùjǐn rúcǐ, zhǐyào néng zuò dào cùnyīnbìzhēng, wǒmen jiù yīdìng néng zài wèilái de rìzi lǐ chéngjiù gèng hǎo de zìjǐ.",
+        "example_vi": "Thời gian một đi không trở lại, nên càng phải trân trọng. Phải học cách quy hoạch công việc, giảm lãng phí vô nghĩa. Chỉ cần tranh thủ từng tấc thời gian, nhất định sẽ thành tựu được phiên bản tốt hơn của chính mình."
+    },
+    {
+        "id": "hsk2_016",
+        "chinese": "希望",
+        "pinyin": "xīwàng | Chữ 希 (hy vọng). Chữ 望 (ngóng): nhìn trăng xa.",
+        "vietnamese": "hy vọng",
+        "example_zh": "生活虽然有时会遇到挫折，但我们永远不要放弃希望。首先，希望像灯塔一样指引我们前进，其次，它能给我们战胜困难的力量。只要心中充满阳光，生活总会柳暗花明。",
+        "example_pinyin": "Shēnghuó suīrán yǒushí huì yù dào cuòzhé, dàn wǒmen yǒngyuǎn bùyào fàngqì xīwàng. Shǒuxiān, xīwàng xiàng dēngtǎ yīyàng zhǐyǐn wǒmen qiánjìn, qícì, tā néng gěi wǒmen zhànshèng kùnnán de lìliàng. Zhǐyào xīnzhōng chōngmǎn yángguāng, shēnghuó zǒng huì liǔ'ànhuāmíng.",
+        "example_vi": "Cuộc sống đôi khi thất bại, nhưng vĩnh viễn không được từ bỏ hy vọng. Hy vọng giống như ngọn hải đăng chỉ dẫn, mang lại sức mạnh chiến thắng khó khăn. Chỉ cần trong lòng tràn đầy ánh nắng, cuộc sống nhất định có lúc 'sau cơn mưa trời lại sáng'."
+    },
+    {
+        "id": "hsk2_017",
+        "chinese": "送",
+        "pinyin": "sòng | Chữ 送 (tặng): đi (辶) mang quà.",
+        "vietnamese": "tặng / tiễn",
+        "example_zh": "送礼不在于贵重，而在于那份心意。首先，我们要了解对方真正的需求，其次，要在适当的时机表达关心。正如古话所说，“千里送鹅毛，礼轻情意重”，真诚才是最重要的。",
+        "example_pinyin": "Sònglǐ bù zàiyú guìzhòng, ér zàiyú nà fèn xīnyì. Shǒuxiān, wǒmen yào liǎojiě duìfāng zhēnzhèng de xūqiú, qícì, yào zài shìdàng de shíjī biǎodá guānxīn. Zhèngrú gǔhuà suǒ shuō,“qiānlǐ sòng émáo, lǐ qīng qíngyì zhòng”, zhēnchéng cáishì zuì zhòngyào de.",
+        "example_vi": "Tặng quà không nằm ở sự quý giá, mà ở tấm lòng. Phải hiểu nhu cầu của đối phương và bày tỏ sự quan tâm đúng lúc. Như câu: 'Đường xa tặng lông ngỗng, quà nhẹ tình ý nặng', sự chân thành là quan trọng nhất."
+    },
+    {
+        "id": "hsk2_018",
+        "chinese": "穿",
+        "pinyin": "chuān | Chữ 穿 (mặc): chuột đào hang chui qua.",
+        "vietnamese": "mặc",
+        "example_zh": "虽然现在的衣服款式繁多，但我认为穿得大方得体最重要。首先，我们要根据场合来选择合适的着装，其次，要注重色彩的搭配。只要我们穿出自信，自然就会显得神采飞扬。",
+        "example_pinyin": "Suīrán xiànzài de yīfú kuǎnshì fánduō, dàn wǒ rènwéi chuān dé dàfāng détǐ zuì zhòngyào. Shǒuxiān, wǒmen yào gēnjù chǎnghé lái xuǎnzé héshì de zhuózhuāng, qícì, yào zhùzhòng sècǎi de dāpèi. Zhǐyào wǒmen chuān chū zìxìn, zìrán jiù huì xiǎn dé shéncǎifēiyáng.",
+        "example_vi": "Quần áo đa dạng nhưng mặc phóng khoáng và phù hợp là quan trọng nhất. Cần căn cứ vào hoàn cảnh chọn trang phục, chú trọng phối màu. Tự tin sẽ giúp thần thái rạng ngời."
+    },
+    {
+        "id": "hsk2_019",
+        "chinese": "洗",
+        "pinyin": "xǐ | Chữ 洗 (rửa): nước (氵) làm sạch.",
+        "vietnamese": "rửa / giặt",
+        "example_zh": "保持清洁的生活习惯，能让我们的心情变得愉悦。首先，每天洗个热水澡能洗掉一身的疲惫，其次，把家里收拾得干干净净也非常治愈。只要我们懂得去旧布新，生活就会时刻充满新鲜感。",
+        "example_pinyin": "Bǎochí qīngjié de shēnghuó xíguàn, néng ràng wǒmen de xīnqíng biàn dé yúyuè. Shǒuxiān, měitiān xǐ gè rèshuǐzǎo néng xǐ diào yīshēn de píbèi, qícì, bǎ jiālǐ shōushí dé gāngāng jìngjìng yě fēicháng zhìyù. Zhǐyào wǒmen dǒngdé qùjiùbùxīn, shēnghuó jiù huì shíkè chōngmǎn xīnxiāngǎn.",
+        "example_vi": "Sạch sẽ giúp tâm trạng vui vẻ. Tắm nước nóng giúp rửa sạch mệt mỏi, dọn dẹp nhà cửa sạch bóng cũng rất chữa lành. Biết cách bỏ cũ đón mới giúp cuộc sống luôn tươi mới."
+    },
+    {
+        "id": "hsk2_020",
+        "chinese": "离",
+        "pinyin": "lí | Chữ 离 (rời): chim (隹) bỏ bẫy.",
+        "vietnamese": "cách / rời",
+        "example_zh": "虽然我现在离家很远，但心始终和家人在一起。首先，我们要学会独立生活，其次，要经常给父母打个电话报平安。无论相隔多远，这份浓浓的亲情是更古不变的。",
+        "example_pinyin": "Suīrán wǒ xiànzài lí jiā hěn yuǎn, dàn xīn shǐzhōng hé jiārén zài yīqǐ. Shǒuxiān, wǒmen yào xuéhuì dúlì shēnghuó, qícì, yào jīngcháng gěi fùmǔ dǎ gè diànhuà bào píng'ān. Wúlùn xiānggé duō yuǎn, zhè fèn nóngnóng de qīnqíng shì gènggǔ bùbiàn de.",
+        "example_vi": "Ở cách nhà xa nhưng lòng vẫn hướng về gia đình. Phải học cách sống độc lập, gọi điện báo bình an cho cha mẹ. Bất kể cách xa bao nhiêu, tình thân vĩnh viễn không thay đổi."
+    },
+    {
+        "id": "hsk2_021",
+        "chinese": "跑步",
+        "pinyin": "pǎobù | Chữ 跑 (chạy). Chữ 步 (bước): chân bước.",
+        "vietnamese": "chạy bộ",
+        "example_zh": "虽然我天生不是运动的料，但我还是坚持每天早起跑步。首先，新鲜的空气能让大脑清醒，其次，出汗的过程非常解压。不仅如此，只要我们持之以恒，身材自然会变得越来越苗条。",
+        "example_pinyin": "Suīrán wǒ tiānshēng bùshì yùndòng de liào, dàn wǒ háishì jiānchí měitiān zǎoqǐ pǎobù. Shǒuxiān, xīnxiān de kōngqì néng ràng dànǎo qīngxǐng, qícì, chūhàn de guòchéng fēicháng jiěyā. Bùjǐn rúcǐ, zhǐyào wǒmen chízhīyǐhéng, shēncái zìrán huì biàn dé yuè lái yuè miáotiáo.",
+        "example_vi": "Không có tố chất thể thao nhưng tôi vẫn kiên trì chạy bộ. Không khí trong lành giúp tỉnh táo, đổ mồ hôi giúp giải tỏa áp lực. Trì chí bền bỉ sẽ giúp vóc dáng thon gọn."
+    },
+    {
+        "id": "hsk2_022",
+        "chinese": "便宜",
+        "pinyin": "piányi | Chữ 便 (tiện). Chữ 宜 (nghi).",
+        "vietnamese": "rẻ",
+        "example_zh": "由于现在的年轻人比较务实，大家买东西不仅看价格是否便宜，而且更看重质量。首先，我们要学会理性消费，其次，不要盲目跟风。正如古话所说，“一分钱一分货”，追求性价比才是聪明的做法。",
+        "example_pinyin": "Yóuyú xiànzài de niánqīngrén bǐjiào wùshí, dàjiā mǎi dōngxī bùjǐn kàn jiàgé shìfǒu piányí, érqiě gèng kànzhòng zhìliàng. Shǒuxiān, wǒmen yào xuéhuì lǐxìng xiāofèi, qícì, bùyào mángmù gēnfēng. Zhèngrú gǔhuà suǒ shuō, “yī fēn qián yī fēn huò”, zhuīqiú xìngjiàbǐ cáishì cōngmíng de zuòfǎ.",
+        "example_vi": "Giới trẻ thực tế, mua đồ không chỉ xem rẻ mà còn coi trọng chất lượng. Phải tiêu dùng lý tính, không chạy theo phong trào. 'Tiền nào của nấy', chọn thứ phù hợp mới là thông minh."
+    },
+    {
+        "id": "hsk2_023",
+        "chinese": "生病",
+        "pinyin": "shēngbìng | Chữ 生 (sinh). Chữ 病 (bệnh).",
+        "vietnamese": "ngã bệnh",
+        "example_zh": "人生在世，生病是在所难免的，关键是要保持好心态。首先，我们要遵医嘱按时吃药，其次，要保证充足的休息和营养。只要我们积极面对，身体很快就能康复如初。",
+        "example_pinyin": "Rénshēng zàishì, shēngbìng shì zàisuǒnánmiǎn de, guānjiàn shì yào bǎochí hǎo xīntài. Shǒuxiān, wǒmen yào zūn yīzhǔ ànshí chīyào, qícì, yào bǎozhèng chōngzú de xiūxī hé yíngyǎng. Zhǐyào wǒmen jījí miànduì, shēntǐ hěn kuài jiù néng kāngfù rúchū.",
+        "example_vi": "Ốm đau khó tránh, mấu chốt là giữ tâm thái tốt. Uống thuốc đúng giờ, đảm bảo nghỉ ngơi và dinh dưỡng. Tích cực đối diện giúp cơ thể nhanh hồi phục."
+    },
+    {
+        "id": "hsk2_024",
+        "chinese": "意思",
+        "pinyin": "yìsi | Chữ 意 (ý): tiếng tim. Chữ 思 (tư): não và tim.",
+        "vietnamese": "thú vị",
+        "example_zh": "虽然很多人觉得学习外语很枯燥，但我发现这其实是一件很有意思的事。首先，你可以了解不同的文化背景，其次，能交到来自世界各地的朋友。这种博大精深的学问，需要我们用心去体会。",
+        "example_pinyin": "Suīrán hěnduō rén juédé xuéxí wàiyǔ hěn kūzào, dàn wǒ fāxiàn zhè qíshí shì yī jiàn hěn yǒuyìsi de shì. Shǒuxiān, nǐ kěyǐ liǎojiě bùtóng de wénhuà bèijǐng, qícì, néng jiāo dào láizì shìjiè gèdì de péngyǒu. Zhè zhǒng bódàjīngshēn de xuéwèn, xūyào wǒmen yòngxīn qù tǐhuì.",
+        "example_vi": "Học ngoại ngữ rất thú vị. Có thể tìm hiểu văn hóa, kết bạn khắp nơi. Học vấn sâu sắc cần dùng tâm cảm nhận."
+    },
+    {
+        "id": "hsk2_025",
+        "chinese": "快乐",
+        "pinyin": "kuàilè | Chữ 快 (vui). Chữ 乐 (lạc).",
+        "vietnamese": "vui vẻ",
+        "example_zh": "什么是快乐？我个人认为，能和志同道合的朋友聚在一起就是快乐。首先，我们可以漫无目的地聊天，其次，可以一起分享生活中的趣事。这种无忧无虑的时光，才是一个人最大的财富。",
+        "example_pinyin": "Shénme shì kuàilè? Wǒ gèrén rènwéi, néng hé zhìtóngdàoé de péngyǒu jù zài yīqǐ jiùshì kuàilè. Shǒuxiān, wǒmen kěyǐ mànwúmùdì de liáotiān, qícì, kěyǐ yīqǐ fēnxiǎng shēnghuó zhōng de qùshì. Zhè zhǒng wúyōuwúlǜ de shíguāng, cái shì yīgè rén zuìdà de cáifù.",
+        "example_vi": "Hạnh phúc là tụ tập cùng bạn bè cùng chí hướng. Có thể tán gẫu, chia sẻ chuyện thú vị. Khoảng thời gian không lo nghĩ là tài sản lớn nhất."
+    },
+    {
+        "id": "hsk2_026",
+        "chinese": "准备",
+        "pinyin": "zhǔnbèi | Chữ 准 (chuẩn). Chữ 备 (bị).",
+        "vietnamese": "chuẩn bị",
+        "example_zh": "如果你想在演讲中脱颖而出，首先要做好充分的准备。不仅要查阅大量的资料，而且要反复练习自己的表达。只要准备得万无一失，当机会来临时，你就能自信地展现自我。",
+        "example_pinyin": "Rúguǒ nǐ xiǎng zài yǎnjiǎng zhōng tuōyǐng'érchū, shǒuxiān yào zuò hǎo chōngfèn de zhǔnbèi. Bùjǐn yào cháyuè dàliàng de zīliào, érqiě yào fǎnfù liànxí zìjǐ de biǎodá. Zhǐyào zhǔnbèi dé wànwúyīshī, dāng jīhuì láilín shí, nǐ jiù néng zìxìn de zhǎnxiàn zìwǒ.",
+        "example_vi": "Muốn thuyết trình nổi bật phải chuẩn bị đầy đủ. Phải tra cứu tư liệu, luyện tập nhiều lần. Chuẩn bị 'vạn vô nhất thất' giúp tự tin thể hiện."
+    },
+    {
+        "id": "hsk2_027",
+        "chinese": "洗澡",
+        "pinyin": "xǐzǎo | Chữ 洗 (rửa). Chữ 澡 (tắm).",
+        "vietnamese": "tắm",
+        "example_zh": "忙碌了一整天后，洗个热水澡是最惬意的享受。首先，温水能洗去一身的疲惫，其次，这能让我们静下心来反思这一天的收获。这种焕然一新的感觉，能让我们第二天重新充满活力。",
+        "example_pinyin": "Mánglùle yī zhěng tiānhòu, xǐ gè rèshuǐzǎo shì zuì qièyì de xiǎngshòu. Shǒuxiān, wēnshuǐ néng xǐ qù yīshēn de píbèi, qícì, zhè néng ràng wǒmen jìng xià xīn lái fǎnsī zhè yītiān de shōuhuò. Zhè zhǒng huànrán-yīxīn de gǎnjué, néng ràng wǒmen dì èr tiān chóngxīn chōngmǎn huólì.",
+        "example_vi": "Tắm nước nóng giúp rửa sạch mệt mỏi, giúp tĩnh tâm suy ngẫm. Cảm giác 'hoán nhiên nhất tân' giúp tràn đầy sức sống ngày hôm sau."
+    },
+    {
+        "id": "hsk2_028",
+        "chinese": "欢迎",
+        "pinyin": "huānyíng | Chữ 欢 (vui). Chữ 迎 (đón).",
+        "vietnamese": "chào mừng",
+        "example_zh": "非常欢迎大家来到我的家乡做客，我会带你们领略那里的风土人情。首先，我们要品尝当地最有名的美食，其次，要去看看那些古老的建筑。尽管相处时间有限，但我会尽地主之谊，让大家玩得开心。",
+        "example_pinyin": "Fēicháng huānyíng dàjiā láidào wǒ de jiāxiāng zuòkè, wǒ huì dài nǐmen lǐnglüè nàlǐ de fēngtǔrénqíng. Shǒuxiān, wǒmen yào pǐncháng dāngdì zuì yǒumíng de měishí, qícì, yào qù kàn kàn nàxiē gǔlǎo de jiànzhù. Jǐnguǎn xiāngchǔ shíjiān yǒuxiàn, dàn wǒ huì jìn dìzhǔzhīyì, ràng dàjiā wán dé kāixīn.",
+        "example_vi": "Hoan nghênh mọi người đến quê tôi. Sẽ cùng thưởng thức món ngon, ngắm kiến trúc cổ. Sẽ làm tốt 'nghĩa vụ chủ nhà' để mọi người vui vẻ."
+    },
+    {
+        "id": "hsk2_029",
+        "chinese": "走路",
+        "pinyin": "zǒulù | Chữ 走 (đi). Chữ 路 (đường).",
+        "vietnamese": "đi bộ",
+        "example_zh": "由于我住的地方离公司不远，所以我更喜欢每天走路上下班。首先，这能呼吸新鲜空气，其次，这是一中非常环保的运动方式。只要我们脚踏实地地走好每一步，心情自然会变得很开朗。",
+        "example_pinyin": "Yóuyú wǒ zhù de dìfāng lí gōngsī bù yuǎn, suǒyǐ wǒ gèng xǐhuān měitiān zǒulù shàngxià bān. Shǒuxiān, zhè néng hūxī xīnxiān kōngqì, qícì, zhè shì yīzhǒng fēicháng huánbǎo de yùndòng fāngshì. Zhǐyào wǒmen jiǎotàshídì de zǒu hǎo měi yī bù, xīnqíng zìrán huì biàn dé hěn kāilǎng.",
+        "example_vi": "Nhà gần công ty nên thích đi bộ. Giúp hít thở không khí trong lành, vận động thân thiện môi trường. Bước tốt từng bước, tâm trạng sẽ cởi mở."
+    },
+    {
+        "id": "hsk2_030",
+        "chinese": "题",
+        "pinyin": "tí | Chữ 题 (đề): đầu (页) của đúng (是).",
+        "vietnamese": "vấn đề",
+        "example_zh": "这次考试的题虽然有点儿难，但只要我们冷静思考，就一定能找到答案。首先，要仔细阅读题干，其次，要学会举一反三。不仅如此，平时我们要多做练习，这样才能在考场上游刃有余。",
+        "example_pinyin": "Zhè cì kǎoshì de tí suīrán yǒudiǎn er nán, dàn zhǐyào wǒmen lěngjìng sīkǎo, jiù yīdìng néng zhǎodào dá'àn. Shǒuxiān, yào zǐxì yuèdú tígàn, qícì, yào xuéhuì jǔyīfǎnsān. Bùjǐn rúcǐ, píngshí wǒmen yào duō zuò liànxí, zhèyàng cáinéng zài kǎochǎng shàng yóurènyǒuyú.",
+        "example_vi": "Đề thi hơi khó nhưng bình tĩnh sẽ tìm thấy đáp án. Phải đọc kỹ đề, học cách 'cử nhất phản tam'. Luyện tập nhiều giúp làm bài dễ dàng."
+    },
+    {
+        "id": "hsk2_031",
+        "chinese": "报纸",
+        "pinyin": "bàozhǐ | Chữ 报 (báo). Chữ 纸 (giấy).",
+        "vietnamese": "tờ báo",
+        "example_zh": "在这个数字化时代，虽然看报纸的人越来越少了，但我依然觉得纸质阅读很有魅力。首先，看报纸能让我们静下心来深度思考，其次，它没有电子产品的辐射。只要我们养成博览群书的习惯，心中自然会装满智慧。",
+        "example_pinyin": "Zài zhège shùzìhuà shídài, suīrán kàn bàozhǐ de rén yuè lái yuè shǎole, dàn wǒ yīrán juédé zhǐzhì yuèdú hěn mǒulì. Shǒuxiān, kàn bàozhǐ néng ràng wǒmen jìng xià xīn lái shēndù sīkǎo, qícì, tā méiyǒu diànzǐ chǎnpǐn de fúshè. Zhǐyào wǒmen yǎngchéng bólǎnqúnshū de xíguàn, xīnzhōng zìrán huì zhuāng mǎn zhìhuì.",
+        "example_vi": "Người đọc báo ít đi nhưng đọc trên giấy vẫn sức hút. Giúp tĩnh tâm suy nghĩ, không có bức xạ điện tử. Đọc rộng hiểu nhiều giúp tâm trí đầy trí tuệ."
+    },
+    {
+        "id": "hsk2_032",
+        "chinese": "唱歌",
+        "pinyin": "chànggē | Chữ 唱 (hát). Chữ 歌 (ca).",
+        "vietnamese": "hát",
+        "example_zh": "由于我唱歌总是跑调，朋友们开玩笑说我唱歌是“要钱还是要命”。虽然我的嗓音不是天籁之音，但我依然热爱在淋浴时大声高歌。首先，这是一种极好的放松方式，其次，开心才是最重要的，不是吗？",
+        "example_pinyin": "Yóuyú wǒ chànggē zǒng shì pǎodiào, péngyǒumen kāiwánxiào shuō wǒ chànggē shì “yào qián háishì yàomìng”. Suīrán wǒ de sǎngyīn bùshì tiānlài zhī yīn, dàn wǒ yīrán rè'ài zài línyù shí dàshēng gāogē. Shǒuxiān, zhè shì yīzhǒng jí hǎo de fàngsōng fāngshì, qícì, kāixīn cáishì zuì zhòngyào de, bùshì ma?",
+        "example_vi": "Hát hay lạc tông nhưng vẫn đam mê hát lúc tắm. Đây là cách thư giãn cực tốt, vui vẻ là quan trọng nhất."
+    },
+    {
+        "id": "hsk2_033",
+        "chinese": "懂",
+        "pinyin": "dǒng | Chữ 懂 (hiểu): tim (忄) hiểu rõ.",
+        "vietnamese": "hiểu",
+        "example_zh": "在沟通的过程中，比起“听见”，更重要的是“听懂”。首先，我们要学会换位思考，其次，要耐心地听对方把话说完。只要彼此能够真诚相待，很多矛盾就会化为乌有。",
+        "example_pinyin": "Zài gōutōng de guòchéng zhōng, bǐ qǐ “tīngjiàn”, gèng zhòngyào de shì “tīng dǒng”. Shǒuxiān, wǒmen yào xuéhuì huànwèi sīkǎo, qícì, yào nàixīn de tīng duìfāng bǎ huà shuō wán. Zhǐyào bǐcǐ nénggòu zhēnchéng xiāngdài, hěnduō máodùn jiù huì huà wéi wūyǒu.",
+        "example_vi": "'Nghe hiểu' quan trọng hơn 'nghe thấy'. Phải học cách hoán vị tư duy, kiên nhẫn nghe hết câu. Chân thành đối đãi giúp mâu thuẫn tan biến."
+    },
+    {
+        "id": "hsk2_034",
+        "chinese": "对",
+        "pinyin": "duì | Chữ 对 (đúng).",
+        "vietnamese": "đúng / đối với",
+        "example_zh": "对生活保持好奇心，是保持年轻的秘诀。首先，好奇心能让我们不断学习新事物，其次，它能给生活增添无穷的乐趣。不仅如此，只要我们积极进取，每一天都会过得非常有意义。",
+        "example_pinyin": "Duì shēnghuó bǎochí hàoqí xīn, shì bǎochí niánqīng de mìjué. Shǒuxiān, hàoqí xīn néng ràng wǒmen bùduàn xuéxí xīn shìwù, qícì, tā néng gěi shēnghuó zēngtiān wúqióng de lèqù. Bùjǐn rúcǐ, zhǐyào wǒmen jījí jìnqǔ, měi yītiān dūhuì guò dé fēicháng yǒu yìyì.",
+        "example_vi": "Đối với cuộc sống, tò mò chính là bí quyết trẻ lâu. Giúp không ngừng học điều mới, thêm niềm vui vô tận. Tích cực cầu tiến giúp mỗi ngày ý nghĩa."
+    },
+    {
+        "id": "hsk2_035",
+        "chinese": "非常",
+        "pinyin": "fēicháng | Chữ 非 (phi). Chữ 常 (thường).",
+        "vietnamese": "rất",
+        "example_zh": "我非常喜欢在周末去郊外远足，感受大自然的魅力。首先，郊外的空气清新宜人，其次，迷人的景色让人心旷神怡。尽管路途有些遥远，但看到那一抹绿色，所有的疲劳都消失了。",
+        "example_pinyin": "Wǒ fēicháng xǐhuān zài zhōumò qù jiāowài yuǎnzú, gǎnshòu dàzìrán de mèlì. Shǒuxiān, jiāowài de kōngqì qīngxīn yírén, qícì, mírén de jǐngsè ràng rén xīnkuàngshényí. Jǐnguǎn lùtú yǒuxiē yáoyuǎn, dàn kàn dào nà yīmǒ lǜsè, suǒyǒu de píláo dōu xiāoshīle.",
+        "example_vi": "Rất thích dã ngoại cuối tuần. Không khí trong lành, phong cảnh thư thái. Nhìn thấy màu xanh giúp mệt mỏi tan biến."
+    },
+    {
+        "id": "hsk2_036",
+        "chinese": "服务员",
+        "pinyin": "fúwùyuán | Chữ 服 (phục). Chữ 务 (vụ). Chữ 员 (viên).",
+        "vietnamese": "nhân viên phục vụ",
+        "example_zh": "优秀的服务员不仅要有专业的技能，更要有热情的态度。首先，要真诚地迎接每一位顾客，其次，要能细心地察觉客人的需求。这种宾至如归的服务，才是一个餐厅成功的核心。",
+        "example_pinyin": "Yōuxiù de fúwùyuán bùjǐn yào yǒu zhuānyè de jìnéng, gèng yào yǒu rèqíng de tàidù. Shǒuxiān, yào zhēnchéng de yíngjiē měi yī wèi gùkè, qícì, yào néng xìxīn de chájué kèrén de xūqiú. Zhè zhǒng bīnzhìrúguī de fúwù, cái shì yīgè cāntǐng chénggōng de héxīn.",
+        "example_vi": "Phục vụ xuất sắc cần kỹ năng chuyên nghiệp và thái độ nhiệt tình. Chào đón chân thành, nhạy bén nhận nhu cầu khách. Dịch vụ 'tân chí như quy' là cốt lõi thành công."
+    },
+    {
+        "id": "hsk2_037",
+        "chinese": "告诉",
+        "pinyin": "gàosu | Chữ 告 (cáo). Chữ 诉 (tố).",
+        "vietnamese": "nói cho biết",
+        "example_zh": "老师告诉我们要学会独立思考，不要总是人云亦云。首先，我们要勇于质疑现有的答案，其次，要通过实践去寻找真相。只要我们具备这种能力，就能在复杂的社会中独树一帜。",
+        "example_pinyin": "Lǎoshī gàosù wǒmen yào xuéhuì dúlì sīkǎo, bùyào zǒng shì rényúnyìyún. Shǒuxiān, wǒmen yào yǒngyú zhìyí xiànyǒu de dá'àn, qícì, yào tōngguò shíjiàn qù zhǎoxiún zhēnxiàng. Zhǐyào wǒmen jùbèi zhè zhǒng nénglì, jiù néng zài fùzá de shèhuì zhōng dúshùyīzhì.",
+        "example_vi": "Thầy bảo phải tư duy độc lập, đừng 'nhân vân diệc vân'. Phải dũng cảm nghi ngờ đáp án có sẵn, tìm chân tướng thực tiễn. Năng lực này giúp tạo phong cách riêng."
+    },
+    {
+        "id": "hsk2_038",
+        "chinese": "公共汽车",
+        "pinyin": "gōnggòng qìchē | Chữ 公. Chữ 共. Chữ 汽. Chữ 车.",
+        "vietnamese": "xe buýt",
+        "example_zh": "虽然坐公共汽车有时会比较拥挤，但它是非常环保的出行方式。首先，它能有效减少私家车带来的污染，其次，由于价格便宜，能节省不少开支。只要我们礼让三分，车厢里的环境也会变得很温馨。",
+        "example_pinyin": "Suīrán zuò gōnggòng qìchē yǒushí huì bǐjiào yōngjǐ, dàn tā shì fēicháng huánbǎo de chūxíng fāngshì. Shǒuxiān, tā néng yǒuxiào jiǎnshǎo sījiā chē dài lái de wūrǎn, qícì, yóuyú jiàgé piányí, néng jiéshěng bù shǎo kāizhī. Zhǐyào wǒmen lǐràng sānfēn, chēxiāng lǐ de huánjìng yě huì biàn dé hěn wēnxīn.",
+        "example_vi": "Xe buýt chen chúc nhưng thân thiện môi trường. Giảm ô nhiễm, tiết kiệm chi phí. 'Lễ nhượng tam phân' giúp môi trường ấm áp."
+    },
+    {
+        "id": "hsk2_039",
+        "chinese": "公司",
+        "pinyin": "gōngsī | Chữ 公. Chữ 司.",
+        "vietnamese": "công ty",
+        "example_zh": "在一家公司里，团队协作精神往往比个人能力更重要。首先，大家要目标一致，其次，在遇到困难时要共同面对。不仅如此，只要大家齐心协力，公司就一定能迎来更加灿烂的明天。",
+        "example_pinyin": "Zài yījiā gōngsī lǐ, tuánduì xiézuò jīngshén wǎngwǎng bǐ gèrén nénglì gèng zhòngyào. Shǒuxiān, dàjiā yào mùbiāo yīzhì, qícì, zài yù dào kùnnán shí yào gòngtóng miànduì. Bùjǐn rúcǐ, zhǐyào dàjiā qíxīnxiélì, gōngsī jiù yīdìng néng yíng lái gèngjiā cànlàn de míngtiān.",
+        "example_vi": "Hợp tác đội ngũ quan trọng hơn năng lực cá nhân. Thống nhất mục tiêu, cùng đối mặt khó khăn. Đồng tâm hiệp lực giúp tương lai rạng rỡ."
+    },
+    {
+        "id": "hsk2_040",
+        "chinese": "贵",
+        "pinyin": "guì | Chữ 贵 (quý): vỏ sò (贝) quý.",
+        "vietnamese": "quý / đắt",
+        "example_zh": "虽然名牌衣服的价格比较贵，但我认为适合自己的才是最好的。首先，我们不应该盲目攀比，其次，要注重内在修养的提升。正如古话所说，“人贵有自知之明”，清醒地认识自己比什么都重要。",
+        "example_pinyin": "Suīrán míngpái yīfú de jiàgé bǐjiào guì, dàn wǒ rènwéi shìhé zìjǐ de cáishì zuì hǎo de. Shǒuxiān, wǒmen bù yīnggāi mángmù pānbǐ, qícì, yào zhùzhòng nèizài xiūyǎng de tíshēng. Zhèngrú gǔhuà suǒ shuō, “rén guì yǒu zìzhīzhīmíng”, qīngxǐng de rènshí zìjǐ bǐ shénme dōu zhòngyào.",
+        "example_vi": "Đồ hiệu đắt nhưng phù hợp mới là tốt nhất. Không nên so bì, chú trọng tu dưỡng nội tại. 'Người quý ở chỗ biết tự lượng sức mình'."
+    },
+    {
+        "id": "hsk2_041",
+        "chinese": "觉得",
+        "pinyin": "juéde | Chữ 觉 (giác). Chữ 得 (đắc).",
+        "vietnamese": "cảm thấy",
+        "example_zh": "虽然很多人觉得独自旅行很孤单，但我却非常享受这种自由。首先，我可以完全按照自己的心意出发，其次，这能让我学会独立解决问题。只要我们心态积极，生活处处都会有意外之喜。",
+        "example_pinyin": "Suīrán hěnduō rén juéde dúzì lǚxíng hěn gūdān, dàn wǒ què fēicháng xiǎngshòu zhè zhǒng zìyóu. Shǒuxiān, wǒ kěyǐ wánquán ànzhào zìjǐ de xīnyì chūfā, qícì, zhè néng ràng wǒ xuéhuì dúlì jiějué wèntí. Zhǐyào wǒmen xīntài jījí, shēnghuó chùchù dūhuì yǒu yìwàizhīxǐ.",
+        "example_vi": "Đi một mình tự do. Có thể đi theo ý thích, học cách độc lập giải quyết vấn đề. Tâm thái tích cực giúp gặp nhiều niềm vui."
+    },
+    {
+        "id": "hsk2_042",
+        "chinese": "咖啡",
+        "pinyin": "kāfēi | Từ mượn âm.",
+        "vietnamese": "cà phê",
+        "example_zh": "由于最近需要熬夜学习，我发现咖啡成了我最好的伙伴。首先，浓郁的香气能让人精神振奋，其次，在咖啡馆里看书非常有氛围。不仅如此，只要保持适量，喝咖啡也能让我们变得神清气爽。",
+        "example_pinyin": "Yóuyú zuìjìn xūyào áoyè xuéxí, wǒ fāxiàn kāfēi chéngle wǒ zuì hǎo de huǒbàn. Shǒuxiān, nóngyù de xiāngqì néng ràng rén jīngshén zhènfèn, qícì, zài kāfēiguǎn lǐ kànshū fēicháng yǒu fènwéi. Bùjǐn rúcǐ, zhǐyào bǎochí shìliàng, hē kāfēi yě néng ràng wǒmen biàn dé shénqīngqìshuǎng.",
+        "example_vi": "Thức khuya học bài nên cà phê là bạn tốt. Hương thơm giúp phấn chấn, không khí quán cà phê rất tốt. Lượng vừa đủ giúp sảng khoái."
+    },
+    {
+        "id": "hsk2_043",
+        "chinese": "考试",
+        "pinyin": "kǎoshì | Chữ 考. Chữ 试.",
+        "vietnamese": "kỳ thi",
+        "example_zh": "面对考试，比起成绩，更重要的是我们在这个过程中的成长。首先，考试能帮我们查漏补缺，其次，它能锻炼我们的抗压能力。只要我们平时努力，在考场上就能胸有成竹，发挥出最好的水平。",
+        "example_pinyin": "Miànduì kǎoshì, bǐ qǐ chéngjī, gèng zhòngyào de shì wǒmen zài zhège guòchéng zhōng de chéngzhǎng. Shǒuxiān, kǎoshì néng bāng wǒmen chálòubǔquē, qícì, tā néng duànliàn wǒmen de kàngyā nénglì. Zhǐyào wǒmen píngshí nǔlì, zài kǎochǎng shàng jiù néng xiōngyǒuchéngzhú, fāhuī chū zuì hǎo de shuǐpíng.",
+        "example_vi": "Thi cử quan trọng ở sự trưởng thành. Giúp bù đắp kiến thức, rèn khả năng chịu áp lực. Nỗ lực giúp tự tin 'hung hữu thành trúc'."
+    },
+    {
+        "id": "hsk2_044",
+        "chinese": "快乐",
+        "pinyin": "kuàilè | Chữ 快. Chữ 乐.",
+        "vietnamese": "vui vẻ",
+        "example_zh": "助人为乐是中华民族的传统美德，也是一种快乐的源泉。首先，帮助他人能让我们获得成就感，其次，这种温暖是可以传递的。只要每个人都献出一点爱，世界就会变得其乐融融。",
+        "example_pinyin": "Zhùrénwéilè shì Zhōnghuá mínzú de chuántǒng měidé, yěshì yīzhǒng kuàilè de yuánquán. Shǒuxiān, bāngzhù tārén néng ràng wǒmen huòdé chéngjiùgǎn, qícì, zhè zhǒng wēnnuǎn shì kěyǐ chuándì de. Zhǐyào měi gèrén dōu xiàn chū yīdiǎn ài, shìjiè jiù huì biàn dé qílèróngróng.",
+        "example_vi": "Giúp người làm vui là nguồn hạnh phúc. Mang lại thành tựu, lan tỏa ấm áp. Thế giới sẽ hòa thuận vui tươi."
+    },
+    {
+        "id": "hsk2_045",
+        "chinese": "累",
+        "pinyin": "lèi | Chữ 累 (mệt).",
+        "vietnamese": "mệt",
+        "example_zh": "虽然每天忙于学业和工作会感到很累，但想到未来的目标，我就重新充满了动力。首先，我们要学会调节压力，其次，要给自己留一点放空的时间。不仅如此，只要能苦中作乐，生活就不会显得枯燥无味。",
+        "example_pinyin": "Suīrán měitiān máng yú xuéyè hé gōngzuò huì gǎndào hěn lèi, dàn xiǎngdào wèilái de mùbiāo, wǒ jiù chóngxīn chōngmǎnle dònglì. Shǒuxiān, wǒmen yào xuéhuì tiáojié yālì, qícì, yào gěi zìjǐ liú yīdiǎn fàngkōng de shíjiān. Bùjǐn rúcǐ, zhǐyào néng kǔzhōngzuòlè, shēnghuó jiù bù huì xiǎn dé kūzào wúwèi.",
+        "example_vi": "Bận rộn nhưng hướng tới mục tiêu sẽ có động lực. Phải điều chỉnh áp lực, dành thời gian thư giãn. 'Khổ trung tác lạc' giúp đời không vô vị."
+    },
+    {
+        "id": "hsk2_046",
+        "chinese": "便宜",
+        "pinyin": "piányi | Chữ 便. Chữ 宜.",
+        "vietnamese": "rẻ",
+        "example_zh": "在选择商品时，我们不仅要看价格是否便宜，更要关注它的性价比。首先，我们要根据自己的经济能力消费，其次，不要为了虚荣心而盲目购买。正如老话所说，“一分钱一分货”，适合自己的才是最好的。",
+        "example_pinyin": "Zài xuǎnzé shāngpǐn shí, wǒmen bùjǐn yào kàn jiàgé shìfǒu piányí, gèng yào guānzhù tā de xìngjiàbǐ. Shǒuxiān, wǒmen yào gēnjù zìjǐ de jīngjì nénglì xiāofèi, qícì, bùyào wèile xūróngxīn ér mángmù gòumǎi. Zhèngrú lǎohuà suǒ shuō, “yī fēn qián yī fēn huò”, shìhé zìjǐ de cáishì zuì hǎo de.",
+        "example_vi": "Chọn đồ không chỉ xem rẻ mà còn giá trị sử dụng. Tiêu dùng theo năng lực, không vì hư vinh. 'Tiền nào của nấy'."
+    },
+    {
+        "id": "hsk2_047",
+        "chinese": "漂亮",
+        "pinyin": "piàoliang | Chữ 漂. Chữ 亮.",
+        "vietnamese": "đẹp",
+        "example_zh": "虽然外表漂亮能给人留下良好的第一印象，但内在的修养才更有魅力。首先，我们要不断充实自己的头脑，其次，要拥有一颗善良的心。只要我们表里如一，自然会散发出动人心魄的美感。",
+        "example_pinyin": "Suīrán wàibiǎo piàoliang néng gěi rén liú xià liánghǎo de dì yī yìngxiàng, dàn nèizài de xiūyǎng cái gèng yǒu mèlì. Shǒuxiān, wǒmen yào bùduàn chōngshí zìjǐ de tóunǎo, qícì, yào yōngyǒu yī kē shànliáng de xīn. Zhǐyào wǒmen biǎolǐrúyī, zìrán huì sànfà chū dòngrénxīnpò de měigǎn.",
+        "example_vi": "Vẻ ngoài đẹp gây ấn tượng đầu nhưng tu dưỡng nội tại có sức hút hơn. Làm giàu trí tuệ, có tim lương thiện. 'Biểu lý như nhất' sẽ tỏa cái đẹp rung động lòng người."
+    },
+    {
+        "id": "hsk2_048",
+        "chinese": "去年",
+        "pinyin": "qùnián | Chữ 去. Chữ 年.",
+        "vietnamese": "năm ngoái",
+        "example_zh": "去年对我来说是充满挑战的一年，但也让我学到了很多。首先，我克服了语言学习的困难，其次，我也交到了许多志同道合的朋友。尽管过去的一年有苦有甜，但只要我们不忘初心，未来一定会更好。",
+        "example_pinyin": "Qùnián duì wǒ lái shuō shì chōngmǎn tiǎozhàn de yī nián, dàn yě ràng wǒ xué dàole hěnduō. Shǒuxiān, wǒ kèfúle yǔyán xuéxí de kùnnán, qícì, wǒ yě jiāo dàole xǔduō zhìtóngdàoé de péngyǒu. Jǐnguǎn guòqù de yī nián yǒu kǔ yǒu tián, dàn zhǐyào wǒmen bùwàngchūxīn, wèilái yīdìng huì gèng hǎo.",
+        "example_vi": "Năm ngoái đầy thử thách nhưng dạy tôi nhiều điều. Vượt qua khó khăn ngôn ngữ, kết bạn cùng chí hướng. Không quên tâm nguyện ban đầu."
+    },
+    {
+        "id": "hsk2_049",
+        "chinese": "上班",
+        "pinyin": "shàngbān | Chữ 上. Chữ 班.",
+        "vietnamese": "đi làm",
+        "example_zh": "在职场中，按时上班是最基本的职业道德。首先，这体现了我们的时间观念，其次，这也有助于工作的顺利开展。只要我们每天都能神采奕奕地投入到工作中，就一定能获得老板的认可。",
+        "example_pinyin": "Zài zhíchǎng zhōng, ànshí shàngbān shì zuì jīběn de zhíyè dàodé. Shǒuxiān, zhè tǐxiànle wǒmen de shíjiān guānniàn, qícì, zhè yě yǒu zhù yú gōngzuò de shùnlì kāizhǎn. Zhǐyào wǒmen měitiān dū néng shéncǎiyìyì de tóurù dào gōngzuò zhōng, jiù yīdìng néng huòdé lǎobǎn de rènkě.",
+        "example_vi": "Đi làm đúng giờ là đạo đức cơ bản. Thể hiện quan niệm thời gian, giúp triển khai công việc tốt. Phấn chấn làm việc giúp sếp công nhận."
+    },
+    {
+        "id": "hsk2_050",
+        "chinese": "生病",
+        "pinyin": "shēngbìng | Chữ 生. Chữ 病.",
+        "vietnamese": "ngã bệnh",
+        "example_zh": "俗话说，生病时最能看出谁是真正关心你的人。首先，亲朋好友的问候会让人感到温暖，其次，我们要学会更加爱惜自己的身体。只要我们平时加强锻炼，就能保持百病不侵，拥有健康的体魄。",
+        "example_pinyin": "Súhuà shuō, shēngbìng shí zuì néng kàn chū shuí shì zhēnzhèng guānxīn nǐ de rén. Shǒuxiān, qīnpéng hǎoyǒu de wènhòu huì ràng rén gǎndào wēnnuǎn, qícì, wǒmen yào xuéhuì gèngjiā àixī zìjǐ de shēntǐ. Zhǐyào wǒmen píngshí jiāqiáng duànliàn, jiù néng bǎochí bǎibìngbùqīn, yōngyǒu jiànkāng de tǐpò.",
+        "example_vi": "Lúc ốm dễ nhận ra ai quan tâm mình nhất. Lời hỏi thăm giúp ấm lòng, phải trân trọng cơ thể hơn. Luyện tập giúp cơ thể 'bách bệnh không xâm'."
+    }
+]
