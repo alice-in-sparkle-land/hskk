@@ -1,0 +1,263 @@
+[
+  {
+    "id": "run_001",
+    "chinese": "饼干",
+    "pinyin": "bǐnggān | 饼(饣+并) + 干(一+十) → 饣(食字旁)并排坐着十个“干”, 像一排小士兵。阿南把饼干放厨房十年，硬得能钉钉子，他说：这不是饼干，这是砖头！",
+    "vietnamese": "bánh quy",
+    "example_zh": "在我的厨房柜子里总放着一盒饼干。首先，我不爱吃饼干，因为它们太干了。其次，每次看到它们就像看到提醒：生活需要加点甜。尽管这盒饼干已经过期两年了，但我舍不得扔。最后阿南说：万一哪天闹饥荒，这盒饼干就是我的救命粮！",
+    "example_pinyin": "Zài wǒ de chúfáng guìzi lǐ zǒng fàng zhe yī hé bǐnggān. Shǒuxiān, wǒ bù ài chī bǐnggān, yīnwèi tāmen tài gān le. Qícì, měi cì kàndào tāmen jiù xiàng kàndào tíxǐng: shēnghuó xūyào jiā diǎn tián. Jǐnguǎn zhè hé bǐnggān yǐjīng guòqī liǎng nián le, dàn wǒ shěbude rēng. Zuìhòu Ānán shuō: wàn yī nǎ tiān nào jīhuāng, zhè hé bǐnggān jiùshì wǒ de jiùmìng liáng!",
+    "example_vi": "Trong ngăn tủ bếp nhà tôi lúc nào cũng có một hộp bánh quy. Tôi không thích bánh quy vì nó quá khô. Nhưng mỗi lần nhìn thấy nó như một lời nhắc: cuộc sống cần chút ngọt ngào. Dù hộp bánh đã hết hạn hai năm, tôi vẫn tiếc không nỡ vứt. A Nam bảo: lỡ đâu hôm nào đói, hộp bánh này là lương thực cứu mạng tôi đấy!"
+  },
+  {
+    "id": "run_002",
+    "chinese": "得",
+    "pinyin": "dé | 得(彳+日+一寸) → 双人旁(彳)晒太阳(日)，伸手一寸一寸(一寸)地拿。阿南想获得金牌，结果跑完累得趴在地上，像只晒干的蛤蟆。",
+    "vietnamese": "được, đạt được",
+    "example_zh": "为了获得健康的体魄和清新的灵魂，我决定参加马拉松。首先，获得健康需要付出汗水。其次，获得灵魂的平静比获得奖牌更难。尽管一开始累得要死，但获得那种成就感后，一切都值了。最后阿南说：我获得了伤病，也算是一种‘获得’吧？",
+    "example_pinyin": "Wèile huòdé jiànkāng de tǐpò hé qīngxīn de línghún, wǒ juédìng cānjiā mǎlāsōng. Shǒuxiān, huòdé jiànkāng xūyào fùchū hànshuǐ. Qícì, huòdé línghún de píngjìng bǐ huòdé jiǎngpái gèng nán. Jǐnguǎn yī kāishǐ lèi de yào sǐ, dàn huòdé nà zhǒng chéngjiùgǎn hòu, yīqiè dōu zhí le. Zuìhòu Ānán shuō: wǒ huòdé le shāngbìng, yě suànshì yī zhǒng ‘huòdé’ ba?",
+    "example_vi": "Để có được thể chất khỏe mạnh và tâm hồn thanh khiết, tôi quyết định tham gia marathon. Có được sức khỏe cần mồ hôi. Có được sự bình yên trong tâm hồn còn khó hơn có được huy chương. Dù đầu đời mệt muốn chết, nhưng sau khi có được cảm giác thành tựu ấy, mọi thứ đều đáng. A Nam bảo: tôi có được chấn thương, cũng coi như một kiểu ‘có được’ chứ nhỉ?"
+  },
+  {
+    "id": "run_003",
+    "chinese": "国际",
+    "pinyin": "guójì | 国(口+玉) + 际(阝+示) → 口里含玉(国)，耳朵(阝)旁展示(示)世界。阿南说要跑国际马拉松，结果连小区的门都没跑出去。",
+    "vietnamese": "quốc tế",
+    "example_zh": "我决定参加城市举办的国际马拉松赛。首先，国际比赛听起来就很高大上。其次，报名费也很‘国际化’——贵得离谱。尽管我跑不过那些黑人选手，但能参与就很骄傲。最后阿南说：我跑的是‘国际’马拉松，因为我在跑的时候脑子里经过了十几个国家！",
+    "example_pinyin": "Wǒ juédìng cānjiā chéngshì jǔbàn de guójì mǎlāsōng sài. Shǒuxiān, guójì bǐsài tīng qǐlái jiù hěn gāodàshàng. Qícì, bàomíng fèi yě hěn ‘guójìhuà’ — guì de lípǔ. Jǐnguǎn wǒ pǎo bùguò nàxiē hēirén xuǎnshǒu, dàn néng cānyù jiù hěn jiāo'ào. Zuìhòu Ānán shuō: wǒ pǎo de shì ‘guójì’ mǎlāsōng, yīnwèi wǒ zài pǎo de shíhou nǎodài lǐ jīngguò le shí jǐ gè guójiā!",
+    "example_vi": "Tôi quyết định tham gia giải marathon quốc tế do thành phố tổ chức. Giải quốc tế nghe đã thấy sang. Phí đăng ký cũng rất 'quốc tế' — đắt điên. Dù tôi chẳng thể chạy nổi mấy anh da đen, nhưng được tham gia đã thấy tự hào. A Nam bảo: tôi chạy marathon 'quốc tế' đấy, vì lúc chạy trong đầu tôi đã đi qua cả chục quốc gia rồi!"
+  },
+  {
+    "id": "run_004",
+    "chinese": "放弃",
+    "pinyin": "fàngqì | 放(方+攵) + 弃(亠+厶+廾) → 方方正正(方)被拍(攵)走了，上面一个盖子(亠)下面两只手(廾)扔掉。阿南说：我想放弃，但我的肚子不同意，因为它饿了。",
+    "vietnamese": "từ bỏ, bỏ cuộc",
+    "example_zh": "起初，我担心自己会半途放弃。首先，放弃太容易了，坚持才难。其次，每次想放弃的时候，我就告诉自己‘再跑一公里’。尽管腿像灌了铅，但我没放弃。最后阿南说：我放弃了放弃这个念头，所以我成功了！",
+    "example_pinyin": "Qǐchū, wǒ dānxīn zìjǐ huì bàntú fàngqì. Shǒuxiān, fàngqì tài róngyì le, jiānchí cái nán. Qícì, měi cì xiǎng fàngqì de shíhou, wǒ jiù gàosu zìjǐ ‘zài pǎo yī gōnglǐ’. Jǐnguǎn tuǐ xiàng guàn le qiān, dàn wǒ méi fàngqì. Zuìhòu Ānán shuō: wǒ fàngqì le fàngqì zhège niàntou, suǒyǐ wǒ chénggōng le!",
+    "example_vi": "Ban đầu tôi lo mình sẽ bỏ cuộc giữa chừng. Bỏ cuộc thì dễ, kiên trì mới khó. Mỗi lần định bỏ, tôi tự nhủ 'chạy thêm một cây nữa'. Dù chân như đeo chì, nhưng tôi không bỏ cuộc. A Nam bảo: tôi đã từ bỏ cái ý định từ bỏ, vậy là tôi thành công rồi!"
+  },
+  {
+    "id": "run_005",
+    "chinese": "意志不强",
+    "pinyin": "yìzhì bù qiáng | 意(音+心) + 志(士+心) + 不(一+小+丿) + 强(弓+虽) → 心里(心)有声音(音)，心里有战士(士)，但弓(弓)虽然(虽)拉不开。阿南意志不强，跑步五分钟，拍照两小时。",
+    "vietnamese": "ý chí không mạnh mẽ",
+    "example_zh": "人们常说我是个意志不强的人，但这次我告诉自己一定要坚持到底。首先，意志不强的人容易半途而废。其次，他们总找借口，比如‘今天太累了’。尽管大家都不看好我，但我用行动打了他们的脸。最后阿南说：我是意志不强，我‘意志’是躺着，这很强！",
+    "example_pinyin": "Rénmen cháng shuō wǒ shì gè yìzhì bù qiáng de rén, dàn zhè cì wǒ gàosu zìjǐ yīdìng yào jiānchí dàodǐ. Shǒuxiān, yìzhì bù qiáng de rén róngyì bàntú'érfèi. Qícì, tāmen zǒng zhǎo jièkǒu, bǐrú ‘jīntiān tài lèi le’. Jǐnguǎn dàjiā dōu bù kànhǎo wǒ, dàn wǒ yòng xíngdòng dǎ le tāmen de liǎn. Zuìhòu Ānán shuō: wǒ shì yìzhì bù qiáng, wǒ ‘yìzhì’ shì tǎng zhe, zhè hěn qiáng!",
+    "example_vi": "Người ta thường bảo tôi là người ý chí không mạnh, nhưng lần này tôi tự nhủ nhất định phải kiên trì đến cùng. Người ý chí yếu dễ bỏ cuộc giữa chừng. Họ hay tìm lý do, kiểu 'hôm nay mệt quá'. Dù chẳng ai ủng hộ, nhưng tôi dùng hành động để vả mặt họ. A Nam bảo: tôi ý chí không mạnh thật, ý chí của tôi là nằm, thế này là mạnh lắm rồi!"
+  },
+  {
+    "id": "run_006",
+    "chinese": "坚持到底",
+    "pinyin": "jiānchí dàodǐ | 坚(⺌+土) + 持(扌+寺) + 到(至+刂) + 底(广+氐) → 坚如土堆，手扶着寺庙(寺)，走到最底下(广+氐)。阿南坚持到底跑完马拉松，发现终点线在另一个城市，他哭了。",
+    "vietnamese": "kiên trì đến cùng",
+    "example_zh": "这次我告诉自己一定要坚持到底。首先，坚持到底的人不一定赢，但一定不后悔。其次，半途而废的人永远不知道终点的风景。尽管腿抽筋了，我还是坚持到底。最后阿南说：我坚持到底把一盒饼干吃完了，牙都快崩了！",
+    "example_pinyin": "Zhè cì wǒ gàosu zìjǐ yīdìng yào jiānchí dàodǐ. Shǒuxiān, jiānchí dàodǐ de rén bù yīdìng yíng, dàn yīdìng bù hòuhuǐ. Qícì, bàntú'érfèi de rén yǒngyuǎn bù zhīdào zhōngdiǎn de fēngjǐng. Jǐnguǎn tuǐ chōujīn le, wǒ háishì jiānchí dàodǐ. Zuìhòu Ānán shuō: wǒ jiānchí dàodǐ bǎ yī hé bǐnggān chī wán le, yá dōu kuài bēng le!",
+    "example_vi": "Lần này tôi tự nhủ phải kiên trì đến cùng. Người kiên trì đến cùng chưa chắc thắng, nhưng chắc chắn không hối hận. Kẻ bỏ cuộc giữa đường chẳng bao giờ thấy được cảnh đẹp ở đích đến. Dù chân chuột rút, tôi vẫn kiên trì đến cùng. A Nam bảo: tôi kiên trì ăn hết một hộp bánh quy, suýt gãy răng!"
+  },
+  {
+    "id": "run_007",
+    "chinese": "难道",
+    "pinyin": "nándào | 难(又+隹) + 道(首+辶) → 又(又)一只鸟(隹)堵在路上，难道要问路(道)？阿南问：难道我真的跑不完？后来发现真的跑不完，因为迷路了。",
+    "vietnamese": "chẳng lẽ, khó chẳng lẽ",
+    "example_zh": "难道我真的要向自己的懒惰低头吗？首先，难道我不配拥有更好的自己吗？其次，难道懒惰能给我什么好处吗？尽管脑子里有两个小人打架，但最后那个积极的小人赢了。阿南说：难道跑步比吃薯片还快乐？试了一下，发现是真的！",
+    "example_pinyin": "Nándào wǒ zhēn de yào xiàng zìjǐ de lǎnduò dītóu ma? Shǒuxiān, nándào wǒ bù pèi yōngyǒu gèng hǎo de zìjǐ ma? Qícì, nándào lǎnduò néng gěi wǒ shénme hǎochù ma? Jǐnguǎn nǎodài lǐ yǒu liǎng gè xiǎorén dǎjià, dàn zuìhòu nà gè jījí de xiǎorén yíng le. Ānán shuō: nándào pǎobù bǐ chī shǔpiàn hái kuàilè? Shì le yīxià, fāxiàn shì zhēn de!",
+    "example_vi": "Chẳng lẽ tôi thực sự phải cúi đầu trước sự lười biếng của mình sao? Chẳng lẽ tôi không xứng đáng có một phiên bản tốt hơn ư? Chẳng lẽ lười biếng mang lại lợi ích gì cho tôi? Dù trong đầu có hai gã tí hon đánh nhau, nhưng cuối cùng thằng tích cực thắng. A Nam bảo: chẳng lẽ chạy bộ vui hơn ăn khoai tây chiên? Thử mới thấy, đúng thật!"
+  },
+  {
+    "id": "run_008",
+    "chinese": "却使",
+    "pinyin": "què shǐ | 却(去+卩) + 使(亻+吏) → 去(去)掉节(卩)，让人(亻)当官吏(吏)。阿南想说‘即使是’，却说成‘却使’，意思成了‘但是让’，搞反了！",
+    "vietnamese": "(lỗi chính tả) → đúng là '即使' (dù cho)",
+    "example_zh": "却使最初几天的肌肉酸痛让我产生了想放弃的主意。首先，却使在这里应该是‘即使’，意思是不管多疼。其次，这种错误很多初学者会犯。尽管写错了，但不影响理解。最后阿南说：我故意写‘却使’，显得我很有文化！",
+    "example_pinyin": "Què shǐ zuìchū jǐ tiān de jīròu suāntòng ràng wǒ chǎnshēng le xiǎng fàngqì de zhǔyi. Shǒuxiān, què shǐ zài zhèlǐ yīnggāi shì ‘jíshǐ’, yìsi shì bùguǎn duō téng. Qícì, zhè zhǒng cuòwù hěnduō chūxuézhě huì fàn. Jǐnguǎn xiě cuò le, dàn bù yǐngxiǎng lǐjiě. Zuìhòu Ānán shuō: wǒ gùyì xiě ‘què shǐ’, xiǎnde wǒ hěn yǒu wénhuà!",
+    "example_vi": "'Què shǐ' mấy ngày đầu cơ bắp đau nhức khiến tôi nảy ra ý định bỏ cuộc. 'Què shǐ' ở đây đáng lẽ phải là 'jíshǐ' (dù cho). Lỗi này nhiều người mới học hay mắc. Dù viết sai, nhưng chẳng ảnh hưởng đến hiểu. A Nam bảo: tôi cố tình viết 'què shǐ' để ra vẻ có học đấy!"
+  },
+  {
+    "id": "run_009",
+    "chinese": "主意",
+    "pinyin": "zhǔyi | 主(丶+王) + 意(音+心) → 点(丶)王(王)心里(心)有声音(音)。阿南的主意是跑完吃火锅，结果跑完火锅店关门了，他伤心欲绝。",
+    "vietnamese": "ý định, chủ ý",
+    "example_zh": "肌肉酸痛让我产生了想放弃的主意。首先，这个主意非常诱人。其次，一旦有了放弃的主意，就很难打消。尽管我知道不应该，但还是想了五分钟。最后阿南说：我拿定了主意——今天不跑了！明天也不跑了！后天再说！",
+    "example_pinyin": "Jīròu suāntòng ràng wǒ chǎnshēng le xiǎng fàngqì de zhǔyi. Shǒuxiān, zhège zhǔyi fēicháng yòurén. Qícì, yīdàn yǒu le fàngqì de zhǔyi, jiù hěn nán dǎxiāo. Jǐnguǎn wǒ zhīdào bù yīnggāi, dàn háishì xiǎng le wǔ fēnzhōng. Zuìhòu Ānán shuō: wǒ ná dìng le zhǔyi — jīntiān bù pǎo le! Míngtiān yě bù pǎo le! Hòutiān zài shuō!",
+    "example_vi": "Cơ bắp đau nhức khiến tôi nảy ra ý định bỏ cuộc. Ý định này rất cám dỗ. Một khi đã có ý định bỏ cuộc, rất khó để dập tắt. Dù biết là không nên, nhưng tôi vẫn nghĩ năm phút. A Nam bảo: tôi đã nhất quyết — hôm nay không chạy nữa! Mai cũng không! Mốt tính!"
+  },
+  {
+    "id": "run_010",
+    "chinese": "可是",
+    "pinyin": "kěshì | 可(丁+口) + 是(日+正) → 丁(丁)字口(口)，太阳(日)下正(正)好。阿南说：可是我真的不想跑啊！然后还是跑了，因为狗在后面追。",
+    "vietnamese": "thế nhưng, nhưng mà",
+    "example_zh": "可是，每当我看到运动员们的奖牌，我就会想起坚持就是胜利。首先，可是表示转折，这里表达的是‘虽然疼，但是看到奖牌就有动力’。其次，可是和但是差不多，但更口语。尽管有人分不清，但阿南分得清——可是他就是不想跑！",
+    "example_pinyin": "Kěshì, měi dāng wǒ kàndào yùndòngyuánmen de jiǎngpái, wǒ jiù huì xiǎngqǐ jiānchí jiùshì shènglì. Shǒuxiān, kěshì biǎoshì zhuǎnzhé, zhèlǐ biǎodá de shì ‘suīrán téng, dànshì kàndào jiǎngpái jiù yǒu dònglì’. Qícì, kěshì hé dànshì chàbùduō, dàn gèng kǒuyǔ. Jǐnguǎn yǒurén fēn bù qīng, dàn Ānán fēn de qīng — kěshì tā jiùshì bù xiǎng pǎo!",
+    "example_vi": "Thế nhưng, mỗi lần nhìn thấy huy chương của các vận động viên, tôi lại nhớ rằng kiên trì là chiến thắng. 'Kể' là để chuyển ý, ở đây nó diễn tả 'dù đau, nhưng thấy huy chương là có động lực'. 'Kể' và 'đản thị' gần giống nhau, nhưng 'kể' mang tính khẩu ngữ hơn. Dù có người không phân biệt được, nhưng A Nam thì phân biệt được — thế nhưng cậu ấy chẳng muốn chạy!"
+  },
+  {
+    "id": "run_011",
+    "chinese": "坚持就是胜利",
+    "pinyin": "jiānchí jiùshì shènglì | 坚(⺌+土) + 持(扌+寺) + 就(京+尤) + 是(日+正) + 胜(月+生) + 利(禾+刂) → 像打油诗一样：坚土扶着寺，京城尤其大，太阳正下方，月亮生了胜利的禾苗被刀割。阿南背了十遍还是忘了，最后一想：不就是‘死扛’嘛！",
+    "vietnamese": "kiên trì là chiến thắng",
+    "example_zh": "每当我看到运动员们的奖牌，我就会想起坚持就是胜利。首先，这句话是老生常谈，但真的有用。其次，胜利不是打败别人，是打败昨天的自己。尽管听起来像鸡汤，但喝下去确实能续命。最后阿南说：坚持就是胜利？那我坚持睡觉二十年，怎么没成世界冠军？",
+    "example_pinyin": "Měi dāng wǒ kàndào yùndòngyuánmen de jiǎngpái, wǒ jiù huì xiǎngqǐ jiānchí jiùshì shènglì. Shǒuxiān, zhè jù huà shì lǎoshēng cháng tán, dàn zhēn de yǒu yòng. Qícì, shènglì bùshì dǎbài biérén, shì dǎbài zuótiān de zìjǐ. Jǐnguǎn tīng qǐlái xiàng jītāng, dàn hē xiàqù quèshí néng xùmìng. Zuìhòu Ānán shuō: jiānchí jiùshì shènglì? Nà wǒ jiānchí shuìjiào èrshí nián, zěnme méi chéng shìjiè guànjūn?",
+    "example_vi": "Mỗi lần nhìn thấy huy chương của các vận động viên, tôi lại nhớ rằng kiên trì là chiến thắng. Câu này tuy cũ rích, nhưng có tác dụng thật. Chiến thắng không phải là đánh bại người khác, mà là đánh bại bản thân của ngày hôm qua. Dù nghe như canh gà, nhưng uống vào đúng là sống dai. A Nam bảo: kiên trì là chiến thắng? Thế tôi kiên trì ngủ hai mươi năm, sao chả thành vô địch thế giới?"
+  },
+  {
+    "id": "run_012",
+    "chinese": "一个月下来",
+    "pinyin": "yī gè yuè xiàlái | 一(一) + 个(丨+亅) + 月(月) + 下(一+卜) + 来(一+米+丿) → 一个月像月亮从上面落下来，一粒米带着撇。阿南一个月下来，体重没减，饭量增了一倍。",
+    "vietnamese": "sau một tháng, trải qua một tháng",
+    "example_zh": "一个月下来，新的习惯已经养成。首先，第一个星期最难熬，想放弃五百次。其次，第二个星期开始习惯，腿不疼了。尽管第三个星期遇到瓶颈，但一个月下来发现不跑反而难受。最后阿南说：一个月下来，我的跑鞋坏了，我的膝盖也坏了，但我的意志‘坏’得最彻底——彻底变强了！",
+    "example_pinyin": "Yī gè yuè xiàlái, xīn de xíguàn yǐjīng yǎngchéng. Shǒuxiān, dì-yī gè xīngqī zuì nán áo, xiǎng fàngqì wǔ bǎi cì. Qícì, dì-èr gè xīngqī kāishǐ xíguàn, tuǐ bù téng le. Jǐnguǎn dì-sān gè xīngqī yù dào píngjǐng, dàn yī gè yuè xiàlái fāxiàn bù pǎo fǎn'ér nánshòu. Zuìhòu Ānán shuō: yī gè yuè xiàlái, wǒ de pǎoxié huài le, wǒ de xīgài yě huài le, dàn wǒ de yìzhì ‘huài’ dé zuì chèdǐ — chèdǐ biàn qiáng le!",
+    "example_vi": "Sau một tháng, thói quen mới đã hình thành. Tuần đầu tiên là khó khăn nhất, muốn bỏ năm trăm lần. Tuần thứ hai bắt đầu quen, chân hết đau. Tuần thứ ba gặp điểm nghẽn, nhưng sau một tháng thấy không chạy lại khó chịu. A Nam bảo: sau một tháng, giày chạy của tôi hỏng, đầu gối của tôi cũng hỏng, nhưng ý chí của tôi 'hỏng' triệt để nhất — thành mạnh luôn!"
+  },
+  {
+    "id": "run_013",
+    "chinese": "座桥",
+    "pinyin": "zuò qiáo | 座(广+坐) + 桥(木+乔) → 广(房子)下两个人(坐)，木头(木)搭的高(乔)。阿南跑到一座桥前，发现桥在维修，他说：这是命运让我休息！",
+    "vietnamese": "cây cầu (lượng từ)",
+    "example_zh": "每天清晨，我都会跑过那座桥。首先，那座桥是我跑步路线的中点。其次，每次跑到桥上，我都会停下来看日出。尽管多花了五分钟，但那五分钟是我一天最幸福的时刻。最后阿南说：那座桥上有我的‘迷之自信’——站在桥中间，我觉得自己是世界之王！",
+    "example_pinyin": "Měitiān qīngchén, wǒ dōu huì pǎo guò nà zuò qiáo. Shǒuxiān, nà zuò qiáo shì wǒ pǎobù lùxiàn de zhōngdiǎn. Qícì, měi cì pǎo dào qiáo shàng, wǒ dōu huì tíng xiàlái kàn rìchū. Jǐnguǎn duō huā le wǔ fēnzhōng, dàn nà wǔ fēnzhōng shì wǒ yītiān zuì xìngfú de shíkè. Zuìhòu Ānán shuō: nà zuò qiáo shàng yǒu wǒ de ‘mí zhī zìxìn’ — zhàn zài qiáo zhōngjiān, wǒ juéde zìjǐ shì shìjiè zhī wáng!",
+    "example_vi": "Mỗi sáng tinh mơ, tôi đều chạy qua cây cầu ấy. Cây cầu ấy là điểm giữa chặng đường chạy của tôi. Mỗi lần chạy lên cầu, tôi đều dừng lại ngắm bình minh. Dù mất thêm năm phút, nhưng năm phút đó là khoảnh khắc hạnh phúc nhất trong ngày. A Nam bảo: trên cây cầu ấy có 'sự tự tin huyền bí' của tôi — đứng giữa cầu, tôi thấy mình là vua của thế giới!"
+  },
+  {
+    "id": "run_014",
+    "chinese": "汗",
+    "pinyin": "hàn | 汗(氵+干) → 水(氵)干了(干)就是汗。阿南跑完步，汗如雨下，他说：我不是在跑步，我是在给大地浇水！",
+    "vietnamese": "mồ hôi",
+    "example_zh": "汗水弄湿了我的汗衫，但那种感觉非常爽快。首先，流汗是身体在排毒。其次，汗流得越多，成就感越强。尽管汗臭味不太好闻，但我觉得那是‘男人的香水’。最后阿南说：我的汗是咸的，证明我不是个‘淡’人！",
+    "example_pinyin": "Hàn shuǐ nòng shī le wǒ de hànshān, dàn nà zhǒng gǎnjué fēicháng shuǎngkuai. Shǒuxiān, liú hàn shì shēntǐ zài pái dú. Qícì, hàn liú dé yuè duō, chéngjiùgǎn yuè qiáng. Jǐnguǎn hàn chòuwèi bù tài hǎowén, dàn wǒ juéde nà shì ‘nánrén de xiāngshuǐ’. Zuìhòu Ānán shuō: wǒ de hàn shì xián de, zhèngmíng wǒ bùshì gè ‘dàn’ rén!",
+    "example_vi": "Mồ hôi làm ướt áo thun của tôi, nhưng cảm giác rất sảng khoái. Đổ mồ hôi là cơ thể đang thải độc. Càng đổ nhiều mồ hôi, cảm giác thành tựu càng lớn. Dù mùi mồ hôi không thơm lắm, nhưng tôi coi đó là 'nước hoa của đàn ông'. A Nam bảo: mồ hôi tôi mặn, chứng tỏ tôi không phải người 'nhạt'!"
+  },
+  {
+    "id": "run_015",
+    "chinese": "弄湿",
+    "pinyin": "nòng shī | 弄(王+廾) + 湿(氵+显) → 王(王)用两只手(廾)加水(氵)让它显(显)出来。阿南跑完步，汗水弄湿了衣服，他干脆脱了说：这样更凉快！结果被路人举报了。",
+    "vietnamese": "làm ướt",
+    "example_zh": "汗水弄湿了我的汗衫，但我不在乎。首先，衣服弄湿了可以洗。其次，身体弄湿了可以擦。尽管弄湿的感觉有点黏糊糊，但那是努力的证明。最后阿南说：我的眼泪也弄湿了枕头，那是我看账单的时候。",
+    "example_pinyin": "Hàn shuǐ nòng shī le wǒ de hànshān, dàn wǒ bù zàihu. Shǒuxiān, yīfu nòng shī le kěyǐ xǐ. Qícì, shēntǐ nòng shī le kěyǐ cā. Jǐnguǎn nòng shī de gǎnjué yǒudiǎn niánhūhū, dàn nà shì nǔlì de zhèngmíng. Zuìhòu Ānán shuō: wǒ de yǎnlèi yě nòng shī le zhěntou, nà shì wǒ kàn zhàngdān de shíhou.",
+    "example_vi": "Mồ hôi làm ướt áo thun của tôi, nhưng tôi chẳng quan tâm. Áo làm ướt có thể giặt. Cơ thể làm ướt có thể lau. Cảm giác bị làm ướt hơi dính dính, nhưng đó là bằng chứng của sự nỗ lực. A Nam bảo: nước mắt tôi cũng làm ướt gối, đó là lúc tôi xem hóa đơn."
+  },
+  {
+    "id": "run_016",
+    "chinese": "春夏秋冬",
+    "pinyin": "chūn xià qiū dōng | 春(三+人+日) + 夏(一+自+夂) + 秋(禾+火) + 冬(夂+⺀) → 三人晒太阳是春，自己带凳子下地是夏，火烧稻谷是秋，凳子加两点冰是冬。阿南跑了一年，四季分不清，因为跑步时只顾喘气。",
+    "vietnamese": "xuân hạ thu đông",
+    "example_zh": "我爱上了观察春夏秋冬间大自然的变化。首先，春天跑步看花开，心情像蝴蝶。其次，夏天跑步汗如雨，但风是热的。尽管秋天最舒服，冬天最难熬，但每个季节都有它的美。最后阿南说：我跑了春夏秋冬，发现我最喜欢的季节是‘开空调的季节’！",
+    "example_pinyin": "Wǒ ài shàng le guānchá chūn xià qiū dōng jiān dà zìrán de biànhuà. Shǒuxiān, chūntiān pǎobù kàn huā kāi, xīnqíng xiàng húdié. Qícì, xiàtiān pǎobù hàn rú yǔ, dàn fēng shì rè de. Jǐnguǎn qiūtiān zuì shūfu, dōngtiān zuì nán áo, dàn měi gè jìjié dōu yǒu tā de měi. Zuìhòu Ānán shuō: wǒ pǎo le chūn xià qiū dōng, fāxiàn wǒ zuì xǐhuān de jìjié shì ‘kāi kōngtiáo de jìjié’!",
+    "example_vi": "Tôi yêu thích việc quan sát sự thay đổi của thiên nhiên qua xuân hạ thu đông. Mùa xuân chạy bộ ngắm hoa nở, lòng như cánh bướm. Mùa hè chạy mồ hôi như mưa, nhưng gió thì nóng. Mùa thu thoải mái nhất, mùa đông khó chịu nhất, nhưng mùa nào cũng có vẻ đẹp riêng. A Nam bảo: tôi chạy suốt bốn mùa, thấy mình thích nhất là 'mùa bật điều hòa'!"
+  },
+  {
+    "id": "run_017",
+    "chinese": "赢",
+    "pinyin": "yíng | 赢(亡+口+月+贝+凡) → 亡(死)口(嘴)月(肉)贝(钱)凡(普通)。要赢，就得豁出命(亡)，用嘴(口)吃肉(月)，花钱(贝)，还不普通(凡)。阿南想赢，结果输得只剩裤衩。",
+    "vietnamese": "thắng",
+    "example_zh": "我意识到生活不是为了赢过别人，而是为了超越自己。首先，赢别人会树敌。其次，赢自己会变强。尽管以前我总想赢，但后来发现真正的赢家是那些不跟别人比的人。最后阿南说：我赢了！赢了一身伤！",
+    "example_pinyin": "Wǒ yìshi dào shēnghuó bùshì wèile yíng guò biérén, érshì wèile chāoyuè zìjǐ. Shǒuxiān, yíng biérén huì shù dí. Qícì, yíng zìjǐ huì biàn qiáng. Jǐnguǎn yǐqián wǒ zǒng xiǎng yíng, dàn hòulái fāxiàn zhēnzhèng de yíngjiā shì nàxiē bù gēn biérén bǐ de rén. Zuìhòu Ānán shuō: wǒ yíng le! Yíng le yī shēn shāng!",
+    "example_vi": "Tôi nhận ra cuộc sống không phải để thắng người khác, mà để vượt qua chính mình. Thắng người khác sẽ gây thù. Thắng chính mình sẽ trở nên mạnh mẽ. Dù ngày xưa tôi cứ muốn thắng, nhưng sau thấy người thắng cuộc thực sự là những ai không so sánh với ai. A Nam bảo: tôi thắng rồi! Thắng được một đống thương tích!"
+  },
+  {
+    "id": "run_018",
+    "chinese": "随便",
+    "pinyin": "suíbiàn | 随(阝+辶+月) + 便(亻+更) → 耳朵(阝)走路(辶)带着月亮(月)，人(亻)更方便(更)。阿南说：随便啦，怎么都行。结果老婆让他随便选餐厅，他选了三天没选出来。",
+    "vietnamese": "tùy tiện, đại khái",
+    "example_zh": "我们不能随便生活，更不能未经允许地让时间荒废了我们的梦想。首先，随便的人容易被生活随便对待。其次，随便二字说起来轻松，做起来后悔。尽管有人觉得随便是一种洒脱，但我认为那是懒惰的借口。最后阿南说：我随便吃了个过期面包，然后随便地拉了一天肚子。",
+    "example_pinyin": "Wǒmen bùnéng suíbiàn shēnghuó, gèng bùnéng wèijīng yǔnxǔ de ràng shíjiān huāngfèi le wǒmen de mèngxiǎng. Shǒuxiān, suíbiàn de rén róngyì bèi shēnghuó suíbiàn duìdài. Qícì, suíbiàn èr zì shuō qǐlái qīngsōng, zuò qǐlái hòuhuǐ. Jǐnguǎn yǒurén juéde suíbiàn shì yī zhǒng sǎtuō, dàn wǒ rènwéi nà shì lǎnduò de jièkǒu. Zuìhòu Ānán shuō: wǒ suíbiàn chī le gè guòqī miànbāo, ránhòu suíbiàn de lā le yī tiān dùzi.",
+    "example_vi": "Chúng ta không thể sống tùy tiện, càng không thể để thời gian hoang phí ước mơ của mình mà không được phép. Người tùy tiện dễ bị cuộc sống đối xử tùy tiện. Chữ 'tùy tiện' nói thì dễ, làm xong thì hối. Dù có người cho rằng tùy tiện là phóng khoáng, nhưng tôi coi đó là cái cớ của sự lười biếng. A Nam bảo: tôi tùy tiện ăn một cái bánh mì hết hạn, rồi tùy tiện đi ngoài cả ngày."
+  },
+  {
+    "id": "run_019",
+    "chinese": "未经允许",
+    "pinyin": "wèijīng yǔnxǔ | 未(一+木) + 经(纟+工) + 允(厶+儿) + 许(讠+午) → 未来的(未)丝线(纟)做工(工)，私(厶)儿子(儿)说话(讠)中午(午)。阿南未经允许就吃了冰箱的蛋糕，被抓后说：蛋糕自己同意了的！",
+    "vietnamese": "không được phép, chưa được cho phép",
+    "example_zh": "我们不能未经允许地让时间荒废了我们的梦想。首先，时间是借来的，未经允许就浪费是不道德的。其次，梦想是你自己的，荒废它不需要任何人允许，但你会后悔。尽管没人管你，但你的良心会‘允许’吗？最后阿南说：我未经允许就胖了十斤，谁批准的？",
+    "example_pinyin": "Wǒmen bùnéng wèijīng yǔnxǔ de ràng shíjiān huāngfèi le wǒmen de mèngxiǎng. Shǒuxiān, shíjiān shì jiè lái de, wèijīng yǔnxǔ jiù làngfèi shì bù dàodé de. Qícì, mèngxiǎng shì nǐ zìjǐ de, huāngfèi tā bù xūyào rènhé rén yǔnxǔ, dàn nǐ huì hòuhuǐ. Jǐnguǎn méi rén guǎn nǐ, dàn nǐ de liángxīn huì ‘yǔnxǔ’ ma? Zuìhòu Ānán shuō: wǒ wèijīng yǔnxǔ jiù pàng le shí jīn, shuí pīzhǔn de?",
+    "example_vi": "Chúng ta không thể để thời gian hoang phí ước mơ của mình mà không được phép. Thời gian là đi mượn, phí phạm khi chưa được phép là vô đạo đức. Ước mơ là của riêng mình, phí nó chẳng cần ai cho phép, nhưng bạn sẽ hối hận. Dù chẳng ai quản, nhưng lương tâm bạn có 'cho phép' không? A Nam bảo: tôi không được phép mà béo lên năm cân, thằng nào cho phép?"
+  },
+  {
+    "id": "run_020",
+    "chinese": "通过",
+    "pinyin": "tōngguò | 通(辶+甬) + 过(寸+辶) → 走路(辶)经过甬道(甬)，再加一寸(寸)走过(辶)。阿南通过跑步认识了隔壁老王，老王天天拉他去撸串，越跑越胖。",
+    "vietnamese": "thông qua, bằng cách",
+    "example_zh": "通过跑步，我发现了这座城市以及自己灵魂中没看到的一面。首先，通过运动能认识很多正能量的人。其次，通过坚持能看到自己的潜力。尽管通过别人介绍也能了解世界，但通过自己的双脚丈量的世界更真实。最后阿南说：通过我的实践证明，跑步不能减肥，因为跑完吃得更多！",
+    "example_pinyin": "Tōngguò pǎobù, wǒ fāxiàn le zhè zuò chéngshì yǐjí zìjǐ línghún zhōng méi kàndào de yī miàn. Shǒuxiān, tōngguò yùndòng néng rènshi hěnduō zhèngnéngliàng de rén. Qícì, tōngguò jiānchí néng kàndào zìjǐ de qiánlì. Jǐnguǎn tōngguò biérén jièshào yě néng liǎojiě shìjiè, dàn tōngguò zìjǐ de shuāngjiǎo zhàngliàng de shìjiè gèng zhēnshí. Zuìhòu Ānán shuō: tōngguò wǒ de shíjiàn zhèngmíng, pǎobù bùnéng jiǎnféi, yīnwèi pǎo wán chī dé gèng duō!",
+    "example_vi": "Thông qua chạy bộ, tôi đã khám phá ra thành phố này cũng như một khía cạnh trong tâm hồn mình mà chưa từng thấy. Thông qua vận động có thể quen được nhiều người năng lượng tích cực. Thông qua kiên trì có thể thấy được tiềm năng của mình. Dù thông qua người khác giới thiệu cũng có thể hiểu thế giới, nhưng thế giới do đôi chân mình đo đạc mới chân thật hơn. A Nam bảo: thông qua thực nghiệm của tôi thì rõ, chạy bộ chẳng giảm cân được, vì chạy xong ăn còn nhiều hơn!"
+  },
+  {
+    "id": "run_021",
+    "chinese": "没看到的一面",
+    "pinyin": "méi kàndào de yī miàn | 没(氵+殳) + 看(手+目) + 到(至+刂) + 的(白+勺) + 一(一) + 面(一+口+⺈) → 水(氵)加武器(殳)没看见，手(手)遮目(目)看不到，只看到一面。阿南说自己有‘没看到的一面’，大家一看：原来是肚子上那块肉！",
+    "vietnamese": "khía cạnh chưa từng thấy",
+    "example_zh": "我发现了自己灵魂中没看到的一面。首先，每个人都有没看到的一面，就像月球的背面。其次，通过挑战自己，才能把那面翻出来。尽管那面可能不太好看，但那也是你的一部分。最后阿南说：我发现了自己‘没看到的一面’——原来我这么能跑！虽然只跑了五十米。",
+    "example_pinyin": "Wǒ fāxiàn le zìjǐ línghún zhōng méi kàndào de yī miàn. Shǒuxiān, měi gèrén dōu yǒu méi kàndào de yī miàn, jiù xiàng yuèqiú de bèimiàn. Qícì, tōngguò tiǎozhàn zìjǐ, cáinéng bǎ nà miàn fān chūlái. Jǐnguǎn nà miàn kěnéng bù tài hǎokàn, dàn nà yě shì nǐ de yī bùfèn. Zuìhòu Ānán shuō: wǒ fāxiàn le zìjǐ ‘méi kàndào de yī miàn’ — yuánlái wǒ zhème néng pǎo! Suīrán zhǐ pǎo le wǔshí mǐ.",
+    "example_vi": "Tôi đã khám phá ra khía cạnh trong tâm hồn mình chưa từng thấy. Ai cũng có một khía cạnh chưa từng thấy, như mặt tối của mặt trăng. Bằng cách thử thách bản thân, mới có thể lật được mặt ấy ra. Dù mặt ấy có thể xấu, nhưng đó vẫn là một phần của bạn. A Nam bảo: tôi đã khám phá ra 'khía cạnh chưa từng thấy' của mình — hóa ra tôi có thể chạy giỏi thế! Tuy chỉ chạy được năm mươi mét."
+  },
+  {
+    "id": "run_022",
+    "chinese": "通过这次比赛",
+    "pinyin": "tōngguò zhè cì bǐsài | 通+过+这(辶+文) + 次(冫+欠) + 比(匕+匕) + 赛(宀+八+贝) → 通过这次用文(文)字走过(辶)，两点水(冫)欠(欠)着，两个匕(匕)比，宝盖下八个贝(贝)比赛。阿南通过这次比赛只学会了一件事：鞋带要系紧！",
+    "vietnamese": "thông qua giải thi đấu lần này",
+    "example_zh": "通过这次比赛，我不仅身体更强壮了，还写下了一篇充满感染力的散文。首先，通过这次比赛我交到了朋友。其次，通过这次比赛我知道了自己的极限。尽管没拿名次，但收获比奖牌重。最后阿南说：通过这次比赛，我明白了——我适合当啦啦队！",
+    "example_pinyin": "Tōngguò zhè cì bǐsài, wǒ bùjǐn shēntǐ gèng qiángzhuàng le, hái xiě xià le yī piān chōngmǎn gǎnrǎnlì de sǎnwén. Shǒuxiān, tōngguò zhè cì bǐsài wǒ jiāo dào le péngyou. Qícì, tōngguò zhè cì bǐsài wǒ zhīdào le zìjǐ de jíxiàn. Jǐnguǎn méi ná míngcì, dàn shōuhuò bǐ jiǎngpái zhòng. Zuìhòu Ānán shuō: tōngguò zhè cì bǐsài, wǒ míngbai le — wǒ shìhé dāng lālāduì!",
+    "example_vi": "Thông qua giải thi đấu lần này, tôi không chỉ cơ thể khỏe hơn, mà còn viết được một bài tản văn đầy sức lan tỏa. Thông qua giải này tôi kết được bạn. Thông qua giải này tôi biết được giới hạn của mình. Dù chẳng có thứ hạng, nhưng nhận được còn quý hơn huy chương. A Nam bảo: thông qua giải này tôi hiểu ra — tôi hợp làm cổ động viên!"
+  },
+  {
+    "id": "run_023",
+    "chinese": "篇",
+    "pinyin": "piān | 篇(⺮+扁) → 竹(⺮)子做成的扁(扁)片，用来写字。阿南写了一篇作文，题目叫《我的懒惰人生》，老师给了零分，因为太真实了。",
+    "vietnamese": "bài, thiên (lượng từ cho văn chương)",
+    "example_zh": "我写下了一篇充满感染力的散文。首先，一篇好的文章能让人哭，也能让人笑。其次，这篇散文记录了我的跑步心路。尽管只有一千字，但每个字都是汗换来的。最后阿南说：我写了一篇日记，题目是‘今天没跑’，老师说我很有创意。",
+    "example_pinyin": "Wǒ xiě xià le yī piān chōngmǎn gǎnrǎnlì de sǎnwén. Shǒuxiān, yī piān hǎo de wénzhāng néng ràng rén kū, yě néng ràng rén xiào. Qícì, zhè piān sǎnwén jìlù le wǒ de pǎobù xīnlù. Jǐnguǎn zhǐyǒu yī qiān zì, dàn měi gè zì dōu shì hàn huàn lái de. Zuìhòu Ānán shuō: wǒ xiě le yī piān rìjì, tímù shì ‘jīntiān méi pǎo’, lǎoshī shuō wǒ hěn yǒu chuàngyì.",
+    "example_vi": "Tôi đã viết một bài tản văn đầy sức lan tỏa. Một bài văn hay có thể làm người khóc, cũng có thể làm người cười. Bài tản văn này ghi lại hành trình chạy bộ của tôi. Dù chỉ có một nghìn chữ, nhưng mỗi chữ đều đánh đổi bằng mồ hôi. A Nam bảo: tôi viết một bài nhật ký, tựa đề 'Hôm nay không chạy', cô giáo bảo tôi rất sáng tạo."
+  },
+  {
+    "id": "run_024",
+    "chinese": "篇论文",
+    "pinyin": "piān lùnwén | 篇(⺮+扁) + 论(讠+仑) + 文(文) → 竹片(⺮)上写论文(论+文)，还要讲究逻辑(仑)。阿南的篇论文题目是《论跑步时如何避免被狗追》，导师说：不用写，跑快点就行。",
+    "vietnamese": "bài luận văn",
+    "example_zh": "这就像是我最引以为傲的人生篇论文。首先，人生的篇论文没有标准答案。其次，每个人都在用自己的经历写这篇论文。尽管有人写得精彩，有人写得潦草，但最重要的是‘交卷’时别后悔。最后阿南说：我的人生篇论文题目是《论躺平的哲学》，导师给了A+，因为没人比他更懂躺平。",
+    "example_pinyin": "Zhè jiù xiàng shì wǒ zuì yǐn yǐwéi ào de rénshēng piān lùnwén. Shǒuxiān, rénshēng de piān lùnwén méiyǒu biāozhǔn dá'àn. Qícì, měi gèrén dōu zài yòng zìjǐ de jīnglì xiě zhè piān lùnwén. Jǐnguǎn yǒurén xiě dé jīngcǎi, yǒurén xiě dé liáocǎo, dàn zuì zhòngyào de shì ‘jiāo juàn’ shí bié hòuhuǐ. Zuìhòu Ānán shuō: wǒ de rénshēng piān lùnwén tímù shì 《Lùn tǎngpíng de zhéxué》, dǎoshī gěi le A+, yīnwèi méi rén bǐ tā gèng dǒng tǎngpíng.",
+    "example_vi": "Điều này giống như bài luận văn cuộc đời mà tôi tự hào nhất. Luận văn cuộc đời chẳng có đáp án chuẩn. Mỗi người đều dùng trải nghiệm của mình để viết bài luận văn này. Dù có người viết hay, có người viết nguệch ngoạc, nhưng quan trọng nhất là lúc 'nộp bài' đừng hối hận. A Nam bảo: bài luận văn cuộc đời tôi tựa đề 'Bàn về triết lý nằm thẳng', giáo sư cho A+, vì chẳng ai hiểu nằm thẳng hơn tôi."
+  },
+  {
+    "id": "run_025",
+    "chinese": "作家",
+    "pinyin": "zuòjiā | 作(亻+乍) + 家(宀+豕) → 人(亻)突然(乍)在宝盖(宀)下养猪(豕)。阿南想当作家，结果写出来的东西只有他自己看得懂，编辑说：这是密码吗？",
+    "vietnamese": "nhà văn",
+    "example_zh": "一位作家朋友向我介绍了禅跑的方法。首先，作家的话总带着诗意。其次，这位作家朋友自己从不跑步，但他写的跑步文章特别美。尽管方法有点玄，但试试也无妨。最后阿南说：我认识一个作家，他写的减肥书让我胖了十斤，因为太好看，我边吃零食边看！",
+    "example_pinyin": "Yī wèi zuòjiā péngyou xiàng wǒ jièshào le chán pǎo de fāngfǎ. Shǒuxiān, zuòjiā de huà zǒng dài zhe shīyì. Qícì, zhè wèi zuòjiā péngyou zìjǐ cóngbù pǎobù, dàn tā xiě de pǎobù wénzhāng tèbié měi. Jǐnguǎn fāngfǎ yǒudiǎn xuán, dàn shìshi yě wúfáng. Zuìhòu Ānán shuō: wǒ rènshi yī gè zuòjiā, tā xiě de jiǎnféi shū ràng wǒ pàng le shí jīn, yīnwèi tài hǎokàn, wǒ biān chī língshí biān kàn!",
+    "example_vi": "Một người bạn là nhà văn đã giới thiệu cho tôi phương pháp chạy Thiền. Lời của nhà văn thường đầy chất thơ. Anh bạn nhà văn ấy tự chẳng bao giờ chạy bộ, nhưng bài viết về chạy bộ của anh ấy rất hay. Dù phương pháp có hơi huyền, nhưng thử cũng chẳng sao. A Nam bảo: tôi quen một nhà văn, ông ấy viết sách giảm cân khiến tôi béo lên năm cân, vì hay quá nên tôi vừa đọc vừa ăn snack!"
+  },
+  {
+    "id": "run_026",
+    "chinese": "介绍",
+    "pinyin": "jièshào | 介(人+丿) + 绍(纟+召) → 人(人)加一撇(丿)，丝线(纟)召唤(召)。阿南介绍朋友去跑步，朋友跑了一天就介绍阿南去推拿。",
+    "vietnamese": "giới thiệu",
+    "example_zh": "一位作家朋友向我介绍了禅跑的方法。首先，介绍之前要先了解对方的需求。其次，好的介绍能让两个陌生人成为朋友。尽管作家介绍的方法很特别，但我试了觉得还不错。最后阿南说：我向朋友介绍了一家火锅店，结果他吃完介绍我去医院。",
+    "example_pinyin": "Yī wèi zuòjiā péngyou xiàng wǒ jièshào le chán pǎo de fāngfǎ. Shǒuxiān, jièshào zhīqián yào xiān liǎojiě duìfāng de xūqiú. Qícì, hǎo de jièshào néng ràng liǎng gè mòshēngrén chéngwéi péngyou. Jǐnguǎn zuòjiā jièshào de fāngfǎ hěn tèbié, dàn wǒ shì le juéde hái bùcuò. Zuìhòu Ānán shuō: wǒ xiàng péngyou jièshào le yī jiā huǒguō diàn, jiéguǒ tā chī wán jièshào wǒ qù yīyuàn.",
+    "example_vi": "Một người bạn nhà văn đã giới thiệu cho tôi phương pháp chạy Thiền. Trước khi giới thiệu cần hiểu nhu cầu của đối phương. Giới thiệu tốt có thể khiến hai người xa lạ thành bạn. Dù phương pháp nhà văn giới thiệu hơi đặc biệt, nhưng tôi thử thấy cũng ổn. A Nam bảo: tôi giới thiệu bạn một quán lẩu, thế là sau khi ăn xong bạn ấy giới thiệu tôi đi bệnh viện."
+  },
+  {
+    "id": "run_027",
+    "chinese": "当时",
+    "pinyin": "dāngshí | 当(⺌+彐) + 时(日+寸) → 小(⺌)雪(彐)落下的时候(当)，太阳(日)一寸(寸)移动。阿南当时说要减肥，现在体重翻倍，他说：那是当时，不是‘当下’。",
+    "vietnamese": "lúc đó, hồi đó",
+    "example_zh": "当时，一位作家朋友向我介绍了禅跑的方法。首先，当时我觉得这方法太玄乎了。其次，当时我身体很差，只能半信半疑。尽管当时不信，但试了一个月后发现真香。最后阿南说：当时我要是听了朋友的话，现在也不会躺在医院里。",
+    "example_pinyin": "Dāngshí, yī wèi zuòjiā péngyou xiàng wǒ jièshào le chán pǎo de fāngfǎ. Shǒuxiān, dāngshí wǒ juéde zhè fāngfǎ tài xuánhu le. Qícì, dāngshí wǒ shēntǐ hěn chà, zhǐ néng bànxìn bànyí. Jǐnguǎn dāngshí bù xìn, dàn shì le yī gè yuè hòu fāxiàn zhēn xiāng. Zuìhòu Ānán shuō: dāngshí wǒ yàoshi tīng le péngyou de huà, xiànzài yě bù huì tǎng zài yīyuàn lǐ.",
+    "example_vi": "Hồi đó, một người bạn nhà văn đã giới thiệu cho tôi phương pháp chạy Thiền. Hồi đó tôi thấy phương pháp này hơi huyền. Hồi đó tôi sức khỏe rất kém, chỉ nửa tin nửa ngờ. Dù hồi đó không tin, nhưng sau khi thử một tháng thấy rất hợp. A Nam bảo: hồi đó nếu tôi chịu nghe bạn, bây giờ cũng chẳng nằm viện."
+  },
+  {
+    "id": "run_028",
+    "chinese": "正确",
+    "pinyin": "zhèngquè | 正(一+止) + 确(石+角) → 一(一)止(止)为‘正’，石头(石)上有角(角)。阿南觉得自己的选择永远正确，直到他选了一条路，尽头是警察局。",
+    "vietnamese": "chính xác, đúng đắn",
+    "example_zh": "我意识到，选择面对挑战是完全正确的。首先，正确的选择不一定容易，但一定值得。其次，逃避虽然舒服，但那是错误的选择。尽管有人会说‘早知当初’，但当时的选择就是最正确的。最后阿南说：我选择不跑步，这个决定非常正确，因为我成功保住了我的沙发。",
+    "example_pinyin": "Wǒ yìshi dào, xuǎnzé miànduì tiǎozhàn shì wánquán zhèngquè de. Shǒuxiān, zhèngquè de xuǎnzé bù yīdìng róngyì, dàn yīdìng zhídé. Qícì, táobì suīrán shūfu, dàn nà shì cuòwù de xuǎnzé. Jǐnguǎn yǒurén huì shuō ‘zǎo zhī dāngchū’, dàn dāngshí de xuǎnzé jiùshì zuì zhèngquè de. Zuìhòu Ānán shuō: wǒ xuǎnzé bù pǎobù, zhège juédìng fēicháng zhèngquè, yīnwèi wǒ chénggōng bǎo zhù le wǒ de shāfā.",
+    "example_vi": "Tôi nhận ra, lựa chọn đối mặt với thử thách là hoàn toàn chính xác. Lựa chọn chính xác chưa chắc dễ dàng, nhưng chắc chắn đáng giá. Trốn tránh thì thoải mái, nhưng đó là lựa chọn sai. Dù có người nói 'giá như biết trước', nhưng lựa chọn lúc đó là chính xác nhất. A Nam bảo: tôi chọn không chạy bộ, quyết định này rất chính xác, vì tôi đã giữ thành công cái ghế sô pha của mình."
+  },
+  {
+    "id": "run_029",
+    "chinese": "理想",
+    "pinyin": "lǐxiǎng | 理(王+里) + 想(相+心) → 王(王)在里面(里)，互相(相)用心(心)。阿南的理想是每天睡到自然醒，他说：这理想虽然小，但我一辈子都没实现过。",
+    "vietnamese": "lý tưởng",
+    "example_zh": "理想并不遥远，它就在每天的呼吸和脚步之中。首先，理想不是天上的星星，是脚下的路。其次，每天朝着理想走一步，理想就近一步。尽管听起来很鸡汤，但事实就是这样。最后阿南说：我的理想是在床上吃早餐，为了实现它，我已经赖床二十年了。",
+    "example_pinyin": "Lǐxiǎng bìng bù yáoyuǎn, tā jiù zài měitiān de hūxī hé jiǎobù zhī zhōng. Shǒuxiān, lǐxiǎng bùshì tiānshàng de xīngxing, shì jiǎoxià de lù. Qícì, měitiān cháozhe lǐxiǎng zǒu yī bù, lǐxiǎng jiù jìn yī bù. Jǐnguǎn tīng qǐlái hěn jītāng, dàn shìshí jiùshì zhèyàng. Zuìhòu Ānán shuō: wǒ de lǐxiǎng shì zài chuángshàng chī zǎocān, wèile shíxiàn tā, wǒ yǐjīng lài chuáng èrshí nián le.",
+    "example_vi": "Lý tưởng không hề xa xôi, nó nằm ngay trong hơi thở và bước chân mỗi ngày. Lý tưởng không phải ngôi sao trên trời, mà là con đường dưới chân. Mỗi ngày đi một bước về phía lý tưởng, lý tưởng sẽ gần thêm một bước. Dù nghe có vẻ như canh gà, nhưng sự thật là vậy. A Nam bảo: lý tưởng của tôi là ăn sáng trên giường, để thực hiện nó, tôi đã nằm ỳ ra đó hai mươi năm rồi."
+  }
+]
